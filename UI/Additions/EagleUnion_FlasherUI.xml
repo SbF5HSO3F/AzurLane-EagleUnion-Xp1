@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_FlasherUI -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/3/7 19:48:59 -->
+<Context Name="FlasherPanelAddon">
+    <Grid ID="FlasherPanelGrid" Offset="0,0" Size="296,Auto" AutoSizePadding="0,2" Texture="Controls_DropdownPanel" Color="143,122,82,200" Anchor="L,T" ConsumeMouseOver="1" Hidden="0">
+
+        <Stack ID="FlasherPanelStack" Anchor="C,T" Offset="0,4" StackGrowth="Bottom" StackPadding="2">
+            <Stack ID="FlasherPanelSecondStack" Anchor="C,C" Offset="0,0" StackGrowth="Right" StackPadding="2">
+                <GridButton ID="FlasherGainButton" Anchor="L,C" Offset="0,0" Size="parent-30,30" Texture="Controls_ButtonControl.dds" Style="FlasherPanelHeader" SliceCorner="10,10" SliceSize="1,1" SliceTextureSize="24,24" StateOffsetIncrement="0,24" TruncateWidth="150">
+                    <Stack ID="FlasherGainStack" Anchor="C,C" Offset="0,0" StackGrowth="Right">
+                        <Label ID="FlasherGainCount" Anchor="L,C" Offset="4,1" Style="FontNormal18" ColorSet="ResGoldLabelCS" FontStyle="Stroke" String="0"/>
+                        <Label ID="FlasherGainIcon" Anchor="L,C" Offset="6,0" Style="FontNormal18" ColorSet="ResGoldLabelCS" FontStyle="Stroke" String="[ICON_GoldLarge]"/>
+                    </Stack>
+                </GridButton>
+            </Stack>
+        </Stack>
+
+        <Box ID="FlasherTopColumn" Color="143,122,82,200" Anchor="C,T" Size="parent,2" Offset="0,0" Hidden="0">
+            <Box Color="0,0,0,200" Anchor="L,T" Size="parent,1" AnchorSide="I,O"/>
+            <Box Color="0,0,0,200" Anchor="L,B" Size="parent,1" AnchorSide="I,O"/>
+        </Box>
+        <Box ID="FlasherBottomColumn" Color="143,122,82,200" Anchor="C,B" Size="parent,2" Offset="0,0" Hidden="0">
+            <Box Color="0,0,0,200" Anchor="L,T" Size="parent,1" AnchorSide="I,O"/>
+            <Box Color="0,0,0,200" Anchor="L,B" Size="parent,1" AnchorSide="I,O"/>
+        </Box>
+    </Grid>
+</Context>

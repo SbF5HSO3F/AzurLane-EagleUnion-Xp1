@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Flasher_EnText -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/3/9 16:49:40 -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_FLASHER_SS249_NAME" Language="en_US">
+			<Text>Flasher</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_FLASHER_SS249" Language="en_US">
+			<Text>As the most successful submarine of the Eagle Union, Flasher, your numerous achievements are known to all. Wherever you go, there are victories; wherever you pass, there are wrecks. You and your sisters of the Gato class lurk beneath the surface, waiting for the opportunity to sink any careless enemy, turning the azure sea into a devouring abyss. Continue to ambush your enemies below the sea surface, for your glory is far from over!</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_QUOTE" Language="en_US">
+			<Text>Let's gather together and act like a pack of wolves!</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_CAPSULE_BODY" Language="en_US">
+			<Text>Flasher will silently approach her enemies and then kill them with one blow.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_DETAILED_BODY" Language="en_US">
+			<Text>Flasher is definitely a competent hunter: her units are undetectable unless they are adjacent. Furthermore, as soon as they get close to the enemy, they immediately regain all of their [ICON_Movement] Movement and Attack Points. The [ICON_Strength] Combat Power provided by each unused [ICON_Movement] Movement point will then allow her units to deal heavy blows to the enemy. As she kills more and more units in battle, the Flasher will earn more and more [ICON_Gold] gold. By utilizing these advantages, no one will be able to stop the Flasher from winning.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>USS Flasher was a Gato-class submarine that served in the Pacific during World War II. She received the Presidential Unit Citation and six battle stars for sinking 21 ships totaling 100,231 tons of Japanese shipping, making her one of the most successful American submarines of the war. She was the first U.S. Navy ship to be named after a Flasher.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>The Flasher was officially decommissioned on March 16, 1946, in New London County, Connecticut, USA, and in 1963, the Flasher was dismantled and sold.</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_AGENDA_FISH_ARE_FRIENDS_NAME" Language="en_US">
+			<Text>Fish are Friends</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_FISH_ARE_FRIENDS_DESCRIPTION" Language="en_US">
+			<Text>Loves a civilization that declares friendship with herself and hates a civilization that condemns her friends and allies.</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_FLASHER_SS249_REASON_ANY" Language="en_US">
+			<Text>(You declared friendship with her)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_FISH_ARE_FRIENDS_DECLARED_FRIEND" Language="en_US">
+			<Text>Flasher like civilization that declares friendship with her</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_FLASHER_SS249_REASON_ANY" Language="en_US">
+			<Text>(You condemned her friend.)</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_FISH_ARE_FRIENDS_DENOUNCED_FRIEND" Language="en_US">
+			<Text>Flasher hates it when you condemn her friends</Text>
+		</Replace>
+		<!--领袖能力-->
+		<!--Teary-Eyed Huntress-->
+		<Replace Tag="LOC_TRAIT_LEADER_TEARY_EYED_HUNTRESS_NAME" Language="en_US">
+			<Text>Teary Eyed Huntress</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TEARY_EYED_HUNTRESS_DESCRIPTION" Language="en_US">
+			<Text>All units +1 [ICON_Movement] Movement and can only be detected when adjacent to enemy units. Military units +3 [ICON_Strength] Combat Strength per unused [ICON_MOVEMENT] Movement and regain all [ICON_Movement] Movement and Attack Points the first time they move within 2-tiles of an enemy unit each turn. When you kill a unit, you will receive [ICON_Gold] Gold according to the number of units you have killed. Gain the Gato-class Submarine unique unit when the Electricity technology are researched.</Text>
+		</Replace>
+		<!--Lua浮动文字显示-->
+		<Replace Tag="LOC_FLASHER_HUNTRESS" Language="en_US">
+			<Text>Found prey!</Text>
+		</Replace>
+		<Replace Tag="LOC_FLASHER_HUNTRESS_GOLD" Language="en_US">
+			<Text>[COLOR_FLOAT_GOLD]+{1_num}[ENDCOLOR] [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="LOC_FLASHER_HUNTRESS_DESC" Language="en_US">
+			<Text>You have killed {1_num} units cumulatively, so you will receive {2_num} [ICON_Gold] Gold when killing the next unit.</Text>
+		</Replace>
+		<Replace Tag="LOC_FLASHER_HUNTRESS_REFESRH" Language="en_US">
+			<Text>Click to refresh</Text>
+		</Replace>
+		<!--特殊加成-->
+
+		<!--领袖项目-->
+
+		<!--领袖单位-->
+		<Replace Tag="LOC_UNIT_GATO_CLASS_NAME" Language="en_US">
+			<Text>Gato-class Submarine</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GATO_CLASS_DESCRIPTION" Language="en_US">
+			<Text>Flasher's unique Modern era naval unit that replaces the Submarine, has higher [ICON_Movement] Movement. Can only be seen by other Naval Raiders unless adjacent to it. Reveals Naval Raiders within sight range. +10 [ICON_Strength] Combat Power when fighting adjacent naval units.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_1" Language="en_US">
+			<Text>The Gato class submarine was a submarine class used by the US Navy during World War II, belonging to the traditional power submarine that used diesel engines and electric motors. It, along with its successors, the Palau class submarines and the Dinka class submarines, together formed the main force of the US Navy's submarine fleet during World War II. Like other US submarines at the time, the Gato class submarines, which had a total of 77 built, were all named after aquatic creatures.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_2" Language="en_US">
+			<Text>The Gato class submarine inherits the design of the pufferfish class submarine, making it larger and extending its underwater and surface endurance.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_3" Language="en_US">
+			<Text>They undermined the maritime routes of the Axis powers such as Japan, Germany, and Vichy France, pressured important ports, blocked the transportation of strategic materials, and also set up a peripheral reconnaissance network for their own fleet.  They even launched surprise attacks on key targets of the enemy in the naval battle of surface fleet, becoming the "hidden heroes of the war victory". In the early stages of the Pacific War, due to the serious losses caused by the Pearl Harbor incident, the Pacific Fleet did not have enough warships to stop the aggressive offensive of the Japanese army. At this time, the US Navy submarine force launched a "wolf pack operation" in groups of three or five, fearlessly attacking Japan's transportation line to the Pacific Islands, giving the Pacific surface fleet valuable preparation time. This move enabled the main fleet to reverse the situation in the later Battle of Midway and Guadalcanal Island, and finally defeated the Japanese Combined Fleet.</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_4" Language="en_US">
+			<Text>When the United States and Japan were caught in the bloody Battle of Guadalcanal, the Pacific Fleet suffered heavy losses in four naval battles (the first, second, third and fourth Solomon naval battles and the Battle of Santa Cruz).  The Gato-class submarine once again played a huge role in attacking the Japanese transport fleet, isolating the Japanese forces on the island and enabling the US forces to win the final victory.  A naval historian once exaggeratedly said, "The Japanese forces on Guadalcanal had to cut their own rice for food later because there was no supply. (The Gato-class submarine cut off the Japanese transport line.)" In fact, the supply of the Japanese army was not entirely blocked by US submarines, but was mostly blocked by the surface fleet of the US military such as the Enterprise and the "Cactus" air force stationed at Henderson Field on Guadalcanal. Even so, the submarine still played an important role. In addition to attacking the transportation line, the Gato-class submarine also performed very well in various battlefields.</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_GATO_CLASS_NAME" Language="en_US">
+			<Text>Ambush</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_GATO_CLASS_DESCRIPTION" Language="en_US">
+			<Text>+10 [ICON_Strength] Combat Power when fighting adjacent naval units</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_GATO_CLASS_NEXT_COMBAT_DESCRIPTION" Language="en_US">
+			<Text>+{1_num} [ICON_Strength] Combat Power when fighting adjacent naval units</Text>
+		</Replace>
+		<!--特殊晋升-->
+
+		<!--特殊能力-->
+		<Replace Tag="LOC_ABILITY_FLASHER_ALL_UNITS_BUFF_NAME" Language="en_US">
+			<Text>Underwater Villain</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FLASHER_ALL_UNITS_BUFF_DESCRIPTION" Language="en_US">
+			<Text>+1 [ICON_Movement] Movement, can only be detected when adjacent to an enemy unit</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FLASHER_COMBAT_UNITS_BUFF_NAME" Language="en_US">
+			<Text>Hunting prey</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FLASHER_COMBAT_UNITS_BUFF_DESCRIPTION" Language="en_US">
+			<Text>+3 [ICON_Strength] Combat Strength per unused [ICON_MOVEMENT] Movement, Regain all [ICON_Movement] Movement and Attack Points the first time they move within 2-tiles of an enemy unit each turn</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_FLASHER_PER_MOVEMENT_FOR_COMBAT_DESCRIPTION" Language="en_US">
+			<Text>+{Property} [ICON_Strength] Combat Strength per unused [ICON_MOVEMENT] Movement</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

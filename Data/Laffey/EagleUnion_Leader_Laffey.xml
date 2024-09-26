@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Leader_Laffey -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/11/19 15:05:14 -->
+<GameData>
+	<Types>
+		<!--拉菲-->
+		<Row Type="LEADER_LAFFEY_DD459"				Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_WARGOD_OF_SOLOMON"	Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_UNIT_BENSON_CLASS"	Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<!--拉菲-->
+		<Row LeaderType="LEADER_LAFFEY_DD459"	Name="LOC_LEADER_LAFFEY_DD459_NAME"	Sex="Female"	InheritFrom="LEADER_DEFAULT"	SceneLayers="4"/>
+	</Leaders>
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_LAFFEY_DD459"	CapitalName="LOC_CITY_NAME_EAGLE_UNION_SAN_FRANCISCO"/>
+	</CivilizationLeaders>
+	<Traits>
+		<!--拉菲-->
+		<Row TraitType="TRAIT_LEADER_WARGOD_OF_SOLOMON"	Name="LOC_TRAIT_LEADER_WARGOD_OF_SOLOMON_NAME"	Description="LOC_TRAIT_LEADER_WARGOD_OF_SOLOMON_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_UNIT_BENSON_CLASS"	Name="LOC_UNIT_BENSON_CLASS_NAME"				Description="LOC_UNIT_BENSON_CLASS_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<!--拉菲-->
+		<Row LeaderType="LEADER_LAFFEY_DD459"	TraitType="TRAIT_LEADER_WARGOD_OF_SOLOMON"/>
+		<Row LeaderType="LEADER_LAFFEY_DD459"	TraitType="TRAIT_LEADER_UNIT_BENSON_CLASS"/>
+	</LeaderTraits>
+	<HistoricalAgendas>
+		<Row LeaderType="LEADER_LAFFEY_DD459"	AgendaType="AGENDA_SOLOMON_S_NIGHT"/>
+	</HistoricalAgendas>
+	<Agendas>
+		<Row AgendaType="AGENDA_SOLOMON_S_NIGHT"	Name="LOC_AGENDA_SOLOMON_S_NIGHT_NAME"	Description="LOC_AGENDA_SOLOMON_S_NIGHT_DESCRIPTION"/>
+	</Agendas>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_LAFFEY_DD459"	Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_QUOTE" />
+	</LeaderQuotes>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_LAFFEY_DD459"	ForegroundImage="IMG_EAGLE_UNION_LEADER_LAFFEY_DD459_LOADING_FOREGROUND"	BackgroundImage="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_LAFFEY_DD459"	BackgroundImage="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND.dds"/>
+	</DiplomacyInfo>
+	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>TRAIT_LEADER_WARGOD_OF_SOLOMON</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_WARGOD_OF_SOLOMON</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+		<!--单位buff-->
+		<Row>
+			<TraitType>TRAIT_LEADER_WARGOD_OF_SOLOMON</TraitType>
+			<ModifierId>LAFFEY_UNITS_BUFF</ModifierId>
+		</Row>
+		<!--水域单元格buff-->
+		<Row>
+			<TraitType>TRAIT_LEADER_WARGOD_OF_SOLOMON</TraitType>
+			<ModifierId>LAFFEY_COAST_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_WARGOD_OF_SOLOMON</TraitType>
+			<ModifierId>LAFFEY_OCEAN_PRODUCTION</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_WARGOD_OF_SOLOMON</TraitType>
+			<ModifierId>LAFFEY_COAST_FAITH</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_WARGOD_OF_SOLOMON</TraitType>
+			<ModifierId>LAFFEY_OCEAN_FAITH</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--单位buff-->
+		<Row>
+			<ModifierId>LAFFEY_UNITS_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+		</Row>
+		<!--尤里卡-->
+		<Row>
+			<ModifierId>LAFFEY_RANDOM_TECHNOLOGY_BOOST</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_RANDOM_TECHNOLOGY</ModifierType>
+		</Row>
+		<!--鼓舞-->
+		<Row>
+			<ModifierId>LAFFEY_RANDOM_CIVIC_BOOST</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_RANDOM_CIVIC</ModifierType>
+		</Row>
+		<!--水域单元格buff-->
+		<Row>
+			<ModifierId>LAFFEY_COAST_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_TERRAIN_TYPE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_OCEAN_PRODUCTION</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_TERRAIN_TYPE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_COAST_FAITH</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_TERRAIN_TYPE</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_OCEAN_FAITH</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_CITIES_ADJUST_CITY_YIELD_PER_TERRAIN_TYPE</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--单位buff-->
+		<Row>
+			<ModifierId>LAFFEY_UNITS_BUFF</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_LAFFEY_COMBAT_UNITS_BUFF</Value>
+		</Row>
+		<!--尤里卡-->
+		<Row>
+			<ModifierId>LAFFEY_RANDOM_TECHNOLOGY_BOOST</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--鼓舞-->
+		<Row>
+			<ModifierId>LAFFEY_RANDOM_CIVIC_BOOST</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--水域单元格buff-->
+		<Row>
+			<ModifierId>LAFFEY_COAST_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_COAST_PRODUCTION</ModifierId>
+			<Name>TerrainType</Name>
+			<Value>TERRAIN_COAST</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_COAST_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_OCEAN_PRODUCTION</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_OCEAN_PRODUCTION</ModifierId>
+			<Name>TerrainType</Name>
+			<Value>TERRAIN_OCEAN</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_OCEAN_PRODUCTION</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_PRODUCTION</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_COAST_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_COAST_FAITH</ModifierId>
+			<Name>TerrainType</Name>
+			<Value>TERRAIN_COAST</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_COAST_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_OCEAN_FAITH</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_OCEAN_FAITH</ModifierId>
+			<Name>TerrainType</Name>
+			<Value>TERRAIN_OCEAN</Value>
+		</Row>
+		<Row>
+			<ModifierId>LAFFEY_OCEAN_FAITH</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_FAITH</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

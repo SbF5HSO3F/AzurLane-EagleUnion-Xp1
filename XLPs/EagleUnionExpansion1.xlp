@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<AssetObjects..XLP>
+	<m_Version>
+		<major>1</major>
+		<minor>0</minor>
+		<build>0</build>
+		<revision>0</revision>
+	</m_Version>
+	<m_ClassName text="UITexture"/>
+	<m_PackageName text="EagleUnionExpansion1"/>
+	<m_Entries>
+		<Element>
+			<m_EntryID text="IMG_LEADER_LAFFEY_DD459_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_LAFFEY_DD459_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_LEADER_LAFFEY_DD459_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_LAFFEY_DD459_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_Benson_class"/>
+			<m_ObjectName text="Moment_Benson_class"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_EXPANSION1"/>
+			<m_ObjectName text="EAGLE_UNION_EXPANSION1"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_FLASHER_SS249_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_FLASHER_SS249_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_EAGLE_UNION_LEADER_FLASHER_SS249_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_FLASHER_SS249_LOADING_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_XP1_LEADERS_256"/>
+			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_256"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_XP1_LEADERS_32"/>
+			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_32"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_XP1_LEADERS_45"/>
+			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_45"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_XP1_LEADERS_48"/>
+			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_48"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_XP1_LEADERS_50"/>
+			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_50"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_XP1_LEADERS_55"/>
+			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_55"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_XP1_LEADERS_64"/>
+			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_64"/>
+		</Element>
+		<Element>
+			<m_EntryID text="EAGLE_UNION_XP1_LEADERS_80"/>
+			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_80"/>
+		</Element>
+		<Element>
+			<m_EntryID text="Moment_Gato_class"/>
+			<m_ObjectName text="Moment_Gato_class"/>
+		</Element>
+	</m_Entries>
+	<m_AllowedPlatforms>
+		<Element>WINDOWS</Element>
+		<Element>MACOS</Element>
+		<Element>IOS</Element>
+		<Element>LINUX</Element>
+		<Element>XBONE</Element>
+		<Element>PS4</Element>
+		<Element>SWITCH</Element>
+		<Element>STADIA</Element>
+	</m_AllowedPlatforms>
+</AssetObjects..XLP>
+

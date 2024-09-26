@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Flasher_HKText -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/3/9 16:49:51 -->
+<GameData>
+	<LocalizedText>
+		<!--領袖介紹-->
+		<Replace Tag="LOC_LEADER_FLASHER_SS249_NAME" Language="zh_Hant_HK">
+			<Text>松鯛</Text>
+		</Replace>
+		<!--載入-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_FLASHER_SS249" Language="zh_Hant_HK">
+			<Text>作為白鷹聯邦最為成功的潛艇，松鯛，無人不知你累累的戰績。您所到之處必有戰果，您所經之地必有殘骸。您和您的貓鯊級姐妹們潛伏于水面之下，伺機擊沉一切掉以輕心的敵人，讓蔚藍的海洋成為吞噬一切的深淵。繼續在海平面下伏擊您的敵人吧，您的輝煌還遠不止如此！</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_QUOTE" Language="zh_Hant_HK">
+			<Text>大家集合到一起，像狼群般行動吧！</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
+			<Text>松鯛會無聲地靠近她的敵人，然後一擊斃命。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
+			<Text>松鯛絕對是一位稱職的獵殺者：她的單位除非相鄰，否則不會被發現。而且，一旦它們靠近敵軍，就會立即恢復全部 [ICON_Movement] 移動力與攻擊點數。屆時，每點未使用的 [ICON_Movement] 移動力所提供的 [ICON_Strength] 戰鬥力會讓她的單位給予敵軍沉重地打擊。隨著在戰鬥中擊殺越來越多的單位，松鯛將會獲得越來越多的 [ICON_Gold] 金幣。只要利用好這些優勢，無人能阻擋松鯛的勝利。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>松鯛號是第二次世界大戰期間在太平洋服役的貓鯊級潛艇。她獲得了總統單位嘉獎和六顆戰星，擊沉了21艘艦艇，總計100231噸的日本船隻，使她成為戰爭中最成功的美國潛艇之一。她是美國海軍第一艘以松鯛命名的艦艇。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>1946年3月16日，松鯛號在美國康涅狄格州的新倫敦縣正式退役，1963年，松鯛號被拆解出售。</Text>
+		</Replace>
+		<!--領袖議程-->
+		<Replace Tag="LOC_AGENDA_FISH_ARE_FRIENDS_NAME" Language="zh_Hant_HK">
+			<Text>小魚們的夥伴</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_FISH_ARE_FRIENDS_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>喜歡與自己宣佈友好的文明，討厭譴責她朋友和盟友的文明。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_FLASHER_SS249_REASON_ANY" Language="zh_Hant_HK">
+			<Text>（您與她宣佈友好）</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_FISH_ARE_FRIENDS_DECLARED_FRIEND" Language="zh_Hant_HK">
+			<Text>松鯛喜歡與自己宣佈友好的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_FLASHER_SS249_REASON_ANY" Language="zh_Hant_HK">
+			<Text>（您譴責了她的朋友）</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_FISH_ARE_FRIENDS_DENOUNCED_FRIEND" Language="zh_Hant_HK">
+			<Text>松鯛討厭您譴責她的朋友</Text>
+		</Replace>
+		<!--領袖能力-->
+		<!--Teary-Eyed Huntress-->
+		<Replace Tag="LOC_TRAIT_LEADER_TEARY_EYED_HUNTRESS_NAME" Language="zh_Hant_HK">
+			<Text>開啟狩獵！</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TEARY_EYED_HUNTRESS_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>所有單位+1 [ICON_Movement] 移動力，且只有與敵方單位相鄰時才能被發現。軍事單位每點未使用的 [ICON_Movement] 移動力提供+3 [ICON_Strength] 戰鬥力，且每回合首次移動至敵方單位兩個單元格範圍內時，將恢復全部 [ICON_Movement] 移動力與攻擊點數。擊殺單位時將根據累積擊殺單位數獲得 [ICON_Gold] 金幣。研究完“電力”後獲得特色單位“貓鯊級潛艇”。</Text>
+		</Replace>
+		<!--Lua浮動文字顯示-->
+		<Replace Tag="LOC_FLASHER_HUNTRESS" Language="zh_Hant_HK">
+			<Text>發現獵物！</Text>
+		</Replace>
+		<Replace Tag="LOC_FLASHER_HUNTRESS_GOLD" Language="zh_Hant_HK">
+			<Text>[COLOR_FLOAT_GOLD]+{1_num}[ENDCOLOR] [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="LOC_FLASHER_HUNTRESS_DESC" Language="zh_Hant_HK">
+			<Text>您已經累積擊殺{1_num}個單位，因此在擊殺下一個單位時您將獲得{2_num} [ICON_Gold] 金幣。</Text>
+		</Replace>
+		<Replace Tag="LOC_FLASHER_HUNTRESS_REFESRH" Language="zh_Hant_HK">
+			<Text>點擊以刷新</Text>
+		</Replace>
+		<!--特殊加成-->
+
+		<!--領袖項目-->
+
+		<!--領袖單位-->
+		<Replace Tag="LOC_UNIT_GATO_CLASS_NAME" Language="zh_Hant_HK">
+			<Text>貓鯊級潛艇</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GATO_CLASS_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>取代潛艇的松鯛特色現代海軍單位，擁有更高的 [ICON_Movement] 移動力。除非與單位相鄰，否則只能被其他海軍襲擊者發現。能使視線範圍中的海軍襲擊者暴露位置。與相鄰的海軍單位作戰時+10 [ICON_Strength] 戰鬥力。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>貓鯊級潛艇是美國海軍在第二次世界大戰中使用過的一個潛艇級別，屬於使用柴油引擎及電動機的傳統動力潛艇。其與後繼的巴勞鱵級潛艇與丁鱥級潛艇，共同構成了第二次大戰時美國海軍的潛艇艦隊主力。如同當時其他的美軍潛艇，建造數量達77艘的貓鯊級潛艇，全都是以水中生物的名稱作為艦名。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>貓鯊級潛艇繼承河豚級潛艇的設計，將其大型化並延長了水下及水面的續航距離。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
+			<Text>她們對日本、德國、維希法國等軸心國海上線路進行通商破壞，施壓重要港口，堵塞戰略物資運輸，同時也為己方艦隊拉起週邊偵查網，乃至在水面艦隊海戰中向敵重點目標發動奇襲，成為“戰爭勝利的幕後功臣”。在太平洋戰爭初期由於珍珠港事件的嚴重損失，太平洋艦隊沒有足夠軍艦去阻止日軍咄咄逼人的攻勢。此時美海軍潛艇部隊便發起了“三五成群”的“狼群作戰”，無畏地打擊日本通往太平洋諸島的交通線，給了太平洋水面艦隊寶貴的備戰時間。此舉使得主力艦隊得以在後來中途島海戰、瓜達爾卡納爾島戰役扭轉局勢，最終擊潰日本聯合艦隊。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
+			<Text>正當美日雙方陷入血腥的瓜達爾卡納爾島戰役，太平洋艦隊因為四次海戰（第一、二、三次所羅門海戰、聖克魯茲海戰）損失慘重時，貓鯊級潛艇再度發揮巨大的作用，襲擊日本運輸艦隊，孤立該島日軍使美軍獲得最後勝利，有海軍歷史學者曾誇張的說：“瓜達爾卡納爾的日軍在後來得親手割稻為糧，因為已經沒有補給了。（貓鯊級潛艇把日軍運輸線切斷了。）”其實日軍的補給並非全為美軍潛艇所阻止，一大部分是被企業號等美軍投入的水面艦隊及進駐瓜達爾卡納爾島亨得森機場的“仙人掌”航空隊所攔阻。即使如此，潛艇仍功不可沒。 除了打擊運輸線，貓鯊級在各大戰役現場表現也相當亮眼。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_GATO_CLASS_NAME" Language="zh_Hant_HK">
+			<Text>潛襲</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_GATO_CLASS_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>與相鄰的海軍單位作戰時+10 [ICON_Strength] 戰鬥力</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_GATO_CLASS_NEXT_COMBAT_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>與相鄰的海軍單位作戰時+{1_num} [ICON_Strength] 戰鬥力</Text>
+		</Replace>
+		<!--特殊晉升-->
+
+		<!--特殊能力-->
+		<Replace Tag="LOC_ABILITY_FLASHER_ALL_UNITS_BUFF_NAME" Language="zh_Hant_HK">
+			<Text>水下小人</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FLASHER_ALL_UNITS_BUFF_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>+1 [ICON_Movement] 移動力，只有與敵方單位相鄰時才能被發現</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FLASHER_COMBAT_UNITS_BUFF_NAME" Language="zh_Hant_HK">
+			<Text>狩獵獵物</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FLASHER_COMBAT_UNITS_BUFF_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>每點未使用的 [ICON_Movement] 移動力提供+3 [ICON_Strength] 戰鬥力；每回合首次移動至敵方單位兩個單元格範圍內時，將恢復全部 [ICON_Movement] 移動力與攻擊點數</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_FLASHER_PER_MOVEMENT_FOR_COMBAT_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>每點未使用的 [ICON_Movement] 移動力提供+{Property} [ICON_Strength] 戰鬥力</Text>
+		</Replace>
+
+	</LocalizedText>
+</GameData>

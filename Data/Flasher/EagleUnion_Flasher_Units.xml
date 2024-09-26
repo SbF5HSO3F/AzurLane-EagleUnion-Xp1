@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Flasher_Units -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/3/7 21:25:53 -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_GATO_CLASS"		Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_GATO_CLASS"	Kind="KIND_ABILITY"/>
+	</Types>
+	<Tags>
+		<Row Tag="CLASS_GATO_CLASS" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_GATO_CLASS" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_GATO_CLASS" AiType="UNITTYPE_RANGED"/>
+		<Row UnitType="UNIT_GATO_CLASS" AiType="UNITTYPE_NAVAL"/>
+	</UnitAiInfos>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_GATO_CLASS" ReplacesUnitType="UNIT_SUBMARINE"/>
+	</UnitReplaces>
+	<TypeTags>
+		<Row Type="UNIT_GATO_CLASS"		Tag="CLASS_NAVAL_RAIDER"/>
+		<Row Type="UNIT_GATO_CLASS"		Tag="CLASS_NAVAL_RANGED"/>
+		<Row Type="UNIT_GATO_CLASS"		Tag="CLASS_GATO_CLASS"/>
+		<Row Type="UNIT_GATO_CLASS"		Tag="CLASS_STEALTH"/>
+		<Row Type="UNIT_GATO_CLASS"		Tag="CLASS_REVEAL_STEALTH"/>
+		<Row Type="ABILITY_GATO_CLASS"	Tag="CLASS_GATO_CLASS"/>
+	</TypeTags>
+	<Units>
+		<Row UnitType="UNIT_GATO_CLASS"
+			 Cost="480"
+			 Maintenance="6"
+			 BaseMoves="4"
+			 BaseSightRange="3"
+			 ZoneOfControl="false"
+			 Domain="DOMAIN_SEA"
+			 Combat="70"
+			 RangedCombat="80"
+			 Range="2"
+			 FormationClass="FORMATION_CLASS_NAVAL"
+			 PromotionClass="PROMOTION_CLASS_NAVAL_RAIDER"
+			 AdvisorType="ADVISOR_CONQUEST"
+			 Name="LOC_UNIT_GATO_CLASS_NAME"
+			 Description="LOC_UNIT_GATO_CLASS_DESCRIPTION"
+			 PurchaseYield="YIELD_GOLD"
+			 PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT"
+			 TraitType="TRAIT_LEADER_UNIT_GATO_CLASS"
+			 PrereqTech="TECH_ELECTRICITY"/>
+	</Units>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_GATO_CLASS" Texture="Moment_Gato_class.dds"/>
+	</MomentIllustrations>
+	<UnitUpgrades>
+		<Row Unit="UNIT_GATO_CLASS" UpgradeUnit="UNIT_NUCLEAR_SUBMARINE"/>
+	</UnitUpgrades>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_GATO_CLASS" Name="LOC_ABILITY_GATO_CLASS_NAME" Description="LOC_ABILITY_GATO_CLASS_DESCRIPTION"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="GATO_CLASS_NEXT_COMBAT" Context="Preview" Text="LOC_PREVIEW_GATO_CLASS_NEXT_COMBAT_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_GATO_CLASS</UnitAbilityType>
+			<ModifierId>GATO_CLASS_NEXT_COMBAT</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>GATO_CLASS_NEXT_COMBAT</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_NEXT_NAVAL</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>GATO_CLASS_NEXT_COMBAT</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

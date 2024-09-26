@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Flasher_Agendas -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/3/8 18:33:22 -->
+<GameData>
+	<Types>
+		<Row Type="TRAIT_AGENDA_FISH_ARE_FRIENDS" Kind="KIND_TRAIT"/>
+	</Types>
+	<AiListTypes>
+		<!--通用-->
+		<Row ListType="FishAreFriendsDistricts"/>
+		<Row ListType="FishAreFriendsTechs"/>
+		<!--小鱼们的伙伴-->
+		<Row ListType="FishAreFriendsPreferDiplomatic"/>
+	</AiListTypes>
+	<AiLists>
+		<!--通用-->
+		<Row ListType="FishAreFriendsDistricts"				AgendaType="TRAIT_AGENDA_FISH_ARE_FRIENDS"	System="Districts"/>
+		<Row ListType="FishAreFriendsTechs"					LeaderType="LEADER_FLASHER_SS249"			System="Technologies"/>
+		<!--小鱼们的伙伴-->
+		<Row ListType="FishAreFriendsPreferDiplomatic"		AgendaType="TRAIT_AGENDA_FISH_ARE_FRIENDS"	System="DiplomaticActions"/>
+	</AiLists>
+	<AiFavoredItems>
+		<!--通用-->
+		<Row ListType="FishAreFriendsDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="FishAreFriendsTechs"					Item="TECH_WRITING"							Favored="true"/>
+		<!--小鱼们的伙伴-->
+		<Row ListType="FishAreFriendsPreferDiplomatic"		Item="DIPLOACTION_DECLARE_FRIENDSHIP"		Favored="true"/>
+	</AiFavoredItems>
+	<Traits>
+		<!--小鱼们的伙伴-->
+		<Row TraitType="TRAIT_AGENDA_FISH_ARE_FRIENDS"/>
+	</Traits>
+	<AgendaTraits>
+		<!--小鱼们的伙伴-->
+		<Row AgendaType="AGENDA_FISH_ARE_FRIENDS" TraitType="TRAIT_AGENDA_FISH_ARE_FRIENDS"/>
+	</AgendaTraits>
+	<TraitModifiers>
+		<!--宣布友好-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_FISH_ARE_FRIENDS</TraitType>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_FRIEND</ModifierId>
+		</Row>
+		<!--谴责盟友-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_FISH_ARE_FRIENDS</TraitType>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_DENOUNCED_FRIEND</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--宣布友好-->
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_FRIEND</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_DECLARED_FRIEND</SubjectRequirementSetId>
+		</Row>
+		<!--谴责盟友-->
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_DENOUNCED_FRIEND</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYER_FRIEND_DENOUNCED</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--宣布友好-->
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_FRIEND</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>12</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_FRIEND</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_FRIEND</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_FRIEND</ModifierId>
+			<Name>MessageThrottle</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_FRIEND</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_LEADER_FLASHER_SS249_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_FRIEND</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_FISH_ARE_FRIENDS_DECLARED_FRIEND</Value>
+		</Row>
+		<!--谴责盟友-->
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_DENOUNCED_FRIEND</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-12</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_DENOUNCED_FRIEND</ModifierId>
+			<Name>ReductionTurns</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_DENOUNCED_FRIEND</ModifierId>
+			<Name>ReductionValue</Name>
+			<Value>-1</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_DENOUNCED_FRIEND</ModifierId>
+			<Name>MessageThrottle</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_DENOUNCED_FRIEND</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_LEADER_FLASHER_SS249_REASON_ANY</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_FISH_ARE_FRIENDS_DENOUNCED_FRIEND</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_MODIFIER_FISH_ARE_FRIENDS_DENOUNCED_FRIEND</Value>
+		</Row>
+	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="AGENDA_FISH_ARE_FRIENDS_FRIEND"			Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_FISH_ARE_FRIENDS_DENOUNCED_FRIEND"	Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
+</GameData>

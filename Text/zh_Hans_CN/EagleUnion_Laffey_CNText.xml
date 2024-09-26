@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Laffey_CNText -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/11/19 14:28:30 -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_LAFFEY_DD459_NAME" Language="zh_Hans_CN">
+			<Text>拉菲</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_LAFFEY_DD459" Language="zh_Hans_CN">
+			<Text>本森级驱逐舰拉菲号，你的英勇已经成为无人不知的传奇。在瓜达尔卡纳尔海战中，您宛如一颗绚烂的流星划破夜空，留下的则是所有人心中的光辉榜样。即使你已遍体鳞伤，即便你已身燃烈火，你仍奋勇作战，直至最后的沉寂。太平洋已经见证了你那荣耀与牺牲的坚韧之魂，现在正等着你去书写新的辉煌篇章。</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_QUOTE" Language="zh_Hans_CN">
+			<Text>唔……还算勉勉强强吧。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+			<Text>拉菲能在战斗中振奋她的文明，以推进她的胜利。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+			<Text>拉菲的军事力量不容小觑，她的单位不会蒙受受伤减益，并在面对更强的敌人和遭遇夹击时将获得 [ICON_Strength] 战斗力加成。而通过在战斗中击杀敌军，拉菲能为白鹰联邦启动科技的 [ICON_TECHBOOSTED] 尤里卡和市政的 [ICON_CIVICBOOSTED] 鼓舞。如过这些科技和市政的 [ICON_TECHBOOSTED] 尤里卡或 [ICON_CIVICBOOSTED] 鼓舞已经触发，则将会立刻解锁。这将迅速地推进白鹰联邦科技和文化的进程，让白鹰联邦走在世界的前列。再依靠水域单元格为岸边建立的城市提供的 [ICON_PRODUCTION] 生产力和 [ICON_FAITH] 信仰值加成，拉菲将轻松通往任何胜利。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>拉菲，本森级驱逐舰的一员，旧金山伯利恒钢铁公司建造，1941年1月13日开工，同年10月30日建成。由舰名由来的勇敢的水兵巴雷特·拉菲的孙女主持下水｡</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>1942年3月31日，威廉·E·汉克少校奉命成为它的指挥官。同年8月，沿西海岸训练过后,拉菲航向南太平洋。它的目的地是所罗门群岛，任务是从日方手中夺回瓜达康纳尔岛(或译:瓜达尔卡纳尔岛，以下简称瓜岛)的控制权。拉菲加入以胡蜂为首的特遣舰队，与大黄蜂一同护送燃料与援军，前往亨德森机场。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>同年9月15日，日方潜水舰伊19袭击了胡蜂，三枚氧气鱼雷直接命中舰侧，并引爆舰上油库，造成无法挽回的损伤，最终由兰斯以雷击处分，舰上193人阵亡，367人轻重伤。这次事件中，拉菲搭救了许多幸存者，并送他们去埃斯皮里图桑托岛(以下简称桑托岛)。随后它加入第64.2特遣舰队，接受巡洋舰旧金山、盐湖城、博伊西、海伦娜的指挥。它们的任务是破坏日方的东京快车行动，阻止日方海军将急需的补给和增援送到日方瓜岛驻军手上。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>1942年10月11日~12日的夜里，埃斯帕恩斯角海战来到了最激烈的时刻。第64.2特遣舰队守在萨沃海峡(铁底海峡的一部分)入口处，驱逐舰列阵，法伦霍、邓肯、拉菲为先锋；布坎南、麦卡拉为后卫｡23时25分，海伦娜的雷达捕捉到敌舰队接近，特遣舰队指挥官诺曼·斯科特下令转向，挡住埃斯帕恩斯角与萨沃岛之间的航路。因此，它们将抄近路，直接对上迎面而来的日军。转向时先锋驱逐舰先放慢，随后重回领先位置。开始警戒活动时，拉菲发现了重巡洋舰青叶，并以5英寸单装炮射击青叶。青叶的舰桥遭炮弹直接命中，指挥干部群死伤惨重，第六战队司令官五藤存知少将的双脚当场被炸断，并于之后伤重不治身亡。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_5" Language="zh_Hans_CN">
+			<Text>埃斯帕恩斯角海战过后，拉菲在努美阿与第64.4特遣舰队会合，护送运输货船前往隆加角。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_6" Language="zh_Hans_CN">
+			<Text>11月11日，舰队抵达隆加角，准备将护送的物资与援军卸下至亨德森机场。当天早上，敌轰炸机攻击了运输船与货轮，但很快就被驱离，因此人员与物资损失轻微，之后工作人员在隆加角重新开始卸货。次日，舰队开往萨沃海峡，拦截敌方往瓜岛、亨德森机场推进的海上突入部队。11月12日夜，美方特遣舰队从西边突入萨沃海峡，迎战从反方向接近，意图摧毁亨德森机场的日方舰队，揭开惨烈的瓜达康纳尔海战(第三次所罗门海战第一夜战)的序幕。在11月13日星期五的天明以前，双方战成一团，黑暗与混乱，让他们难以区分敌我。许多人，许多船舰，就此在铁底海峡中长眠，再也回不到阳光下。因此，这场海战又被称作黑色星期五之役。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_7" Language="zh_Hans_CN">
+			<Text>卡拉汉采纳斯科特的建言，以三列纵阵迎战日方舰队。拉菲(大概是由于表现出色之故)再次担任先锋，跟随它的是斯特雷特、奥班农。战局初期，日方发动了对亚特兰大的全力打击，摧毁了舰桥。在埃斯佩兰斯角海战立下大功，首度在夜战中击败日军的斯科特阵亡，指挥干部群仅有一人幸免于难。由于损伤严重，该舰于13日中午遭放弃自沉。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_8" Language="zh_Hans_CN">
+			<Text>混战中，日方指挥官阿部弘毅的旗舰，战舰比叡与库欣、拉菲、奥班农和斯特雷特狭路相逢。先前已遭受猛烈炮击的库欣，见到比叡出现在面前。它的舰长立即发射了六枚鱼雷，其中三枚击中比叡的舰体，但并没有爆炸。不久后，毫发无伤的比叡靠了过来，以探照灯照亮了库欣，并用炮火将它化作甲板扭曲的残骸堆。也因为探照灯的缘故，比叡遭到美方各舰集火射击。燃起大火的库欣遭到放弃，并渐行渐远，约有60人葬身火海。有人目击到，它一直漂流到13日下午才爆炸沉没。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_9" Language="zh_Hans_CN">
+			<Text>位于库欣后方的拉菲，与比叡接近到几乎相撞的地步。舰长汉克下令驱逐舰转向，并发射鱼雷(但并未爆炸)，同时双方继续接近。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_10" Language="zh_Hans_CN">
+			<Text>此时此刻， 比叡和拉菲之间的距离为10公尺。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_11" Language="zh_Hans_CN">
+			<Text>在比叡的主炮打出跨射的同时，拉菲的炮火击中了比睿的舰桥。以阿部弘毅为首的指挥干部群多人负伤，铃木参谋长阵亡。拉菲的四门5英寸单装炮，也在对射中遭比睿的副炮击毁了两门。拉菲仍以仅剩的两门5英寸单装炮继续开火，击伤比叡的左舷正面、左舷船首与舰尾。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_12" Language="zh_Hans_CN">
+			<Text>取得如此战果后，这艘短命的驱逐舰遭到数艘日方驱逐舰攻击，随后又遭比叡(一说是雾岛)的主炮击中，造成了致命伤。同时，长良(一说是照月)发射的氧气鱼雷也炸断了它的舰尾。随着发电机被毁(一说锅炉遭到直击)，舰上燃起大火，千疮百孔的舰体全面失控、崩溃。指挥官下令乘员弃舰，但乘员们发现，周围海面也不安全。舰上携带的深水炸弹在爆炸，不仅撕裂它的舰体，如雨落下的无数燃烧破片，也杀死了许多在它周围载浮载沉的人们。拉菲号战沉。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_13" Language="zh_Hans_CN">
+			<Text>拉菲号的奋战极大地振奋了美国海军和民众的士气。各大报刊立刻刊登了她的英雄事迹以鼓舞民心，包括南太平洋战区总司令哈尔西上将在内也先后致信嘉奖。拉菲号舰长威廉·E·汉克少校因其非凡勇气追授海军十字勋章加佩金星章；大副以下共6人获授银星勋章、铜星勋章或海军及陆战队勋章。在8个月的短暂生涯中拉菲号共获得3枚战斗之星。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_14" Language="zh_Hans_CN">
+			<Text>瓜达尔卡纳尔海战胜利后，美国总统罗斯福将美国总统单位嘉奖授予拉菲号的全体船员。在美国二战期间入役的约292艘驱逐舰中，仅8艘获此殊荣。嘉奖令正文如下：[NEWLINE][NEWLINE]以表彰下文所述事迹：[NEWLINE]“兹嘉奖拉菲号驱逐舰在1942年9月15日至11月13日于南太平洋战场中对抗日军的杰出表现。她不顾附近仍有敌潜艇出没，毅然对（胡蜂号）落水船员伸出援手；在埃斯帕恩斯角海战中崭露头角后，她又成功击退敌鱼雷机空袭；在萨沃岛的决战中，尽管已遍体鳞伤且燃起烈火，拉菲号仍对进犯之敌予以迎头痛击。在敌人仓皇撤退后，不幸伤重沉没。她为我们树立了一个英勇不屈的光辉榜样。”</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_LAFFEY_DD459_CHAPTER_HISTORY_PARA_15" Language="zh_Hans_CN">
+			<Text>为纪念拉菲号和她的舰长在瓜达尔卡纳尔海战中的无畏表现，两艘新建的艾伦·M·萨姆纳级驱逐舰分别获名拉菲号和汉克号。新拉菲号继承了前辈的骁勇，在冲绳岛战役日军的菊水特攻期间，替航空母舰挡下多达5架神风特攻机的撞击，身负重伤仍坚持作战，同样获得总统集体嘉奖，这在美国海军史上绝无仅有。</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_AGENDA_SOLOMON_S_NIGHT_NAME" Language="zh_Hans_CN">
+			<Text>所罗门之夜</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_SOLOMON_S_NIGHT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>相比于和平，更愿意继续战斗。</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_SOLOMON_S_NIGHT_DESCRIPTION_XP2" Language="zh_Hans_CN">
+			<Text>相比于和平，更愿意继续战斗。对该领袖的不满将以2倍于通常速率的速度减少。</Text>
+		</Replace>
+		<!--领袖能力-->
+		<Replace Tag="LOC_TRAIT_LEADER_WARGOD_OF_SOLOMON_NAME" Language="zh_Hans_CN">
+			<Text>所罗门的战神</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_WARGOD_OF_SOLOMON_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>城市每拥有1块水域单元格，则+1 [ICON_PRODUCTION] 生产力，+2 [ICON_FAITH] 信仰值。军事单位不会蒙受受伤减益，与拥有更高基础战斗力的单位作战时+10 [ICON_Strength] 战斗力，遭受夹击时+7 [ICON_Strength] 战斗力。击杀单位后，为随机一项科技和市政启动 [ICON_TECHBOOSTED] 尤里卡时刻和 [ICON_CIVICBOOSTED] 鼓舞时刻（若 [ICON_TECHBOOSTED] 尤里卡或 [ICON_CIVICBOOSTED] 鼓舞已经触发，则解锁相应科技或市政）。研究完“内燃机”后获得特色单位“本森级驱逐舰”。</Text>
+		</Replace>
+		<!--Lua浮动文字显示-->
+
+		<!--特殊加成-->
+
+		<!--领袖项目-->
+
+		<!--领袖单位-->
+		<!--Pallada-class Protected Cruiser-->
+		<Replace Tag="LOC_UNIT_BENSON_CLASS_NAME" Language="zh_Hans_CN">
+			<Text>本森级驱逐舰</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_BENSON_CLASS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>取代驱逐舰的拉菲特色现代海军近战单位，解锁更早。与受伤单位作战时+7 [ICON_Strength] 战斗力，可执行射程为1的远程攻击。显示视线范围内的海军袭击者。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BENSON_NAME" Language="zh_Hans_CN">
+			<Text>瓜达尔卡纳尔海战</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_BENSON_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>与受伤单位作战时+7 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_BENSON_WOUNDED_COMBAT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>与受伤单位作战时+{1_Amount} [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BENSON_CLASS_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>本森级驱逐舰是美国海军1500吨级舰队驱逐舰的最后发展，1938年计划建造6艘。由于欧洲战局的发展，美军在1941年又追加建造24艘，30艘本森级在1940年-1943年完工，在二战中有3艘被击沉。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BENSON_CLASS_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>本森级开始要求和西姆斯级一样装备5座单装炮和3座4联装鱼雷，后来决定在中心线上装2座5联装鱼雷。本森级最大改进是动力区的布置，她是第一种采用锅炉舱、机舱交替布置的驱逐舰，这样可以减少军舰一旦受损时动力装置全部失去作用的危险。由于她在两个锅炉舱中间隔了一个机舱，两个烟囱相距很大。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_BENSON_CLASS_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>为了加强舰体强度，其舰体比西姆斯级增重7%。虽然本森级标准排水量超过1600吨，但稳定性不足的弱点仍未消除，其后期建造舰只有减少后面一座鱼雷发射管，以加装防空炮。</Text>
+		</Replace>
+		<!--特殊晋升-->
+
+		<!--特殊能力-->
+		<Replace Tag="LOC_ABILITY_LAFFEY_COMBAT_UNITS_BUFF_NAME" Language="zh_Hans_CN">
+			<Text>所罗门的战神</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_LAFFEY_COMBAT_UNITS_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>不会蒙受受伤减益。与拥有更高基础战斗力的单位作战时+10 [ICON_Strength] 战斗力，遭受夹击时+7 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_LAFFEY_ATTACKER_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>与拥有更高基础战斗力的单位作战时+{1_Amount} [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_LAFFEY_FLANKED_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>遭受夹击时+{1_Amount} [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<!--特殊晋升-->
+
+		<!--外交对话-->
+		<!--同意宣布友谊-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，愿意和你做朋友……要睡一会儿吗？</Text>
+		</Replace>
+		<!--拒绝宣布友谊-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>呣……不要摇我……</Text>
+		</Replace>
+		<!--请求宣布友谊-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，想跟你做朋友呢……你，愿意吗？</Text>
+		</Replace>
+		<!--宣布友谊被接受-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>嗯？这是拉菲心情好的表现喔……</Text>
+		</Replace>
+		<!--宣布友谊被拒绝-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲很可怕么？</Text>
+		</Replace>
+		<!--被宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>自我限制解除……再次化身鬼神也无所谓的……</Text>
+		</Replace>
+		<!--宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲决定对你宣战。嗯……拉菲决定对你宣战……嗯……</Text>
+		</Replace>
+		<!--接受代表团-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>代表团……拉菲收到了哦……</Text>
+		</Replace>
+		<!--拒绝代表团-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，要睡一会儿……</Text>
+		</Replace>
+		<!--派出代表团-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>嗯……愿意接收拉菲的代表团么？</Text>
+		</Replace>
+		<!--被谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，很，可，怕，么？</Text>
+		</Replace>
+		<!--谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>逞英雄可没意思……（谴责你）</Text>
+		</Replace>
+		<!--初次见面-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>我是备受期待的本森级驱逐舰拉菲，在三次所罗门海战有着极为活跃的表现……你说战舰？那是什么？</Text>
+		</Replace>
+		<!--初次见面，邀请参观附近城市-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>愿意到访拉菲附近的城市么？</Text>
+		</Replace>
+		<!--初次见面，感谢玩家提供最近城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>呜……谢谢……</Text>
+		</Replace>
+		<!--初次见面，请求交换城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲想看看你的城市呢……拉菲的城市，也会给你看的……</Text>
+		</Replace>
+		<!--欢迎语？-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>要一起睡会儿么？</Text>
+		</Replace>
+		<!--示好-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>嗯，拉菲喜欢你……</Text>
+		</Replace>
+		<!--敌视-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>Zzzzzzzzz……</Text>
+		</Replace>
+		<!--请求结盟-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，想跟你结盟呢……</Text>
+		</Replace>
+		<!--同意和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>嗯……就这样吧……</Text>
+		</Replace>
+		<!--拒绝和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>这点程度和我当时可差远了……</Text>
+		</Replace>
+		<!--请求和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲想要和平……呼……拉菲，要睡一会儿……</Text>
+		</Replace>
+		<!--接受开放边界请求-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>开放边界？嗯……去吧……</Text>
+		</Replace>
+		<!--拒绝开放边界请求-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲对开放边界不感兴趣……</Text>
+		</Replace>
+		<!--请求开放边界-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，想要通过你的边境呢……</Text>
+		</Replace>
+		<!--要求移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>浩浩荡荡的舰队……拉菲，能看见……</Text>
+		</Replace>
+		<!--拒绝移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，需要这只军队呆在这儿……</Text>
+		</Replace>
+		<!--同意移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲会移走军队的……嗯……</Text>
+		</Replace>
+		<!--经受不住时间考验-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲…还能战斗……</Text>
+		</Replace>
+		<!--同意交易-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>嗯……</Text>
+		</Replace>
+		<!--拒绝交易-->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_LAFFEY_DD459_ANY" Language="zh_Hans_CN">
+			<Text>拉菲……不接受……</Text>
+		</Replace>
+	</LocalizedText>
+</GameData>

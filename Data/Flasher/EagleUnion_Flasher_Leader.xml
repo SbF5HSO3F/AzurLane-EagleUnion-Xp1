@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Flasher_Leader -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/3/2 17:39:19 -->
+<GameData>
+	<Types>
+		<!--松鲷-->
+		<Row Type="LEADER_FLASHER_SS249"				Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_TEARY_EYED_HUNTRESS"	Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_UNIT_GATO_CLASS"		Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<!--松鲷-->
+		<Row LeaderType="LEADER_FLASHER_SS249"	Name="LOC_LEADER_FLASHER_SS249_NAME"	Sex="Female"	InheritFrom="LEADER_DEFAULT"	SceneLayers="4"/>
+	</Leaders>
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_FLASHER_SS249"	CapitalName="LOC_CITY_NAME_EAGLE_UNION_GROTON"/>
+	</CivilizationLeaders>
+	<Traits>
+		<!--松鲷-->
+		<Row TraitType="TRAIT_LEADER_TEARY_EYED_HUNTRESS"	Name="LOC_TRAIT_LEADER_TEARY_EYED_HUNTRESS_NAME"	Description="LOC_TRAIT_LEADER_TEARY_EYED_HUNTRESS_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_UNIT_GATO_CLASS"		Name="LOC_UNIT_GATO_CLASS_NAME"						Description="LOC_UNIT_GATO_CLASS_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<!--松鲷-->
+		<Row LeaderType="LEADER_FLASHER_SS249"	TraitType="TRAIT_LEADER_TEARY_EYED_HUNTRESS"/>
+		<Row LeaderType="LEADER_FLASHER_SS249"	TraitType="TRAIT_LEADER_UNIT_GATO_CLASS"/>
+	</LeaderTraits>
+	<HistoricalAgendas>
+		<Row LeaderType="LEADER_FLASHER_SS249"	AgendaType="AGENDA_FISH_ARE_FRIENDS"/>
+	</HistoricalAgendas>
+	<Agendas>
+		<Row AgendaType="AGENDA_FISH_ARE_FRIENDS"	Name="LOC_AGENDA_FISH_ARE_FRIENDS_NAME"	Description="LOC_AGENDA_FISH_ARE_FRIENDS_DESCRIPTION"/>
+	</Agendas>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_FLASHER_SS249"	Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_QUOTE" />
+	</LeaderQuotes>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_FLASHER_SS249"	ForegroundImage="IMG_EAGLE_UNION_LEADER_FLASHER_SS249_LOADING_FOREGROUND"	BackgroundImage="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_FLASHER_SS249"	BackgroundImage="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND.dds"/>
+	</DiplomacyInfo>
+	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>TRAIT_LEADER_TEARY_EYED_HUNTRESS</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_TEARY_EYED_HUNTRESS</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+		<!--所有单位隐形-->
+		<Row>
+			<TraitType>TRAIT_LEADER_TEARY_EYED_HUNTRESS</TraitType>
+			<ModifierId>FLASHER_ALL_UNITS_ABILITIES</ModifierId>
+		</Row>
+		<!--军事单位狩猎-->
+		<Row>
+			<TraitType>TRAIT_LEADER_TEARY_EYED_HUNTRESS</TraitType>
+			<ModifierId>FLASHER_COMBAT_UNITS_ABILITIES</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--所有单位隐形-->
+		<Row>
+			<ModifierId>FLASHER_ALL_UNITS_ABILITIES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+		</Row>
+		<!--军事单位狩猎-->
+		<Row>
+			<ModifierId>FLASHER_COMBAT_UNITS_ABILITIES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_GRANT_ABILITY</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--所有单位隐形-->
+		<Row>
+			<ModifierId>FLASHER_ALL_UNITS_ABILITIES</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_FLASHER_ALL_UNITS_BUFF</Value>
+		</Row>
+		<!--军事单位狩猎-->
+		<Row>
+			<ModifierId>FLASHER_COMBAT_UNITS_ABILITIES</ModifierId>
+			<Name>AbilityType</Name>
+			<Value>ABILITY_FLASHER_COMBAT_UNITS_BUFF</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

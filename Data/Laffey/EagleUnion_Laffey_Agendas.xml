@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Laffey_Agendas -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/11/21 19:55:16 -->
+<GameData>
+	<Types>
+		<Row Type="TRAIT_AGENDA_SOLOMON_S_NIGHT" Kind="KIND_TRAIT"/>
+	</Types>
+	<AiListTypes>
+		<!--通用-->
+		<Row ListType="SolomonsNightDistricts"/>
+		<Row ListType="SolomonsNightTechs"/>
+		<!--所罗门之夜-->
+		<Row ListType="SolomonsNightPreferDiplomatic"/>
+		<Row ListType="SolomonsNightCoastSettlement"/>
+		<Row ListType="SolomonsNightIgnoreWarmongerValue"/>
+	</AiListTypes>
+	<AiLists>
+		<!--通用-->
+		<Row ListType="SolomonsNightDistricts"				AgendaType="TRAIT_AGENDA_SOLOMON_S_NIGHT"	System="Districts"/>
+		<Row ListType="SolomonsNightTechs"					LeaderType="LEADER_LAFFEY_DD459"			System="Technologies"/>
+		<!--所罗门之夜-->
+		<Row ListType="SolomonsNightPreferDiplomatic"		AgendaType="TRAIT_AGENDA_SOLOMON_S_NIGHT"	System="DiplomaticActions"/>
+		<Row ListType="SolomonsNightCoastSettlement"		AgendaType="TRAIT_AGENDA_SOLOMON_S_NIGHT"	System="PlotEvaluations"/>
+		<Row ListType="SolomonsNightIgnoreWarmongerValue"	AgendaType="TRAIT_AGENDA_SOLOMON_S_NIGHT"	System="PlotEvaluations"/>
+	</AiLists>
+	<AiFavoredItems>
+		<!--通用-->
+		<Row ListType="SolomonsNightDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="SolomonsNightDistricts"				Item="DISTRICT_HARBOR"						Favored="true"/>
+		<Row ListType="SolomonsNightTechs"					Item="TECH_WRITING"							Favored="true"/>
+		<Row ListType="SolomonsNightTechs"					Item="TECH_CELESTIAL_NAVIGATION"			Favored="true"/>
+		<!--所罗门之夜-->
+		<Row ListType="SolomonsNightPreferDiplomatic"		Item="DIPLOACTION_MAKE_PEACE"				Favored="false"/>
+		<Row ListType="SolomonsNightPreferDiplomatic"		Item="DIPLOACTION_DECLARE_SURPRISE_WAR"		Favored="false"/>
+		<Row ListType="SolomonsNightPreferDiplomatic"		Item="DIPLOACTION_DECLARE_WAR_MINOR_CIV"	Favored="false"/>
+		<Row ListType="SolomonsNightPreferDiplomatic"		Item="DIPLOACTION_DECLARE_FRIENDSHIP"		Favored="true"/>
+		<Row ListType="SolomonsNightCoastSettlement"		Item="Coastal"								Favored="false"		Value="30"/>
+		<Row ListType="SolomonsNightIgnoreWarmongerValue"	Item="PSEUDOYIELD_DIPLOMATIC_BONUS"								Value="-100"/>
+	</AiFavoredItems>
+	<Traits>
+		<!--所罗门之夜-->
+		<Row TraitType="TRAIT_AGENDA_SOLOMON_S_NIGHT"/>
+	</Traits>
+	<AgendaTraits>
+		<!--所罗门之夜-->
+		<Row AgendaType="AGENDA_SOLOMON_S_NIGHT" TraitType="TRAIT_AGENDA_SOLOMON_S_NIGHT"/>
+	</AgendaTraits>
+	<TraitModifiers>
+		<Row>
+			<TraitType>TRAIT_AGENDA_SOLOMON_S_NIGHT</TraitType>
+			<ModifierId>SOLOMON_S_NIGHT_IGNORE_WARMONGERING</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>SOLOMON_S_NIGHT_IGNORE_WARMONGERING</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_WARMONGER_MULTIPLIER</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>SOLOMON_S_NIGHT_IGNORE_WARMONGERING</ModifierId>
+			<Name>Amount</Name>
+			<Value>0</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

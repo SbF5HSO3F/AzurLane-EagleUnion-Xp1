@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Flasher_UnitAbilities -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/3/7 16:16:31 -->
+<GameData>
+	<Types>
+		<Row Type="ABILITY_FLASHER_ALL_UNITS_BUFF"		Kind="KIND_ABILITY"/>
+		<Row Type="ABILITY_FLASHER_COMBAT_UNITS_BUFF"	Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_FLASHER_ALL_UNITS_BUFF"		Tag="CLASS_ALL_UNITS"/>
+		<Row Type="ABILITY_FLASHER_COMBAT_UNITS_BUFF"	Tag="CLASS_ALL_COMBAT_UNITS"/>
+		<Row Type="ABILITY_FLASHER_COMBAT_UNITS_BUFF"	Tag="CLASS_NAVAL_CARRIER"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_FLASHER_ALL_UNITS_BUFF"		Name="LOC_ABILITY_FLASHER_ALL_UNITS_BUFF_NAME"		Description="LOC_ABILITY_FLASHER_ALL_UNITS_BUFF_DESCRIPTION"	Inactive="true"/>
+		<Row UnitAbilityType="ABILITY_FLASHER_COMBAT_UNITS_BUFF"	Name="LOC_ABILITY_FLASHER_COMBAT_UNITS_BUFF_NAME"	Description="LOC_ABILITY_FLASHER_COMBAT_UNITS_BUFF_DESCRIPTION"	Inactive="true"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="FLASHER_COMBAT_UNITS_PER_MOVEMENT_FOR_COMBAT" Context="Preview" Text="LOC_PREVIEW_FLASHER_PER_MOVEMENT_FOR_COMBAT_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<!--水下小人-->
+		<Row>
+			<UnitAbilityType>ABILITY_FLASHER_ALL_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>FLASHER_ALL_UNITS_BUFF</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_FLASHER_ALL_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>FLASHER_ALL_UNITS_MOVEMENT</ModifierId>
+		</Row>
+		<!--跟你爆了-->
+		<Row>
+			<UnitAbilityType>ABILITY_FLASHER_COMBAT_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>FLASHER_COMBAT_UNITS_SEARCH_RANGE</ModifierId>
+		</Row>
+		<Row>
+			<UnitAbilityType>ABILITY_FLASHER_COMBAT_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>FLASHER_COMBAT_UNITS_PER_MOVEMENT_FOR_COMBAT</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<!--水下小人-->
+		<Row>
+			<ModifierId>FLASHER_ALL_UNITS_BUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_HIDDEN_VISIBILITY</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>FLASHER_ALL_UNITS_MOVEMENT</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_MOVEMENT</ModifierType>
+		</Row>
+		<!--跟你爆了-->
+		<Row>
+			<ModifierId>FLASHER_COMBAT_UNITS_SEARCH_RANGE</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_PROPERTY</ModifierType>
+		</Row>
+		<Row>
+			<ModifierId>FLASHER_COMBAT_UNITS_PER_MOVEMENT_FOR_COMBAT</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--水下小人-->
+		<Row>
+			<ModifierId>FLASHER_ALL_UNITS_BUFF</ModifierId>
+			<Name>Hidden</Name>
+			<Value>true</Value>
+		</Row>
+		<Row>
+			<ModifierId>FLASHER_ALL_UNITS_MOVEMENT</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+		<!--跟你爆了-->
+		<Row>
+			<ModifierId>FLASHER_COMBAT_UNITS_SEARCH_RANGE</ModifierId>
+			<Name>Key</Name>
+			<Value>FlasherSearchRange</Value>
+		</Row>
+		<Row>
+			<ModifierId>FLASHER_COMBAT_UNITS_SEARCH_RANGE</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>FLASHER_COMBAT_UNITS_PER_MOVEMENT_FOR_COMBAT</ModifierId>
+			<Name>Key</Name>
+			<Value>FlasherPerMovement</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

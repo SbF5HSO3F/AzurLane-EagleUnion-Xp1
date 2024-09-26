@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Laffey_Units -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/11/21 15:19:05 -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_BENSON_CLASS"	Kind="KIND_UNIT"/>
+		<Row Type="ABILITY_BENSON"		Kind="KIND_ABILITY"/>
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_BENSON_CLASS" AiType="UNITAI_COMBAT"/>
+		<Row UnitType="UNIT_BENSON_CLASS" AiType="UNITAI_EXPLORE"/>
+		<Row UnitType="UNIT_BENSON_CLASS" AiType="UNITTYPE_MELEE"/>
+		<Row UnitType="UNIT_BENSON_CLASS" AiType="UNITTYPE_NAVAL"/>
+		<Row UnitType="UNIT_BENSON_CLASS" AiType="UNITTYPE_RANGED"/>
+	</UnitAiInfos>
+	<UnitReplaces>
+		<Row CivUniqueUnitType="UNIT_BENSON_CLASS" ReplacesUnitType="UNIT_DESTROYER"/>
+	</UnitReplaces>
+	<Tags>
+		<Row Tag="CLASS_BENSON" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="UNIT_BENSON_CLASS" Tag="CLASS_NAVAL_MELEE"/>
+		<Row Type="UNIT_BENSON_CLASS" Tag="CLASS_REVEAL_STEALTH"/>
+		<Row Type="UNIT_BENSON_CLASS" Tag="CLASS_ANTI_AIR"/>
+		<Row Type="UNIT_BENSON_CLASS" Tag="CLASS_BENSON"/>
+		<Row Type="ABILITY_BENSON"	  Tag="CLASS_BENSON"/>
+	</TypeTags>
+	<Units>
+		<!--艾伦·M·萨姆纳级驱逐舰-->
+		<Row UnitType="UNIT_BENSON_CLASS" Cost="540" Maintenance="7" BaseMoves="5" BaseSightRange="3" ZoneOfControl="true" Domain="DOMAIN_SEA" Combat="85" RangedCombat="78" Range="1" AntiAirCombat="90" FormationClass="FORMATION_CLASS_NAVAL" PrereqTech="TECH_COMBUSTION" PromotionClass="PROMOTION_CLASS_NAVAL_MELEE" Name="LOC_UNIT_BENSON_CLASS_NAME" Description="LOC_UNIT_BENSON_CLASS_DESCRIPTION" PurchaseYield="YIELD_GOLD" PseudoYieldType="PSEUDOYIELD_UNIT_NAVAL_COMBAT" TraitType="TRAIT_LEADER_UNIT_BENSON_CLASS"/>
+	</Units>
+	<MomentIllustrations>
+		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_BENSON_CLASS" Texture="Moment_Benson_class.dds"/>
+	</MomentIllustrations>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_BENSON" Name="LOC_ABILITY_BENSON_NAME" Description="LOC_ABILITY_BENSON_DESCRIPTION"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="BENSON_WOUNDED_COMBAT" Context="Preview" Text="LOC_PREVIEW_BENSON_WOUNDED_COMBAT_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_BENSON</UnitAbilityType>
+			<ModifierId>BENSON_WOUNDED_COMBAT</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>BENSON_WOUNDED_COMBAT</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_OPPONENT_IS_DAMAGE</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>BENSON_WOUNDED_COMBAT</ModifierId>
+			<Name>Amount</Name>
+			<Value>7</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>

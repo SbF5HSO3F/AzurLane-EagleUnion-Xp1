@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Flasher_CNText -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2024/3/2 17:09:04 -->
+<GameData>
+	<LocalizedText>
+		<!--领袖介绍-->
+		<Replace Tag="LOC_LEADER_FLASHER_SS249_NAME" Language="zh_Hans_CN">
+			<Text>松鲷</Text>
+		</Replace>
+		<!--加载-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_FLASHER_SS249" Language="zh_Hans_CN">
+			<Text>作为白鹰联邦最为成功的潜艇，松鲷，无人不知你累累的战绩。您所到之处必有战果，您所经之地必有残骸。您和您的猫鲨级姐妹们潜伏于水面之下，伺机击沉一切掉以轻心的敌人，让蔚蓝的海洋成为吞噬一切的深渊。继续在海平面下伏击您的敌人吧，您的辉煌还远不止如此！</Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_QUOTE" Language="zh_Hans_CN">
+			<Text>大家集合到一起，像狼群般行动吧！</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+			<Text>松鲷会无声地靠近她的敌人，然后一击毙命。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+			<Text>松鲷绝对是一位称职的猎杀者：她的单位除非相邻，否则不会被发现。而且，一旦它们靠近敌军，就会立即恢复全部 [ICON_Movement] 移动力与攻击点数。届时，每点未使用的 [ICON_Movement] 移动力所提供的 [ICON_Strength] 战斗力会让她的单位给予敌军沉重地打击。随着在战斗中击杀越来越多的单位，松鲷将会获得越来越多的 [ICON_Gold] 金币。只要利用好这些优势，无人能阻挡松鲷的胜利。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>松鲷号是第二次世界大战期间在太平洋服役的猫鲨级潜艇。她获得了总统单位嘉奖和六颗战星，击沉了21艘舰艇，总计100231吨的日本船只，使她成为战争中最成功的美国潜艇之一。她是美国海军第一艘以松鲷命名的舰艇。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_FLASHER_SS249_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>1946年3月16日，松鲷号在美国康涅狄格州的新伦敦县正式退役，1963年，松鲷号被拆解出售。</Text>
+		</Replace>
+		<!--领袖议程-->
+		<Replace Tag="LOC_AGENDA_FISH_ARE_FRIENDS_NAME" Language="zh_Hans_CN">
+			<Text>小鱼们的伙伴</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_FISH_ARE_FRIENDS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>喜欢与自己宣布友好的文明，讨厌谴责她朋友和盟友的文明。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_LEADER_FLASHER_SS249_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您与她宣布友好）</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_FISH_ARE_FRIENDS_DECLARED_FRIEND" Language="zh_Hans_CN">
+			<Text>松鲷喜欢与自己宣布友好的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_LEADER_FLASHER_SS249_REASON_ANY" Language="zh_Hans_CN">
+			<Text>（您谴责了她的朋友）</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_MODIFIER_FISH_ARE_FRIENDS_DENOUNCED_FRIEND" Language="zh_Hans_CN">
+			<Text>松鲷讨厌您谴责她的朋友</Text>
+		</Replace>
+		<!--领袖能力-->
+		<!--Teary-Eyed Huntress-->
+		<Replace Tag="LOC_TRAIT_LEADER_TEARY_EYED_HUNTRESS_NAME" Language="zh_Hans_CN">
+			<Text>开启狩猎！</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_TEARY_EYED_HUNTRESS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>所有单位+1 [ICON_Movement] 移动力，且只有与敌方单位相邻时才能被发现。军事单位每点未使用的 [ICON_Movement] 移动力提供+3 [ICON_Strength] 战斗力，且每回合首次移动至敌方单位两个单元格范围内时，将恢复全部 [ICON_Movement] 移动力与攻击点数。击杀单位时将根据累积击杀单位数获得 [ICON_Gold] 金币。研究完“电力”后获得特色单位“猫鲨级潜艇”。</Text>
+		</Replace>
+		<!--Lua浮动文字显示-->
+		<Replace Tag="LOC_FLASHER_HUNTRESS" Language="zh_Hans_CN">
+			<Text>发现猎物！</Text>
+		</Replace>
+		<Replace Tag="LOC_FLASHER_HUNTRESS_GOLD" Language="zh_Hans_CN">
+			<Text>[COLOR_FLOAT_GOLD]+{1_num}[ENDCOLOR] [ICON_GOLD]</Text>
+		</Replace>
+		<Replace Tag="LOC_FLASHER_HUNTRESS_DESC" Language="zh_Hans_CN">
+			<Text>您已经累积击杀{1_num}个单位，因此在击杀下一个单位时您将获得{2_num} [ICON_Gold] 金币。</Text>
+		</Replace>
+		<Replace Tag="LOC_FLASHER_HUNTRESS_REFESRH" Language="zh_Hans_CN">
+			<Text>点击以刷新</Text>
+		</Replace>
+		<!--特殊加成-->
+
+		<!--领袖项目-->
+
+		<!--领袖单位-->
+		<Replace Tag="LOC_UNIT_GATO_CLASS_NAME" Language="zh_Hans_CN">
+			<Text>猫鲨级潜艇</Text>
+		</Replace>
+		<Replace Tag="LOC_UNIT_GATO_CLASS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>取代潜艇的松鲷特色现代海军单位，拥有更高的 [ICON_Movement] 移动力。除非与单位相邻，否则只能被其他海军袭击者发现。能使视线范围中的海军袭击者暴露位置。与相邻的海军单位作战时+10 [ICON_Strength] 战斗力。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+			<Text>猫鲨级潜艇是美国海军在第二次世界大战中使用过的一个潜艇级别，属于使用柴油引擎及电动机的传统动力潜艇。其与后继的巴劳鱵级潜艇与丁鱥级潜艇，共同构成了第二次大战时美国海军的潜艇舰队主力。如同当时其他的美军潜艇，建造数量达77艘的猫鲨级潜艇，全都是以水中生物的名称作为舰名。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>猫鲨级潜艇继承河豚级潜艇的设计，将其大型化并延长了水下及水面的续航距离。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>她们对日本、德国、维希法国等轴心国海上线路进行通商破坏，施压重要港口，堵塞战略物资运输，同时也为己方舰队拉起外围侦查网，乃至在水面舰队海战中向敌重点目标发动奇袭，成为“战争胜利的幕后功臣”。在太平洋战争初期由于珍珠港事件的严重损失，太平洋舰队没有足够军舰去阻止日军咄咄逼人的攻势。此时美海军潜艇部队便发起了“三五成群”的“狼群作战”，无畏地打击日本通往太平洋诸岛的交通线，给了太平洋水面舰队宝贵的备战时间。此举使得主力舰队得以在后来中途岛海战、瓜达尔卡纳尔岛战役扭转局势，最终击溃日本联合舰队。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_UNITS_PAGE_UNIT_GATO_CLASS_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>正当美日双方陷入血腥的瓜达尔卡纳尔岛战役，太平洋舰队因为四次海战（第一、二、三次所罗门海战、圣克鲁兹海战）损失惨重时，猫鲨级潜艇再度发挥巨大的作用，袭击日本运输舰队，孤立该岛日军使美军获得最后胜利，有海军历史学者曾夸张的说：“瓜达尔卡纳尔的日军在后来得亲手割稻为粮，因为已经没有补给了。（猫鲨级潜艇把日军运输线切断了。）”其实日军的补给并非全为美军潜艇所阻止，一大部分是被企业号等美军投入的水面舰队及进驻瓜达尔卡纳尔岛亨得森机场的“仙人掌”航空队所拦阻。即使如此，潜艇仍功不可没。 除了打击运输线，猫鲨级在各大战役现场表现也相当亮眼。</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_GATO_CLASS_NAME" Language="zh_Hans_CN">
+			<Text>潜袭</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_GATO_CLASS_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>与相邻的海军单位作战时+10 [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_GATO_CLASS_NEXT_COMBAT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>与相邻的海军单位作战时+{1_num} [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<!--特殊晋升-->
+
+		<!--特殊能力-->
+		<Replace Tag="LOC_ABILITY_FLASHER_ALL_UNITS_BUFF_NAME" Language="zh_Hans_CN">
+			<Text>水下小人</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FLASHER_ALL_UNITS_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>+1 [ICON_Movement] 移动力，只有与敌方单位相邻时才能被发现</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FLASHER_COMBAT_UNITS_BUFF_NAME" Language="zh_Hans_CN">
+			<Text>狩猎猎物</Text>
+		</Replace>
+		<Replace Tag="LOC_ABILITY_FLASHER_COMBAT_UNITS_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>每点未使用的 [ICON_Movement] 移动力提供+3 [ICON_Strength] 战斗力；每回合首次移动至敌方单位两个单元格范围内时，将恢复全部 [ICON_Movement] 移动力与攻击点数</Text>
+		</Replace>
+		<Replace Tag="LOC_PREVIEW_FLASHER_PER_MOVEMENT_FOR_COMBAT_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>每点未使用的 [ICON_Movement] 移动力提供+{Property} [ICON_Strength] 战斗力</Text>
+		</Replace>
+		<!--外交对话-->
+		<![CDATA[<!--同意宣布友谊-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，愿意和你做朋友……要睡一会儿吗？</Text>
+		</Replace>
+		<!--拒绝宣布友谊-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>呣……不要摇我……</Text>
+		</Replace>
+		<!--请求宣布友谊-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，想跟你做朋友呢……你，愿意吗？</Text>
+		</Replace>
+		<!--宣布友谊被接受-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>嗯？这是拉菲心情好的表现喔……</Text>
+		</Replace>
+		<!--宣布友谊被拒绝-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲很可怕么？</Text>
+		</Replace>
+		<!--被宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>自我限制解除……再次化身鬼神也无所谓的……</Text>
+		</Replace>
+		<!--宣战-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲决定对你宣战。嗯……拉菲决定对你宣战……嗯……</Text>
+		</Replace>
+		<!--接受代表团-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>代表团……拉菲收到了哦……</Text>
+		</Replace>
+		<!--拒绝代表团-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，要睡一会儿……</Text>
+		</Replace>
+		<!--派出代表团-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>嗯……愿意接收拉菲的代表团么？</Text>
+		</Replace>
+		<!--被谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，很，可，怕，么？</Text>
+		</Replace>
+		<!--谴责-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>逞英雄可没意思……（谴责你）</Text>
+		</Replace>
+		<!--初次见面-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>我是备受期待的本森级驱逐舰拉菲，在三次所罗门海战有着极为活跃的表现……你说战舰？那是什么？</Text>
+		</Replace>
+		<!--初次见面，邀请参观附近城市-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>愿意到访拉菲附近的城市么？</Text>
+		</Replace>
+		<!--初次见面，感谢玩家提供最近城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>呜……谢谢……</Text>
+		</Replace>
+		<!--初次见面，请求交换城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲想看看你的城市呢……拉菲的城市，也会给你看的……</Text>
+		</Replace>
+		<!--欢迎语？-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>要一起睡会儿么？</Text>
+		</Replace>
+		<!--示好-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>嗯，拉菲喜欢你……</Text>
+		</Replace>
+		<!--敌视-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>Zzzzzzzzz……</Text>
+		</Replace>
+		<!--请求结盟-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，想跟你结盟呢……</Text>
+		</Replace>
+		<!--同意和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>嗯……就这样吧……</Text>
+		</Replace>
+		<!--拒绝和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>这点程度和我当时可差远了……</Text>
+		</Replace>
+		<!--请求和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲想要和平……呼……拉菲，要睡一会儿……</Text>
+		</Replace>
+		<!--接受开放边界请求-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>开放边界？嗯……去吧……</Text>
+		</Replace>
+		<!--拒绝开放边界请求-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲对开放边界不感兴趣……</Text>
+		</Replace>
+		<!--请求开放边界-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，想要通过你的边境呢……</Text>
+		</Replace>
+		<!--要求移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>浩浩荡荡的舰队……拉菲，能看见……</Text>
+		</Replace>
+		<!--拒绝移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲，需要这只军队呆在这儿……</Text>
+		</Replace>
+		<!--同意移开边境部队-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲会移走军队的……嗯……</Text>
+		</Replace>
+		<!--经受不住时间考验-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲…还能战斗……</Text>
+		</Replace>
+		<!--同意交易-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>嗯……</Text>
+		</Replace>
+		<!--拒绝交易-->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_FLASHER_SS249_ANY" Language="zh_Hans_CN">
+			<Text>拉菲……不接受……</Text>
+		</Replace>]]>
+	</LocalizedText>
+</GameData>

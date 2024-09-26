@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Laffey_UnitAbilities -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2023/11/19 15:26:51 -->
+<GameData>
+	<Types>
+		<Row Type="ABILITY_LAFFEY_COMBAT_UNITS_BUFF"				Kind="KIND_ABILITY"/>
+	</Types>
+	<TypeTags>
+		<Row Type="ABILITY_LAFFEY_COMBAT_UNITS_BUFF"				Tag="CLASS_ALL_COMBAT_UNITS"/>
+		<Row Type="ABILITY_LAFFEY_COMBAT_UNITS_BUFF"				Tag="CLASS_NAVAL_CARRIER"/>
+	</TypeTags>
+	<UnitAbilities>
+		<Row UnitAbilityType="ABILITY_LAFFEY_COMBAT_UNITS_BUFF"		Name="LOC_ABILITY_LAFFEY_COMBAT_UNITS_BUFF_NAME"			Description="LOC_ABILITY_LAFFEY_COMBAT_UNITS_BUFF_DESCRIPTION"		Inactive="true"/>
+	</UnitAbilities>
+	<ModifierStrings>
+		<Row ModifierId="LAFFEY_ATTACKER_BUFF" Context="Preview" Text="LOC_PREVIEW_LAFFEY_ATTACKER_BUFF_DESCRIPTION"/>
+		<Row ModifierId="LAFFEY_FLANKED_BUFF"  Context="Preview" Text="LOC_PREVIEW_LAFFEY_FLANKED_BUFF_DESCRIPTION"/>
+	</ModifierStrings>
+	<UnitAbilityModifiers>
+		<!--不会蒙受受伤减益-->
+		<Row>
+			<UnitAbilityType>ABILITY_LAFFEY_COMBAT_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>LAFFEY_NO_REDUCTION_DAMAGE</ModifierId>
+		</Row>
+		<!--进攻buff-->
+		<Row>
+			<UnitAbilityType>ABILITY_LAFFEY_COMBAT_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>LAFFEY_ATTACKER_BUFF</ModifierId>
+		</Row>
+		<!--夹击buff-->
+		<Row>
+			<UnitAbilityType>ABILITY_LAFFEY_COMBAT_UNITS_BUFF</UnitAbilityType>
+			<ModifierId>LAFFEY_FLANKED_BUFF</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<!--不会蒙受受伤减益-->
+		<Row>
+			<ModifierId>LAFFEY_NO_REDUCTION_DAMAGE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_NO_REDUCTION_DAMAGE</ModifierType>
+		</Row>
+		<!--进攻buff-->
+		<Row>
+			<ModifierId>LAFFEY_ATTACKER_BUFF</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_COMBAT_AGAINST_STRONGER_UNIT</SubjectRequirementSetId>
+		</Row>
+		<!--夹击buff-->
+		<Row>
+			<ModifierId>LAFFEY_FLANKED_BUFF</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_UNIT_IS_FLANKED_REQUIRE</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--不会蒙受受伤减益-->
+		<Row>
+			<ModifierId>LAFFEY_NO_REDUCTION_DAMAGE</ModifierId>
+			<Name>NoReduction</Name>
+			<Value>true</Value>
+		</Row>
+		<!--进攻buff-->
+		<Row>
+			<ModifierId>LAFFEY_ATTACKER_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
+		</Row>
+		<!--夹击buff-->
+		<Row>
+			<ModifierId>LAFFEY_FLANKED_BUFF</ModifierId>
+			<Name>Amount</Name>
+			<Value>7</Value>
+		</Row>
+	</ModifierArguments>
+</GameData>
