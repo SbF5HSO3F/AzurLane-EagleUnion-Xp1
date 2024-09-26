@@ -6,36 +6,36 @@
 	<Colors>
 		<!--拉菲-->
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_LAFFEY_DD459_PRIMARY</Type>
+			<Type>LAFFEY_DD459_PURPLE</Type>
 			<Color>99,86,121,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_LAFFEY_DD459_SECONDARY</Type>
+			<Type>LAFFEY_DD459_PINK</Type>
 			<Color>252,187,191,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_LAFFEY_DD459_PRIMARY_ALT1</Type>
+			<Type>LAFFEY_DD459_WHITE</Type>
 			<Color>227,220,245,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_LAFFEY_DD459_SECONDARY_ALT1</Type>
+			<Type>LAFFEY_DD459_RED</Type>
 			<Color>255,106,111,255</Color>
 		</Row>
 		<!--松鲷-->
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_FLASHER_SS249_PURPLE</Type>
+			<Type>FLASHER_SS249_PURPLE</Type>
 			<Color>165,115,190,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_FLASHER_SS249_BULE</Type>
+			<Type>FLASHER_SS249_BULE</Type>
 			<Color>105,125,190,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_FLASHER_SS249_DARK</Type>
+			<Type>FLASHER_SS249_DARK</Type>
 			<Color>95,95,115,255</Color>
 		</Row>
 		<Row>
-			<Type>COLOR_PLAYER_LEADER_FLASHER_SS249_WHITE</Type>
+			<Type>FLASHER_SS249_WHITE</Type>
 			<Color>240,245,250,160</Color>
 		</Row>
 	</Colors>
@@ -44,21 +44,21 @@
 		<Row>
 			<Type>LEADER_LAFFEY_DD459</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_PLAYER_LEADER_LAFFEY_DD459_PRIMARY</PrimaryColor>
-			<SecondaryColor>COLOR_PLAYER_LEADER_LAFFEY_DD459_SECONDARY</SecondaryColor>
-			<Alt1PrimaryColor>COLOR_PLAYER_LEADER_LAFFEY_DD459_PRIMARY_ALT1</Alt1PrimaryColor>
-			<Alt1SecondaryColor>COLOR_PLAYER_LEADER_LAFFEY_DD459_SECONDARY_ALT1</Alt1SecondaryColor>
+			<PrimaryColor>LAFFEY_DD459_PURPLE</PrimaryColor>
+			<SecondaryColor>LAFFEY_DD459_PINK</SecondaryColor>
+			<Alt1PrimaryColor>LAFFEY_DD459_WHITE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>LAFFEY_DD459_RED</Alt1SecondaryColor>
 		</Row>
 		<!--松鲷-->
 		<Row>
 			<Type>LEADER_FLASHER_SS249</Type>
 			<Usage>Unique</Usage>
-			<PrimaryColor>COLOR_PLAYER_LEADER_FLASHER_SS249_WHITE</PrimaryColor>
-			<SecondaryColor>COLOR_PLAYER_LEADER_FLASHER_SS249_PURPLE</SecondaryColor>
-			<Alt1PrimaryColor>COLOR_PLAYER_LEADER_FLASHER_SS249_WHITE</Alt1PrimaryColor>
-			<Alt1SecondaryColor>COLOR_PLAYER_LEADER_FLASHER_SS249_BULE</Alt1SecondaryColor>
-			<Alt2PrimaryColor>COLOR_PLAYER_LEADER_FLASHER_SS249_DARK</Alt2PrimaryColor>
-			<Alt2SecondaryColor>COLOR_PLAYER_LEADER_FLASHER_SS249_PURPLE</Alt2SecondaryColor>
+			<PrimaryColor>FLASHER_SS249_WHITE</PrimaryColor>
+			<SecondaryColor>FLASHER_SS249_PURPLE</SecondaryColor>
+			<Alt1PrimaryColor>FLASHER_SS249_WHITE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>FLASHER_SS249_BULE</Alt1SecondaryColor>
+			<Alt2PrimaryColor>FLASHER_SS249_DARK</Alt2PrimaryColor>
+			<Alt2SecondaryColor>FLASHER_SS249_PURPLE</Alt2SecondaryColor>
 		</Row>
 	</PlayerColors>
 </GameData>
