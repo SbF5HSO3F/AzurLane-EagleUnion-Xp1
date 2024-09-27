@@ -7,74 +7,6 @@ include('EagleUnion_Core.lua')
 
 --||====================base functions====================||--
 
---Boost No Boost Tech
---[[function LaffeyBoostNoBoostTech(pPlayer)
-    local PlayerTech = pPlayer:GetTechs()
-    for i in GameInfo.Technologies() do
-        local HasBoost = false
-        local Tech = i.TechnologyType
-        for j in GameInfo.Boosts() do
-            if j.TechnologyType then
-                HasBoost = true
-                break
-            end
-        end
-        if not HasBoost and not PlayerTech:HasBoostBeenTriggered(i.Index) then
-            PlayerTech:TriggerBoost(i.Index)
-            print(Tech, 'is boosted!')
-        end
-    end
-end]]
-
---Boost No Boost Civic
---[[function LaffeyBoostNoBoostCivic(pPlayer)
-    local PlayerCulture = pPlayer:GetCulture()
-    for i in GameInfo.Civics() do
-        local HasBoost = false
-        local Civic = i.CivicType
-        for j in GameInfo.Boosts() do
-            if Civic == j.CivicType then
-                HasBoost = true
-                break
-            end
-        end
-        if not HasBoost and not PlayerCulture:HasBoostBeenTriggered(i.Index) then
-            PlayerCulture:TriggerBoost(i.Index)
-            print(Civic, 'is boosted!')
-        end
-    end
-end]]
-
---Initialize Laffey
---[[function InitializeLaffeyBoost()
-    if Game:GetProperty('LAFFEY_INITALIZE') then
-        return
-    end
-    local players = Game.GetPlayers();
-    for _, player in ipairs(players) do
-        local pPlayerConfig = PlayerConfigurations[player:GetID()]
-        if pPlayerConfig:GetLeaderTypeName() == 'LEADER_LAFFEY_DD459' then
-            LaffeyBoostNoBoostTech(player)
-            LaffeyBoostNoBoostCivic(player)
-            break;
-        end
-    end
-    Game:SetProperty('LAFFEY_INITALIZE', true)
-    print(Game:GetProperty('LAFFEY_INITALIZE'))
-end]]
-
---Is No Boost?
-function LaffeyIsNoBoost(Type)
-    local NoBoost = false
-    for row in GameInfo.Laffey_NoBoost() do
-        if row.NoBoostType == Type then
-            NoBoost = true
-            break
-        end
-    end
-    return NoBoost
-end
-
 --Tech Boost
 function LaffeyTechBoost(pPlayer)
     local baseIndex = 1;
@@ -100,7 +32,7 @@ function LaffeyTechBoost(pPlayer)
                 local iTech = techlist[EagleUnionGetRandNum(#techlist)]
                 local TechType = GameInfo.Technologies[iTech].TechnologyType
                 print(TechType)
-                if PlayerTech:HasBoostBeenTriggered(iTech) or LaffeyIsNoBoost(TechType) then
+                if PlayerTech:HasBoostBeenTriggered(iTech) or EagleUnionHasBoost(TechType) then
                     PlayerTech:SetResearchProgress(iTech, PlayerTech:GetResearchCost(iTech))
                 else
                     PlayerTech:TriggerBoost(iTech, 2)
@@ -140,7 +72,7 @@ function LaffeyCivicBoost(pPlayer)
                 local iCivic = civiclist[EagleUnionGetRandNum(#civiclist)];
                 local CivicType = GameInfo.Civics[iCivic].CivicType
                 print(CivicType)
-                if PlayerCulture:HasBoostBeenTriggered(iCivic) or LaffeyIsNoBoost(CivicType) then
+                if PlayerCulture:HasBoostBeenTriggered(iCivic) or EagleUnionHasBoost(CivicType) then
                     PlayerCulture:SetCulturalProgress(iCivic, PlayerCulture:GetCultureCost(iCivic))
                 else
                     PlayerCulture:TriggerBoost(iCivic, 2)
@@ -197,7 +129,7 @@ function Initialize()
     -----------------Events-----------------
     Events.UnitKilledInCombat.Add(LaffeyKillStrongerUnitBoosted)
     ----------------------------------------
-    print('EagleUnion_Laffey Initial success!')
+    print('Initial success!')
 end
 
 Initialize()

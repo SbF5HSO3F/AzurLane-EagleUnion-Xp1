@@ -132,7 +132,7 @@ function Initialize()
     Events.UnitMovementPointsChanged.Add(FlasherMovementChange)
     ---------------------GameEvents---------------------
     ----------------------------------------------------
-    print('EagleUnion_Flasher Initial success!')
+    print('Initial success!')
 end
 
 Initialize()

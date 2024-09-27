@@ -57,9 +57,14 @@ function FlasherAttachPanel()
     if parent ~= nil then
         Controls.FlasherPanelGrid:ChangeParent(parent)
         parent:AddChildAtIndex(Controls.FlasherPanelGrid, 1)
-        Controls.FlasherGainButton:RegisterCallback(Mouse.eLClick, function()
-            FlasherResetPanel(); UI.PlaySound('UI_Screen_Open')
-        end)
+        Controls.FlasherGainButton:RegisterCallback(Mouse.eLClick,
+            function()
+                FlasherResetPanel()
+                UI.PlaySound('UI_Screen_Open')
+            end
+        )
+        Controls.FlasherGainButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter())
+
         parent:CalculateSize()
         parent:ReprocessAnchoring()
         FlasherResetPanel()
@@ -76,7 +81,7 @@ function Initialize()
     ---------------------GameEvents---------------------
     ExposedMembers.Flasher.Reset = FlasherResetPanel
     ----------------------------------------------------
-    print('AzurLaneFlasher_UI Initial success!')
+    print('Initial success!')
 end
 
 Initialize()
