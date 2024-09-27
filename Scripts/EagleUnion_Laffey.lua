@@ -32,7 +32,7 @@ function LaffeyTechBoost(pPlayer)
                 local iTech = techlist[EagleUnionGetRandNum(#techlist)]
                 local TechType = GameInfo.Technologies[iTech].TechnologyType
                 print(TechType)
-                if PlayerTech:HasBoostBeenTriggered(iTech) or EagleUnionHasBoost(TechType) then
+                if PlayerTech:HasBoostBeenTriggered(iTech) or not EagleUnionHasBoost(TechType) then
                     PlayerTech:SetResearchProgress(iTech, PlayerTech:GetResearchCost(iTech))
                 else
                     PlayerTech:TriggerBoost(iTech, 2)
@@ -72,7 +72,7 @@ function LaffeyCivicBoost(pPlayer)
                 local iCivic = civiclist[EagleUnionGetRandNum(#civiclist)];
                 local CivicType = GameInfo.Civics[iCivic].CivicType
                 print(CivicType)
-                if PlayerCulture:HasBoostBeenTriggered(iCivic) or EagleUnionHasBoost(CivicType) then
+                if PlayerCulture:HasBoostBeenTriggered(iCivic) or not EagleUnionHasBoost(CivicType) then
                     PlayerCulture:SetCulturalProgress(iCivic, PlayerCulture:GetCultureCost(iCivic))
                 else
                     PlayerCulture:TriggerBoost(iCivic, 2)

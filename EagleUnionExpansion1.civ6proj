@@ -26,12 +26,12 @@
           <zh_Hant_HK>白鷹聯邦·領袖擴展1</zh_Hant_HK>
         </Text>
         <Text id="LOC_EAGLE_UNION_XP1_TEASER">
-          <en_US>Added more leaders to the mod "AuzrLane-Eagle Union Civilization".</en_US>
+          <en_US>Added more leaders to the mod "AuzrLane-Eagle Union".</en_US>
           <zh_Hans_CN>为模组“碧蓝航线·白鹰联邦”添加更多领袖。</zh_Hans_CN>
           <zh_Hant_HK>為模組「碧藍航線·白鷹聯邦」添加更多領袖。</zh_Hant_HK>
         </Text>
         <Text id="LOC_EAGLE_UNION_XP1_DEACRIPTION">
-          <en_US>Added more leaders to the mod "AuzrLane-Eagle Union Civilization". There is currently 2 leader added: Laffey and Flasher.</en_US>
+          <en_US>Added more leaders to the mod "AuzrLane-Eagle Union". There is currently 2 leader added: Laffey and Flasher.</en_US>
           <zh_Hans_CN>为模组“碧蓝航线·白鹰联邦”添加更多领袖。当前共添加了2名领袖：拉菲和松鲷。</zh_Hans_CN>
           <zh_Hant_HK>為模組「碧藍航線·白鷹聯邦」添加更多領袖。當前共添加了2名領袖：拉菲和松鲷。</zh_Hant_HK>
         </Text>
@@ -39,7 +39,7 @@
     ]]></LocalizedTextData>
     <FrontEndActionData><![CDATA[<FrontEndActions><UpdateDatabase id="Config"><File>EagleUnion1_Config.xml</File></UpdateDatabase><UpdateColors id="Color"><File>EagleUnion1_Colors.xml</File></UpdateColors><UpdateIcons id="Icons"><File>EagleUnion1_Icons.xml</File></UpdateIcons><UpdateArt id="Art"><File>(Mod Art Dependency File)</File></UpdateArt><UpdateText id="Laffey"><File priority="100">Text/en_US/EagleUnion_Laffey_EnText.xml</File><File priority="90">Text/zh_Hans_CN/EagleUnion_Laffey_CNText.xml</File><File priority="80">Text/zh_Hant_HK/EagleUnion_Laffey_HKText.xml</File></UpdateText><UpdateText id="Flasher"><File priority="100">Text/en_US/EagleUnion_Flasher_EnText.xml</File><File priority="90">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File><File priority="80">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File></UpdateText></FrontEndActions>]]></FrontEndActionData>
     <AssociationData><![CDATA[<Associations>
-  <Dependency type="Mod" title="Azur Lane-Eagle Union Civilization" id="4c8b8884-bdb7-4084-8ea7-a6e08c768f4b" />
+  <Dependency type="Mod" title="Azur Lane-Eagle Union" id="4c8b8884-bdb7-4084-8ea7-a6e08c768f4b" />
 </Associations>]]></AssociationData>
     <InGameActionData><![CDATA[<InGameActions><UpdateIcons id="Icons"><File>EagleUnion1_Icons.xml</File></UpdateIcons><UpdateColors id="Colors"><File>EagleUnion1_Colors.xml</File></UpdateColors><UpdateArt id="Art"><File>(Mod Art Dependency File)</File></UpdateArt><AddUserInterfaces id="UI"><Properties><Context>InGame</Context></Properties><File>UI/Additions/EagleUnion_FlasherUI.xml</File></AddUserInterfaces><AddGameplayScripts id="Script"><File>Scripts/EagleUnion_Laffey.lua</File><File>Scripts/EagleUnion_Flasher.lua</File></AddGameplayScripts><DoNothing id="Core"><File>Data/EagleUnionExpansion1_Core.sql</File></DoNothing><UpdateDatabase id="Laffey"><File priority="100">Data/Laffey/EagleUnion_Laffey_Leader.xml</File><File priority="90">Data/Laffey/EagleUnion_Laffey_UnitAbilities.xml</File><File priority="80">Data/Laffey/EagleUnion_Laffey_Units.xml</File><File priority="70">Data/Laffey/EagleUnion_Laffey_Agendas.xml</File></UpdateDatabase><UpdateDatabase id="Laffey_XP2"><Properties><RuleSet>RULESET_EXPANSION_2</RuleSet></Properties><File>Data/Laffey/EagleUnion_Laffey_XP2.sql</File></UpdateDatabase><UpdateText id="Laffey_Text"><File priority="100">Text/en_US/EagleUnion_Laffey_EnText.xml</File><File priority="90">Text/zh_Hans_CN/EagleUnion_Laffey_CNText.xml</File><File priority="80">Text/zh_Hant_HK/EagleUnion_Laffey_HKText.xml</File></UpdateText><UpdateDatabase id="Flasher"><File priority="100">Data/Flasher/EagleUnion_Flasher_Leader.xml</File><File priority="90">Data/Flasher/EagleUnion_Flasher_UnitAbilities.xml</File><File priority="80">Data/Flasher/EagleUnion_Flasher_Units.xml</File><File priority="70">Data/Flasher/EagleUnion_Flasher_Agendas.xml</File></UpdateDatabase><UpdateDatabase id="FlasherXP2"><Properties><RuleSet>RULESET_EXPANSION_2</RuleSet></Properties><File>Data/Flasher/EagleUnion_Flasher_XP2.sql</File></UpdateDatabase><UpdateText id="FlasherText"><File priority="100">Text/en_US/EagleUnion_Flasher_EnText.xml</File><File priority="90">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File><File priority="80">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File></UpdateText></InGameActions>]]></InGameActionData>
   </PropertyGroup>
