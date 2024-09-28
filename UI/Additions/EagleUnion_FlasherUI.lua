@@ -63,7 +63,7 @@ function FlasherAttachPanel()
                 UI.PlaySound('UI_Screen_Open')
             end
         )
-        Controls.FlasherGainButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter())
+        Controls.FlasherGainButton:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
 
         parent:CalculateSize()
         parent:ReprocessAnchoring()
