@@ -45,7 +45,7 @@ end
 --When Unit Move Complete
 function FlasherMoveComplete(playerID, unitID, iX, iY)
     --check leader is Flasher
-    if not EagleUnionLeaderTypeMatched(playerID, 'LEADER_FLASHER_SS249') then return end
+    if not EagleCore.CheckLeaderMatched(playerID, 'LEADER_FLASHER_SS249') then return end
     --get the unit
     local pUnit = UnitManager.GetUnit(playerID, unitID)
     if pUnit == nil then return end
@@ -81,13 +81,13 @@ end
 --Flasher Kill Unit
 function FlasherKillUnit(killedPlayerID, killedUnitID, playerID, unitID)
     --check leader is Flasher
-    if EagleUnionLeaderTypeMatched(playerID, 'LEADER_FLASHER_SS249') then
+    if EagleCore.CheckLeaderMatched(playerID, 'LEADER_FLASHER_SS249') then
         --get the player
         local pPlayer = Players[playerID]
         --get the kill num
         local killNum = pPlayer:GetProperty(killCounter) or 0
         --get the gold gain
-        local goldGain = EagleUnionSpeedModifier(goldBaseNum + goldAddNum * killNum)
+        local goldGain = EagleCore:ModifyBySpeed(goldBaseNum + goldAddNum * killNum)
         --grant the gold and set the property
         pPlayer:GetTreasury():ChangeGoldBalance(goldGain)
         killNum = (killNum or 0) + 1
@@ -112,7 +112,7 @@ end
 --When unit movement change
 function FlasherMovementChange(playerID, unitID, MovementPoints)
     --check the leader
-    if EagleUnionLeaderTypeMatched(playerID, 'LEADER_FLASHER_SS249') then
+    if EagleCore.CheckLeaderMatched(playerID, 'LEADER_FLASHER_SS249') then
         --get the unit
         local pUnit = UnitManager.GetUnit(playerID, unitID)
         --get the strength

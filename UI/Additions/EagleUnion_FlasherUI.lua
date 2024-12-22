@@ -22,7 +22,7 @@ function FlasherResetPanel(killNum)
     --get the loacl player
     local loaclPlayerID = Game.GetLocalPlayer()
     --check the player leader
-    if EagleUnionLeaderTypeMatched(loaclPlayerID, 'LEADER_FLASHER_SS249') then
+    if EagleCore.CheckLeaderMatched(loaclPlayerID, 'LEADER_FLASHER_SS249') then
         Controls.FlasherPanelGrid:SetHide(false)
         --get the kill number
         local killNumber = nil
@@ -35,7 +35,7 @@ function FlasherResetPanel(killNum)
             killNumber = pPlayer:GetProperty(killCounter) or 0
         end
         --get the gold base number
-        local goldNum = EagleUnionSpeedModifier(goldBaseNum + goldAddNum * killNumber)
+        local goldNum = EagleCore:ModifyBySpeed(goldBaseNum + goldAddNum * killNumber)
         --set the num
         Controls.FlasherGainCount:SetText(goldNum)
         --set the tooltip

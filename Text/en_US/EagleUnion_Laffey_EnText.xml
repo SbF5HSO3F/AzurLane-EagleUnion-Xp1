@@ -72,6 +72,9 @@
 			<Text>Solomon's Night</Text>
 		</Replace>
 		<Replace Tag="LOC_AGENDA_SOLOMON_S_NIGHT_DESCRIPTION" Language="en_US">
+			<Text>Prefer to continue fighting rather than making peace.</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_SOLOMON_S_NIGHT_DESCRIPTION_XP2" Language="en_US">
 			<Text>Prefer to continue fighting rather than making peace. Grievances against this leader decay at twice the usual rate.</Text>
 		</Replace>
 		<!--领袖能力-->

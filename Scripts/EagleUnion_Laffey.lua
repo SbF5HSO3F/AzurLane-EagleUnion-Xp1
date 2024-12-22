@@ -29,10 +29,10 @@ function LaffeyTechBoost(pPlayer)
                 end
             end
             if #techlist > 0 then
-                local iTech = techlist[EagleUnionGetRandNum(#techlist)]
+                local iTech = techlist[EagleCore.tableRandom(#techlist)]
                 local TechType = GameInfo.Technologies[iTech].TechnologyType
                 print(TechType)
-                if PlayerTech:HasBoostBeenTriggered(iTech) or not EagleUnionHasBoost(TechType) then
+                if PlayerTech:HasBoostBeenTriggered(iTech) or not EagleCore.HasBoost(TechType) then
                     PlayerTech:SetResearchProgress(iTech, PlayerTech:GetResearchCost(iTech))
                 else
                     PlayerTech:TriggerBoost(iTech, 2)
@@ -69,10 +69,10 @@ function LaffeyCivicBoost(pPlayer)
                 end
             end
             if #civiclist > 0 then
-                local iCivic = civiclist[EagleUnionGetRandNum(#civiclist)];
+                local iCivic = civiclist[EagleCore.tableRandom(#civiclist)];
                 local CivicType = GameInfo.Civics[iCivic].CivicType
                 print(CivicType)
-                if PlayerCulture:HasBoostBeenTriggered(iCivic) or not EagleUnionHasBoost(CivicType) then
+                if PlayerCulture:HasBoostBeenTriggered(iCivic) or not EagleCore.HasBoost(CivicType) then
                     PlayerCulture:SetCulturalProgress(iCivic, PlayerCulture:GetCultureCost(iCivic))
                 else
                     PlayerCulture:TriggerBoost(iCivic, 2)
@@ -117,7 +117,7 @@ end]]
 --Kill Stronger Unit Boosted
 function LaffeyKillStrongerUnitBoosted(killedPlayerID, killedUnitID, playerID, unitID)
     --is Laffey?
-    if EagleUnionLeaderTypeMatched(playerID, 'LEADER_LAFFEY_DD459') then
+    if EagleCore.CheckLeaderMatched(playerID, 'LEADER_LAFFEY_DD459') then
         local pPlayer = Players[playerID]; LaffeyTechBoost(pPlayer); LaffeyCivicBoost(pPlayer)
     end
 end
