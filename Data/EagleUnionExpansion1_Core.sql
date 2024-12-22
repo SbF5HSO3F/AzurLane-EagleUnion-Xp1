@@ -1,8 +1,8 @@
 -- EagleUnionExpansion1_Core
--- Author: jjj
+-- Author: HSbF6HSO3F
 -- DateCreated: 2023/11/19 16:22:51
 --------------------------------------------------------------
--- Ìõ¼þ¼¯
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 INSERT INTO RequirementSets
 		(RequirementSetId,					RequirementSetType)
@@ -17,7 +17,7 @@ VALUES	('LAFFEY_ATTACKER_REQUIRE',			'REQ_EAGLE_UNION_COMBAT_AGAINST_STRONGER_UN
 		('EAGLE_UNION_OPPONENT_IS_DAMAGE',	'REQ_EAGLE_UNION_OPPONENT_IS_DAMAGE');
 
 
--- ×ÓÌõ¼þµÄ¶¨Òå
+-- ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½
 
 INSERT INTO Requirements
 		(RequirementId,									RequirementType)
@@ -29,7 +29,7 @@ INSERT INTO RequirementArguments
 		(RequirementId,							Name,			Value)
 VALUES	('REQ_EAGLE_UNION_OPPONENT_IS_DAMAGE',	'MinimumAmount','1');
 
--- ×Ô¶¨Òå ModifierType
+-- ï¿½Ô¶ï¿½ï¿½ï¿½ ModifierType
 
 INSERT INTO Types
 		(Type,																		Kind)

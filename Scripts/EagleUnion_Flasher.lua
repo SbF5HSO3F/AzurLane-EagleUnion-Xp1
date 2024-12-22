@@ -1,5 +1,5 @@
 -- EagleUnion_Flasher
--- Author: jjj
+-- Author: HSbF6HSO3F
 -- DateCreated: 2024/3/2 16:51:50
 --------------------------------------------------------------
 --||=======================include========================||--
@@ -134,5 +134,7 @@ function Initialize()
     ----------------------------------------------------
     print('Initial success!')
 end
+
+include('EagleUnion_Flasher_', true)
 
 Initialize()
