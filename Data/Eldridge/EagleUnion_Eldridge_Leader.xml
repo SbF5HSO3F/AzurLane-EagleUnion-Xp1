@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Eldridge_Leader -->
+<!-- Author: HSbF6HSO3F -->
+<!-- DateCreated: 2024/12/24 15:00:05 -->
+<GameData>
+    <Types>
+		<!--埃尔德里奇-->
+		<Row Type="LEADER_ELDRIDGE_DE173"			Kind="KIND_LEADER"/>
+        <Row Type="TRAIT_LEADER_OPERATION_RAINBOW"	Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<!--埃尔德里奇-->
+		<Row LeaderType="LEADER_ELDRIDGE_DE173" Name="LOC_LEADER_ELDRIDGE_DE173_NAME" Sex="Female" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+	</Leaders>
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_ELDRIDGE_DE173"	CapitalName="LOC_CITY_NAME_EAGLE_UNION_ORANGE"/>
+	</CivilizationLeaders>
+    <Traits>
+		<!--埃尔德里奇-->
+		<Row TraitType="TRAIT_LEADER_OPERATION_RAINBOW"	Name="LOC_TRAIT_LEADER_OPERATION_RAINBOW_NAME"	Description="LOC_TRAIT_LEADER_OPERATION_RAINBOW_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<!--埃尔德里奇-->
+		<Row LeaderType="LEADER_ELDRIDGE_DE173"	TraitType="TRAIT_LEADER_OPERATION_RAINBOW"/>
+	</LeaderTraits>
+	<HistoricalAgendas>
+	</HistoricalAgendas>
+	<Agendas>
+	</Agendas>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_ELDRIDGE_DE173"	Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_QUOTE" />
+	</LeaderQuotes>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_ELDRIDGE_DE173"	ForegroundImage="IMG_LEADER_ELDRIDGE_DE173_LOADING_FOREGROUND"	BackgroundImage="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_ELDRIDGE_DE173" BackgroundImage="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND.dds"/>
+	</DiplomacyInfo>
+    	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>TRAIT_LEADER_OPERATION_RAINBOW</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_OPERATION_RAINBOW</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+	</TraitModifiers>
+</GameData>

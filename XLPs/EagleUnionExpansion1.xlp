@@ -34,6 +34,10 @@
 			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_FLASHER_SS249_LOADING_FOREGROUND"/>
 		</Element>
 		<Element>
+			<m_EntryID text="Moment_Gato_class"/>
+			<m_ObjectName text="Moment_Gato_class"/>
+		</Element>
+		<Element>
 			<m_EntryID text="EAGLE_UNION_XP1_LEADERS_256"/>
 			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_256"/>
 		</Element>
@@ -66,8 +70,12 @@
 			<m_ObjectName text="EAGLE_UNION_XP1_LEADERS_80"/>
 		</Element>
 		<Element>
-			<m_EntryID text="Moment_Gato_class"/>
-			<m_ObjectName text="Moment_Gato_class"/>
+			<m_EntryID text="IMG_LEADER_ELDRIDGE_DE173_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_ELDRIDGE_DE173_FOREGROUND"/>
+		</Element>
+		<Element>
+			<m_EntryID text="IMG_LEADER_ELDRIDGE_DE173_LOADING_FOREGROUND"/>
+			<m_ObjectName text="IMG_LEADER_ELDRIDGE_DE173_LOADING_FOREGROUND"/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

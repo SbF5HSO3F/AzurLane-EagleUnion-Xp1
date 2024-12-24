@@ -38,6 +38,19 @@
 			<Type>FLASHER_SS249_WHITE</Type>
 			<Color>240,245,250,160</Color>
 		</Row>
+		<!--埃尔德里奇-->
+		<Row>
+			<Type>ELDRIDGE_DE173_GOLDEN</Type>
+			<Color>254,204,152,255</Color>
+		</Row>
+		<Row>
+			<Type>ELDRIDGE_DE173_BULE</Type>
+			<Color>84,99,206,255</Color>
+		</Row>
+		<Row>
+			<Type>ELDRIDGE_DE173_WHITE</Type>
+			<Color>235,240,243,255</Color>
+		</Row>
 	</Colors>
 	<PlayerColors>
 		<!--拉菲-->
@@ -59,6 +72,17 @@
 			<Alt1SecondaryColor>FLASHER_SS249_BULE</Alt1SecondaryColor>
 			<Alt2PrimaryColor>FLASHER_SS249_DARK</Alt2PrimaryColor>
 			<Alt2SecondaryColor>FLASHER_SS249_PURPLE</Alt2SecondaryColor>
+		</Row>
+		<!--埃尔德里奇-->
+		<Row>
+			<Type>LEADER_ELDRIDGE_DE173</Type>
+			<Usage>Unique</Usage>
+			<PrimaryColor>ELDRIDGE_DE173_GOLDEN</PrimaryColor>
+			<SecondaryColor>ELDRIDGE_DE173_BULE</SecondaryColor>
+			<Alt1PrimaryColor>ELDRIDGE_DE173_BULE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>ELDRIDGE_DE173_WHITE</Alt1SecondaryColor>
+			<Alt2PrimaryColor>ELDRIDGE_DE173_WHITE</Alt2PrimaryColor>
+			<Alt2SecondaryColor>ELDRIDGE_DE173_BULE</Alt2SecondaryColor>
 		</Row>
 	</PlayerColors>
 </GameData>

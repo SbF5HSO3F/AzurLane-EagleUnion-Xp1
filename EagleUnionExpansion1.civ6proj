@@ -2,7 +2,7 @@
 <Project ToolsVersion="12.0" DefaultTargets="Default" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Default</Configuration>
-    <Name>EagleUnionExpansion1</Name>
+    <Name>LOC_EAGLE_UNION_XP1_NAME</Name>
     <Guid>ae761d16-eac9-43cb-bc6c-a0572e0aef30</Guid>
     <ProjectGuid>e773fdbd-3e1b-4e02-8252-5cc20f4ed54d</ProjectGuid>
     <ModVersion>1</ModVersion>
@@ -31,9 +31,9 @@
           <zh_Hant_HK>為模組「碧藍航線·白鷹聯邦」添加更多領袖。</zh_Hant_HK>
         </Text>
         <Text id="LOC_EAGLE_UNION_XP1_DEACRIPTION">
-          <en_US>Added more leaders to the mod "AuzrLane-Eagle Union". There is currently 2 leader added: Laffey and Flasher.</en_US>
-          <zh_Hans_CN>为模组“碧蓝航线·白鹰联邦”添加更多领袖。当前共添加了2名领袖：拉菲和松鲷。</zh_Hans_CN>
-          <zh_Hant_HK>為模組「碧藍航線·白鷹聯邦」添加更多領袖。當前共添加了2名領袖：拉菲和松鲷。</zh_Hant_HK>
+          <en_US>Added more leaders to the mod "AuzrLane-Eagle Union". There is currently 3 leader added: Laffey, Flasher and Eldridge.</en_US>
+          <zh_Hans_CN>为模组“碧蓝航线·白鹰联邦”添加更多领袖。当前共添加了3名领袖：拉菲、松鲷和埃尔德里奇。</zh_Hans_CN>
+          <zh_Hant_HK>為模組「碧藍航線·白鷹聯邦」添加更多領袖。當前共添加了3名領袖：拉菲、松鲷和埃爾德裏奇。</zh_Hant_HK>
         </Text>
       </LocalizedText>
     ]]></LocalizedTextData>
@@ -60,6 +60,9 @@
           <File priority="100">Text/en_US/EagleUnion_Flasher_EnText.xml</File>
           <File priority="90">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File>
           <File priority="80">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File>
+        </UpdateText>
+        <UpdateText id="Eldridge">
+          <File priority="90">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
         </UpdateText>
       </FrontEndActions>
     ]]></FrontEndActionData>
@@ -112,16 +115,22 @@
         <File priority="80">Data/Flasher/EagleUnion_Flasher_Units.xml</File>
         <File priority="70">Data/Flasher/EagleUnion_Flasher_Agendas.xml</File>
       </UpdateDatabase>
-      <UpdateDatabase id="FlasherXP2">
+      <UpdateDatabase id="Flasher_XP2">
         <Properties>
           <RuleSet>RULESET_EXPANSION_2</RuleSet>
         </Properties>
         <File>Data/Flasher/EagleUnion_Flasher_XP2.sql</File>
       </UpdateDatabase>
-      <UpdateText id="FlasherText">
+      <UpdateText id="Flasher_Text">
         <File priority="100">Text/en_US/EagleUnion_Flasher_EnText.xml</File>
         <File priority="90">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File>
         <File priority="80">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File>
+      </UpdateText>
+      <UpdateDatabase id="Eldridge">
+        <File priority="100">Data/Eldridge/EagleUnion_Eldridge_Leader.xml</File>
+      </UpdateDatabase>
+      <UpdateText id="Eldridge_Text">
+        <File priority="90">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
       </UpdateText>
     </InGameActions>
   ]]></InGameActionData>
@@ -136,6 +145,7 @@
     <Folder Include="Data" />
     <Folder Include="Data\Laffey" />
     <Folder Include="Data\Flasher" />
+    <Folder Include="Data\Eldridge" />
     <Folder Include="Scripts" />
     <Folder Include="UI" />
     <Folder Include="Text" />
@@ -145,6 +155,9 @@
     <Folder Include="UI\Additions" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Eldridge\EagleUnion_Eldridge_Leader.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Data\Flasher\EagleUnion_Flasher_Agendas.xml">
       <SubType>Content</SubType>
     </Content>
@@ -194,6 +207,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\en_US\EagleUnion_Laffey_EnText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\zh_Hans_CN\EagleUnion_Eldridge_CNText.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\zh_Hans_CN\EagleUnion_Flasher_CNText.xml">
