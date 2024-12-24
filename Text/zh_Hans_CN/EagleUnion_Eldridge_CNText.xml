@@ -14,7 +14,7 @@
 		</Replace>
 		<!--百科-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_QUOTE" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>会放电喔。但是不会瞬间移动……</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
 			<Text></Text>

@@ -197,6 +197,9 @@
     <Content Include="EagleUnion1_Icons.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Scripts\EagleUnion_Eldridge.lua">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\EagleUnion_Flasher.lua">
       <SubType>Content</SubType>
     </Content>
@@ -222,6 +225,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\zh_Hant_HK\EagleUnion_Laffey_HKText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\EagleUnion_EldridgeUnitUI.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\EagleUnion_EldridgeUnitUI.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UI\Additions\EagleUnion_FlasherUI.lua">
