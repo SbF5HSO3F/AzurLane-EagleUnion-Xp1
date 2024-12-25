@@ -171,14 +171,30 @@ EldridgeUnitPanel = {
     },
     --电气功率：电击
     Voltage = {
-        --get the damage
-        GetVoltDamage = function(pUnit)
-            --get the unit combat
-            local unitCombat = pUnit:GetCombat()
-            --get the damage
-            local extraDamage = voltageDamage * unitCombat / 100
-            return math.ceil(voltageDamage + extraDamage)
-        end,
+        --damage manager
+        VoltManager = {
+            --来源
+            Sources = {
+                --来自战斗力
+                Combat = {
+                    GetModifier = function(playerID, unitID)
+                        --get the unit
+                        local pUnit = UnitManager.GetUnit(playerID, unitID)
+                        --get the combat
+                        return pUnit:GetCombat()
+                    end
+                }
+            },
+            GetVoltDamage = function(self, pUnit)
+                local modifier = 0
+                --get the owner and player
+                local ownerID, unitID = pUnit:GetOwner(), pUnit:GetID()
+                for _, source in pairs(self.Sources) do
+                    modifier = modifier + source.GetModifier(ownerID, unitID)
+                end
+                return math.ceil(modifier * voltageDamage / 100 + voltageDamage)
+            end
+        },
         GetDetail = function(pUnit)
             local detail = { Disable = true, Reason = 'NONE' }
             --get the turns
@@ -224,7 +240,7 @@ EldridgeUnitPanel = {
             Controls.Voltage:SetDisabled(disable)
             Controls.Voltage:SetAlpha((disable and 0.7) or 1)
             --get the volt damage
-            local damage = self.GetVoltDamage(pUnit)
+            local damage = self.VoltManager:GetVoltDamage(pUnit)
             --the tooltip
             local tooltip = Locale.Lookup('LOC_VOLTAGE_TITLE') .. '[NEWLINE][NEWLINE]'
                 .. Locale.Lookup('LOC_VOLTAGE_DESC', damage)
@@ -239,7 +255,9 @@ EldridgeUnitPanel = {
             --get the unit
             local pUnit = UI.GetHeadSelectedUnit()
             if not pUnit then return end
-            local damage = self.GetVoltDamage(pUnit)
+            --for beauty
+            local VoltManager = self.VoltManager
+            local damage = VoltManager:GetVoltDamage(pUnit)
             --get the detail
             UI.RequestPlayerOperation(Game.GetLocalPlayer(),
                 PlayerOperations.EXECUTE_SCRIPT, {
