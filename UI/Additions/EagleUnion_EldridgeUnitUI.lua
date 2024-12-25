@@ -10,6 +10,9 @@ include('EagleUnion_Core')
 local COLOR = UILens.CreateLensLayerHash("Hex_Coloring_Movement")
 local m_EldridgeSelected, m_EldridgePlot = false, nil
 
+local key = 'EldridgeVoltage'
+local voltageReason = DB.MakeHash("ELDRIDGE_VOLTAGE")
+
 --||======================MetaTable=======================||--
 
 EldridgeUnitPanel = {
@@ -25,6 +28,7 @@ EldridgeUnitPanel = {
             Controls.EldridgeGrid:SetHide(false)
             --reset the buttons
             self.Rainbow:Reset(pUnit)
+            self.Voltage:Reset(pUnit)
         else
             --hide the grid
             Controls.EldridgeGrid:SetHide(true)
@@ -40,6 +44,7 @@ EldridgeUnitPanel = {
             Controls.EldridgeGrid:ChangeParent(context)
             --Register Callback
             self.Rainbow:Register()
+            self.Voltage:Register()
             --reset the button
             self:Reset()
         end
@@ -109,7 +114,9 @@ EldridgeUnitPanel = {
         --获取细节
         GetDetail = function(self, pUnit)
             local detail = { Disable = true, Reason = 'NONE' }
-            if pUnit:GetMovesRemaining() == 0 then
+            local unitDef = GameInfo.Units[pUnit:GetType()]
+            if pUnit:GetMovesRemaining() == 0
+                or unitDef.IgnoreMoves == true then
                 --no movement, disabled
                 detail.Reason = Locale.Lookup('LOC_UNITCOMMAND_RAINBOW_NOMOVEMENT')
             else
@@ -158,16 +165,92 @@ EldridgeUnitPanel = {
         --注册函数
         Register = function(self)
             Controls.Rainbow:RegisterCallback(Mouse.eLClick, function() self:Callback() end)
-            Controls.Rainbow:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter())
+            Controls.Rainbow:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
         end
     },
     --电气功率：电击
     Voltage = {
-
+        GetDetail = function(pUnit)
+            local detail = { Disable = true, Reason = 'NONE' }
+            --get the turns
+            local turn = pUnit:GetProperty(key) or 0
+            --check the turns
+            if turn >= Game.GetCurrentGameTurn() then
+                detail.Reason = Locale.Lookup('LOC_UNITCOMMAND_VOLTAGE_LIMIT')
+            else
+                --has target?
+                local hasTarget = false
+                --the player diplomacy
+                local pPlayer = Players[pUnit:GetOwner()]
+                local diplomacy = pPlayer:GetDiplomacy()
+                --get the x and y
+                local x, y = pUnit:GetX(), pUnit:GetY()
+                --begin the loop
+                for _, plot in ipairs(Map.GetAdjacentPlots(x, y)) do
+                    --about the unit on the plot
+                    for _, unit in pairs(Units.GetUnitsInPlot(plot)) do
+                        if unit ~= nil and diplomacy:IsAtWarWith(unit:GetOwner()) then
+                            hasTarget = true
+                            break
+                        end
+                    end
+                end
+                --check the target
+                if hasTarget then
+                    detail.Disable = false
+                else
+                    detail.Reason = Locale.Lookup('LOC_UNITCOMMAND_VOLTAGE_NOTARGET')
+                end
+            end
+            --return the button detail
+            return detail
+        end,
+        --设置按钮
+        Reset = function(self, pUnit)
+            --get the button details
+            local detail = self.GetDetail(pUnit)
+            --get the disable
+            local disable = detail.Disable
+            --set the button
+            Controls.Voltage:SetDisabled(disable)
+            Controls.Voltage:SetAlpha((disable and 0.7) or 1)
+            --the tooltip
+            local tooltip = Locale.Lookup('LOC_VOLTAGE_TITLE') ..
+                '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_VOLTAGE_DESC')
+            if disable then
+                tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
+            end
+            --set the tooltip
+            Controls.Voltage:SetToolTipString(tooltip)
+        end,
+        --回调函数
+        Callback = function()
+            --get the unit
+            local pUnit = UI.GetHeadSelectedUnit()
+            if not pUnit then return end
+            --get the detail
+            UI.RequestPlayerOperation(Game.GetLocalPlayer(),
+                PlayerOperations.EXECUTE_SCRIPT, {
+                    UnitID = pUnit:GetID(),
+                    OnStart = 'EldridgeVoltage',
+                }
+            ); UI.PlaySound("Unit_CondemnHeretic_2D")
+            Network.BroadcastPlayerInfo()
+        end,
+        --注册函数
+        Register = function(self)
+            Controls.Voltage:RegisterCallback(Mouse.eLClick, function() self.Callback() end)
+            Controls.Voltage:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+        end
     }
 }
 
 --||====================base functions====================||--
+
+--play voltage effect
+function EldridgePlayVoltageEffect(x, y)
+    WorldView.PlayEffectAtXY("ELDRIDGE_VOLTAGE", x, y)
+end
 
 --||===================Events functions===================||--
 
@@ -175,6 +258,19 @@ EldridgeUnitPanel = {
 function EldridgeOnUnitSelectChanged(playerId, unitId, locationX, locationY, locationZ, isSelected, isEditable)
     if isSelected and playerId == Game.GetLocalPlayer() then
         EldridgeUnitPanel:Reset()
+    end
+end
+
+--On Unit Active
+function EldridgeUnitActive(owner, unitID, x, y, eReason)
+    local pUnit = UnitManager.GetUnit(owner, unitID)
+    if eReason == voltageReason then
+        EldridgeUnitPanel:Reset()
+        SimUnitSystem.SetAnimationState(pUnit, "SPAWN", "IDLE")
+        --get the unit x and y
+        local uX, uY = pUnit:GetX(), pUnit:GetY()
+        --play the effect
+        WorldView.PlayEffectAtXY("ELDRIDGE_VOLTAGE_USER", uX, uY)
     end
 end
 
@@ -214,6 +310,7 @@ function EldridgeSelectPlot(plotID, edge, lbutton, rbutton)
                     y = Map.GetPlotByIndex(plotID):GetY(),
                 }
             ); m_EldridgePlot = nil; UI.PlaySound("Unit_Relocate")
+            Network.BroadcastPlayerInfo()
         end
     end
 end
@@ -224,7 +321,7 @@ end
 function Initialize()
     Events.LoadGameViewStateDone.Add(EldridgeOnLoadGameViewStateDone)
     Events.UnitSelectionChanged.Add(EldridgeOnUnitSelectChanged)
-    --Events.UnitActivate.Add(SeydlitzUnitActive)
+    Events.UnitActivate.Add(EldridgeUnitActive)
     ------------------------------------------
     Events.UnitOperationSegmentComplete.Add(EldridgeGridReset)
     Events.UnitCommandStarted.Add(EldridgeGridReset)
@@ -247,6 +344,8 @@ function Initialize()
     Events.InterfaceModeChanged.Add(EldridgeUIModeChange)
     ------------------------------------------
     LuaEvents.WorldInput_WBSelectPlot.Add(EldridgeSelectPlot)
+    ------------------------------------------
+    ExposedMembers.Eldridge.PlayEffect = EldridgePlayVoltageEffect
     ------------------------------------------
     print('Initial success!')
 end
