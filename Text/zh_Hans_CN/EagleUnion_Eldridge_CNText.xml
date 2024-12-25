@@ -23,20 +23,40 @@
 			<Text></Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>埃尔德里奇号（USS Eldridge ，DE-173）是美国坎农级护航驱逐舰，舰名是为了纪念在所罗门群岛行动中阵亡的美国海军少校约翰·埃尔德里奇（1903-1942）。埃尔德里奇号于1943年2月22日开工，1943年7月25日下水，1943年8月27日正式服役。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>1944年1月4日至1945年5月9日期间，她在地中海执行任务，九次航行中成功护航至卡萨布兰卡，比泽特和奥兰。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>1945年5月28日，她离开纽约市，在太平洋地区执行护航任务。8月7日抵达冲绳，进行当地护送和巡逻。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>1946年6月17日，从美国海军退役。1951年1月15日，希腊海军通过“共同防御援助计划”获得埃尔德里奇号，并改名为“利昂”号（HS Leon，D54），随后她主要负责东爱琴海的巡逻工作和海军军校的训练。1992年11月15日，埃尔德里奇从希腊海军退役，随后于1999年11月11日被出售拆解，结束了自己充满传说的一生。</Text>
 		</Replace>
 		<!--领袖议程-->
 
 		<!--领袖能力-->
 		<!--Operation Rainbow-->
-		<Replace Tag="LOC_TRAIT_LEADER_OPERATION_RAINBOW_NAME" Language="zh_Hans_CN">
-			<Text>彩虹计划</Text>
+		<Replace Tag="LOC_TRAIT_LEADER_PHILADELPHIA_EXPERIMENT_NAME" Language="zh_Hans_CN">
+			<Text>费城实验</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_OPERATION_RAINBOW_DESCRIPTION" Language="zh_Hans_CN">
+		<Replace Tag="LOC_TRAIT_LEADER_PHILADELPHIA_EXPERIMENT_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>所有单位获得“彩虹计划”和“电气功率”单位命令。</Text>
 		</Replace>
 		<!--Lua浮动文字显示-->
-
+		<Replace Tag="LOC_RAINBOW_TITLE" Language="zh_Hans_CN">
+			<Text>彩虹计划</Text>
+		</Replace>
+		<Replace Tag="LOC_RAINBOW_DESC" Language="zh_Hans_CN">
+			<Text>转移至任意一座城市。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNITCOMMAND_RAINBOW_NOMOVEMENT" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]该单位没有剩余 [ICON_MOVEMENT] 移动力[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_UNITCOMMAND_RAINBOW_NOPLOT" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]该单位没有可供转移的城市[ENDCOLOR]</Text>
+		</Replace>
 		<!--特殊加成-->
 
 		<!--领袖项目-->

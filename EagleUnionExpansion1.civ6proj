@@ -87,10 +87,12 @@
             <Context>InGame</Context>
           </Properties>
           <File>UI/Additions/EagleUnion_FlasherUI.xml</File>
+          <File>UI/Additions/EagleUnion_EldridgeUnitUI.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Script">
           <File>Scripts/EagleUnion_Laffey.lua</File>
           <File>Scripts/EagleUnion_Flasher.lua</File>
+          <File>Scripts/EagleUnion_Eldridge.lua</File>
         </AddGameplayScripts>
         <UpdateDatabase id="Laffey">
           <File priority="100">Data/Laffey/EagleUnion_Laffey_Leader.xml</File>

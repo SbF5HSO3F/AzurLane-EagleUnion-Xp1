@@ -6,7 +6,7 @@
     <Types>
 		<!--埃尔德里奇-->
 		<Row Type="LEADER_ELDRIDGE_DE173"			Kind="KIND_LEADER"/>
-        <Row Type="TRAIT_LEADER_OPERATION_RAINBOW"	Kind="KIND_TRAIT"/>
+        <Row Type="TRAIT_LEADER_PHILADELPHIA_EXPERIMENT"	Kind="KIND_TRAIT"/>
 	</Types>
 	<Leaders>
 		<!--埃尔德里奇-->
@@ -17,11 +17,11 @@
 	</CivilizationLeaders>
     <Traits>
 		<!--埃尔德里奇-->
-		<Row TraitType="TRAIT_LEADER_OPERATION_RAINBOW"	Name="LOC_TRAIT_LEADER_OPERATION_RAINBOW_NAME"	Description="LOC_TRAIT_LEADER_OPERATION_RAINBOW_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_PHILADELPHIA_EXPERIMENT"	Name="LOC_TRAIT_LEADER_PHILADELPHIA_EXPERIMENT_NAME"	Description="LOC_TRAIT_LEADER_PHILADELPHIA_EXPERIMENT_DESCRIPTION"/>
 	</Traits>
 	<LeaderTraits>
 		<!--埃尔德里奇-->
-		<Row LeaderType="LEADER_ELDRIDGE_DE173"	TraitType="TRAIT_LEADER_OPERATION_RAINBOW"/>
+		<Row LeaderType="LEADER_ELDRIDGE_DE173"	TraitType="TRAIT_LEADER_PHILADELPHIA_EXPERIMENT"/>
 	</LeaderTraits>
 	<HistoricalAgendas>
 	</HistoricalAgendas>
@@ -39,11 +39,11 @@
     	<TraitModifiers>
 		<!--KANSEN-->
 		<Row>
-			<TraitType>TRAIT_LEADER_OPERATION_RAINBOW</TraitType>
+			<TraitType>TRAIT_LEADER_PHILADELPHIA_EXPERIMENT</TraitType>
 			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
 		</Row>
 		<Row>
-			<TraitType>TRAIT_LEADER_OPERATION_RAINBOW</TraitType>
+			<TraitType>TRAIT_LEADER_PHILADELPHIA_EXPERIMENT</TraitType>
 			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
 		</Row>
 	</TraitModifiers>

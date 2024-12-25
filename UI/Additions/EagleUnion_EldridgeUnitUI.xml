@@ -2,6 +2,14 @@
 <!-- EagleUnion_EldridgeUnitUI -->
 <!-- Author: HSbF6HSO3F -->
 <!-- DateCreated: 2024/12/24 20:39:36 -->
-<GameData>
+<Context Name="EldridgeContext">
+	<Grid ID="EldridgeGrid" Anchor="R,B" Size="46,41" AutoSizePadding="2,0" Texture="SelectionPanel_ActionGroupSlot" SliceCorner="5,19" SliceSize="1,1" SliceTextureSize="12,41" ConsumeMouse="1" Hidden="1">
+		<Stack ID="EldridgeActionStack" Anchor="C,B" StackGrowth="Right" StackPadding="2">
 
-</GameData>
+			<Button ID="Rainbow" Anchor="C,B" Size="44,53" Texture="UnitPanel_ActionButton">
+				<Image ID="RainbowIcon" Anchor="C,C" Offset="0,-2" Size="38,38" Icon="ICON_UNITOPERATION_TELEPORT_TO_CITY"/>
+			</Button>
+
+		</Stack>
+	</Grid>
+</Context>
