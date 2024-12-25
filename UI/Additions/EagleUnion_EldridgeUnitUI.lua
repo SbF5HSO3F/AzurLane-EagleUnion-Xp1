@@ -12,6 +12,7 @@ local m_EldridgeSelected, m_EldridgePlot = false, nil
 
 local key = 'EldridgeVoltage'
 local voltageReason = DB.MakeHash("ELDRIDGE_VOLTAGE")
+local voltageDamage = 20
 
 --||======================MetaTable=======================||--
 
@@ -170,6 +171,14 @@ EldridgeUnitPanel = {
     },
     --电气功率：电击
     Voltage = {
+        --get the damage
+        GetVoltDamage = function(pUnit)
+            --get the unit combat
+            local unitCombat = pUnit:GetCombat()
+            --get the damage
+            local extraDamage = voltageDamage * unitCombat / 100
+            return math.ceil(voltageDamage + extraDamage)
+        end,
         GetDetail = function(pUnit)
             local detail = { Disable = true, Reason = 'NONE' }
             --get the turns
@@ -214,9 +223,11 @@ EldridgeUnitPanel = {
             --set the button
             Controls.Voltage:SetDisabled(disable)
             Controls.Voltage:SetAlpha((disable and 0.7) or 1)
+            --get the volt damage
+            local damage = self.GetVoltDamage(pUnit)
             --the tooltip
-            local tooltip = Locale.Lookup('LOC_VOLTAGE_TITLE') ..
-                '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_VOLTAGE_DESC')
+            local tooltip = Locale.Lookup('LOC_VOLTAGE_TITLE') .. '[NEWLINE][NEWLINE]'
+                .. Locale.Lookup('LOC_VOLTAGE_DESC', damage)
             if disable then
                 tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
             end
@@ -224,14 +235,16 @@ EldridgeUnitPanel = {
             Controls.Voltage:SetToolTipString(tooltip)
         end,
         --回调函数
-        Callback = function()
+        Callback = function(self)
             --get the unit
             local pUnit = UI.GetHeadSelectedUnit()
             if not pUnit then return end
+            local damage = self.GetVoltDamage(pUnit)
             --get the detail
             UI.RequestPlayerOperation(Game.GetLocalPlayer(),
                 PlayerOperations.EXECUTE_SCRIPT, {
                     UnitID = pUnit:GetID(),
+                    Damage = damage,
                     OnStart = 'EldridgeVoltage',
                 }
             ); UI.PlaySound("Unit_CondemnHeretic_2D")
@@ -239,7 +252,7 @@ EldridgeUnitPanel = {
         end,
         --注册函数
         Register = function(self)
-            Controls.Voltage:RegisterCallback(Mouse.eLClick, function() self.Callback() end)
+            Controls.Voltage:RegisterCallback(Mouse.eLClick, function() self:Callback() end)
             Controls.Voltage:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
         end
     }
@@ -323,6 +336,7 @@ function Initialize()
     Events.UnitSelectionChanged.Add(EldridgeOnUnitSelectChanged)
     Events.UnitActivate.Add(EldridgeUnitActive)
     ------------------------------------------
+    Events.UnitAddedToMap.Add(EldridgeGridReset)
     Events.UnitOperationSegmentComplete.Add(EldridgeGridReset)
     Events.UnitCommandStarted.Add(EldridgeGridReset)
     Events.UnitDamageChanged.Add(EldridgeGridReset)
@@ -336,6 +350,7 @@ function Initialize()
     Events.UnitMovementPointsCleared.Add(EldridgeGridReset)
     Events.UnitMovementPointsRestored.Add(EldridgeGridReset)
     Events.UnitAbilityLost.Add(EldridgeGridReset)
+    Events.UnitRemovedFromMap.Add(EldridgeGridReset)
 
     Events.CityAddedToMap.Add(EldridgeGridReset)
     Events.CityRemovedFromMap.Add(EldridgeGridReset)

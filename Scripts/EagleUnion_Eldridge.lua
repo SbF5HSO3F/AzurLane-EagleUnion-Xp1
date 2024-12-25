@@ -32,35 +32,34 @@ function EldridgeMaxVoltage(playerID, param)
     local pPlayer = Players[playerID]
     local pUnit = UnitManager.GetUnit(playerID, param.UnitID)
     --if the unit and player exist, then proceed
-    if pPlayer and pUnit then
-        --get the diplomacy
-        local diplomacy = pPlayer:GetDiplomacy()
-        --get the unit x and y
-        local x, y = pUnit:GetX(), pUnit:GetY()
-        --get the adjacent plots
-        for _, plot in ipairs(Map.GetAdjacentPlots(x, y)) do
-            --play the effect?
-            local hasEffect = false
-            --get the plot units
-            for _, unit in pairs(Units.GetUnitsInPlot(plot)) do
-                --if the unit is enemy
-                if unit ~= nil and diplomacy:IsAtWarWith(unit:GetOwner()) then
-                    if not hasEffect then
-                        --play the effect
-                        ExposedMembers.Eldridge.PlayEffect(plot:GetX(), plot:GetY())
-                        --set the plot effect
-                        hasEffect = true
-                    end
-                    --damage the unit
-                    EagleCore.DamageUnit(unit, 20)
+    if not pPlayer or not pUnit then return end
+    --get the diplomacy
+    local diplomacy = pPlayer:GetDiplomacy()
+    --get the unit x and y
+    local x, y = pUnit:GetX(), pUnit:GetY()
+    --get the adjacent plots
+    for _, plot in ipairs(Map.GetAdjacentPlots(x, y)) do
+        --play the effect?
+        local hasEffect = false
+        --get the plot units
+        for _, unit in pairs(Units.GetUnitsInPlot(plot)) do
+            --if the unit is enemy
+            if unit ~= nil and diplomacy:IsAtWarWith(unit:GetOwner()) then
+                if not hasEffect then
+                    --play the effect
+                    ExposedMembers.Eldridge.PlayEffect(plot:GetX(), plot:GetY())
+                    --set the plot effect
+                    hasEffect = true
                 end
+                --damage the unit
+                EagleCore.DamageUnit(unit, param.Damage)
             end
         end
-        --set the unit property
-        pUnit:SetProperty(key, Game.GetCurrentGameTurn())
-        --report the activation
-        UnitManager.ReportActivation(pUnit, "ELDRIDGE_VOLTAGE")
     end
+    --set the unit property
+    pUnit:SetProperty(key, Game.GetCurrentGameTurn())
+    --report the activation
+    UnitManager.ReportActivation(pUnit, "ELDRIDGE_VOLTAGE")
 end
 
 --||======================initialize======================||--

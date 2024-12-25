@@ -61,7 +61,7 @@
 			<Text>电气功率</Text>
 		</Replace>
 		<Replace Tag="LOC_VOLTAGE_DESC" Language="zh_Hans_CN">
-			<Text>每回合限一次，对相邻敌方单位造成20点伤害。</Text>
+			<Text>每回合限一次，对相邻敌方单位造成{1_num}点伤害。</Text>
 		</Replace>
 		<Replace Tag="LOC_UNITCOMMAND_VOLTAGE_LIMIT" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]本回合已发动[ENDCOLOR]</Text>
