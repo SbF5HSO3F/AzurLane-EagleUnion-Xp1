@@ -3,7 +3,7 @@
 -- DateCreated: 2023/10/31 22:01:41
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnion_Core.lua')
+include('EagleUnionCore')
 
 --||====================base functions====================||--
 
@@ -132,6 +132,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('EagleUnion_Laffey_', true)
+include('EagleUnionLaffey_', true)
 
 Initialize()

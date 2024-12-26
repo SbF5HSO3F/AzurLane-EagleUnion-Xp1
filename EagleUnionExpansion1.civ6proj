@@ -86,13 +86,13 @@
           <Properties>
             <Context>InGame</Context>
           </Properties>
-          <File>UI/Additions/EagleUnion_FlasherUI.xml</File>
-          <File>UI/Additions/EagleUnion_EldridgeUnitUI.xml</File>
+          <File>UI/Additions/EagleUnionFlasherUI.xml</File>
+          <File>UI/Additions/EagleUnionEldridgeUnitUI.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Script">
-          <File>Scripts/EagleUnion_Laffey.lua</File>
-          <File>Scripts/EagleUnion_Flasher.lua</File>
-          <File>Scripts/EagleUnion_Eldridge.lua</File>
+          <File>Scripts/EagleUnionLaffey.lua</File>
+          <File>Scripts/EagleUnionFlasher.lua</File>
+          <File>Scripts/EagleUnionEldridge.lua</File>
         </AddGameplayScripts>
         <UpdateDatabase id="Laffey">
           <File priority="100">Data/Laffey/EagleUnion_Laffey_Leader.xml</File>
@@ -199,13 +199,13 @@
     <Content Include="EagleUnion1_Icons.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\EagleUnion_Eldridge.lua">
+    <Content Include="Scripts\EagleUnionEldridge.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\EagleUnion_Flasher.lua">
+    <Content Include="Scripts\EagleUnionFlasher.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="Scripts\EagleUnion_Laffey.lua">
+    <Content Include="Scripts\EagleUnionLaffey.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\en_US\EagleUnion_Flasher_EnText.xml">
@@ -229,16 +229,16 @@
     <Content Include="Text\zh_Hant_HK\EagleUnion_Laffey_HKText.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnion_EldridgeUnitUI.lua">
+    <Content Include="UI\Additions\EagleUnionEldridgeUnitUI.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnion_EldridgeUnitUI.xml">
+    <Content Include="UI\Additions\EagleUnionEldridgeUnitUI.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnion_FlasherUI.lua">
+    <Content Include="UI\Additions\EagleUnionFlasherUI.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnion_FlasherUI.xml">
+    <Content Include="UI\Additions\EagleUnionFlasherUI.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

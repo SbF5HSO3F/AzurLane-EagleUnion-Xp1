@@ -3,7 +3,7 @@
 -- DateCreated: 2024/12/24 22:55:24
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnion_Core.lua')
+include('EagleUnionCore')
 
 --||====================ExposedMembers====================||--
 
@@ -76,6 +76,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('EagleUnion_Eldridge_', true)
+include('EagleUnionEldridge_', true)
 
 Initialize()

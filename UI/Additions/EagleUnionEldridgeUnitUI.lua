@@ -383,6 +383,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('EagleUnion_EldridgeUnitUI_', true)
+include('EagleUnionEldridgeUnitUI_', true)
 
 Initialize()
