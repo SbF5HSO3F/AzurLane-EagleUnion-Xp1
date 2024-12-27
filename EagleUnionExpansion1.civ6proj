@@ -82,6 +82,9 @@
         <UpdateArt id="Art">
           <File>(Mod Art Dependency File)</File>
         </UpdateArt>
+        <ImportFiles id="Import">
+          <File>Import/EagleUnionPoint_Eldridge.lua</File>
+        </ImportFiles>
         <AddUserInterfaces id="UI">
           <Properties>
             <Context>InGame</Context>
@@ -148,6 +151,7 @@
     <Folder Include="Data\Laffey" />
     <Folder Include="Data\Flasher" />
     <Folder Include="Data\Eldridge" />
+    <Folder Include="Import" />
     <Folder Include="Scripts" />
     <Folder Include="UI" />
     <Folder Include="Text" />
@@ -197,6 +201,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="EagleUnion1_Icons.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Import\EagleUnionPoint_Eldridge.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\EagleUnionEldridge.lua">
