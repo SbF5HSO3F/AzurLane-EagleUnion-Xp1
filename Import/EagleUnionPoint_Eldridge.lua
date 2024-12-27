@@ -25,7 +25,7 @@ EaglePointManager.Points.Extra.Eldridge = {
                 point = point + pop * EldridgePerPop
             end
         end
-        return EagleCore.Round(point)
+        return EagleCore.Floor(point)
     end,
     GetTooltip = function(self, playerID)
         local yield = self.GetPointYield(playerID)
