@@ -8,6 +8,8 @@ include('EagleUnionCore')
 --||===================local variables====================||--
 
 local EldridgePerPop = 1
+local EldridgeReduction = 10
+local EldridgeAddLimit = 25
 
 --||====================base functions====================||--
 
@@ -30,5 +32,35 @@ EaglePointManager.Points.Extra.Eldridge = {
     GetTooltip = function(self, playerID)
         local yield = self.GetPointYield(playerID)
         return yield ~= 0 and Locale.Lookup(self.Tooltip, yield) or ''
+    end
+}
+
+--花费减免与上限
+EaglePointManager.Reduction.Sources.Eldridge = {
+    Tooltip = 'LOC_EAGLE_POINT_REDUCTION_ELDRIDGE_DE173',
+    GetModifier = function(self, playerID)
+        --获取点数减免
+        local modifier = 0
+        if EagleCore.CheckLeaderMatched(playerID, 'LEADER_ELDRIDGE_DE173') then
+            modifier = EldridgeReduction
+        end
+        --获取点数减免上限
+        local limit = self.Limit
+        if limit ~= nil then modifier = math.min(modifier, limit) end
+        --返回最终的减免
+        return EagleCore.Round(modifier)
+    end,
+    GetTooltip = function(self, playerID)
+        local modifier = -self:GetModifier(playerID)
+        return modifier ~= 0 and Locale.Lookup(self.Tooltip, modifier) or ''
+    end
+}
+
+EaglePointManager.Reduction.Limit.Factor.Eldridge = {
+    GetLimitChange = function(playerID)
+        if EagleCore.CheckLeaderMatched(playerID, 'LEADER_ELDRIDGE_DE173') then
+            return EldridgeAddLimit
+        end
+        return 0
     end
 }

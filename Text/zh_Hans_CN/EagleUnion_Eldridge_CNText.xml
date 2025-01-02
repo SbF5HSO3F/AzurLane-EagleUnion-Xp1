@@ -42,7 +42,7 @@
 			<Text>费城实验</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_PHILADELPHIA_EXPERIMENT_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>所有单位获得“彩虹计划”和“电气功率”单位命令。城市每点 [ICON_CITIZEN] 人口提供+1研究点数。</Text>
+			<Text>所有单位获得“彩虹计划”和“电气功率”单位命令。城市每点 [ICON_CITIZEN] 人口提供+1 [ICON_ResearchPoint] 研究点数。[ICON_ResearchPoint] 研究点数花费-10%且减免上限+25%。</Text>
 		</Replace>
 		<!--Lua浮动文字显示-->
 		<Replace Tag="LOC_RAINBOW_TITLE" Language="zh_Hans_CN">
@@ -70,7 +70,10 @@
 			<Text>[COLOR_RED]必须相邻敌方单位[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_ELDRIDGE_DE173" Language="zh_Hans_CN">
-			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自费城实验</Text>
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 来自全体人民</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_REDUCTION_ELDRIDGE_DE173" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% 来自费城实验</Text>
 		</Replace>
 		<!--特殊加成-->
 
