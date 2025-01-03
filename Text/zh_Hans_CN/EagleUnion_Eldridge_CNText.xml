@@ -42,7 +42,7 @@
 			<Text>费城实验</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_PHILADELPHIA_EXPERIMENT_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>所有单位获得“彩虹计划”和“电气功率”单位命令。城市每点 [ICON_CITIZEN] 人口提供+1 [ICON_ResearchPoint] 研究点数。[ICON_ResearchPoint] 研究点数花费-10%且减免上限+25%。</Text>
+			<Text>所有单位获得“彩虹计划”和“电气功率”单位命令。城市每点 [ICON_CITIZEN] 人口提供+2 [ICON_ResearchPoint] 研究点数。[ICON_ResearchPoint] 研究点数花费-15%且减免上限+25%。</Text>
 		</Replace>
 		<!--Lua浮动文字显示-->
 		<Replace Tag="LOC_RAINBOW_TITLE" Language="zh_Hans_CN">

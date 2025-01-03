@@ -10,12 +10,16 @@
 	<m_PackageName text="leaderfallbacks"/>
 	<m_Entries>
 		<Element>
-			<m_EntryID text="IMG_EAGLE_UNION_LEADER_LAFFEY_DD459_DIPLOMACY_FOREGROUND "/>
-			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_LAFFEY_DD459_DIPLOMACY_FOREGROUND "/>
-		</Element>
-		<Element>
 			<m_EntryID text="FLASHER_SS249_DEFAULT"/>
 			<m_ObjectName text="FLASHER_SS249_DEFAULT"/>
+		</Element>
+		<Element>
+			<m_EntryID text="ELDRIDGE_DE173_DEFAULT"/>
+			<m_ObjectName text="ELDRIDGE_DE173_DEFAULT"/>
+		</Element>
+		<Element>
+			<m_EntryID text="LAFFEY_DD459_DEFAULT "/>
+			<m_ObjectName text="LAFFEY_DD459_DEFAULT "/>
 		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>

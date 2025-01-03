@@ -7,8 +7,8 @@ include('EagleUnionCore')
 
 --||===================local variables====================||--
 
-local EldridgePerPop = 1
-local EldridgeReduction = 10
+local EldridgePerPop = 2
+local EldridgeReduction = 15
 local EldridgeAddLimit = 25
 
 --||====================base functions====================||--
@@ -64,3 +64,7 @@ EaglePointManager.Reduction.Limit.Factor.Eldridge = {
         return 0
     end
 }
+
+--||=======================include========================||--
+
+include('EagleUnionPoint_Eldridge_', true)
