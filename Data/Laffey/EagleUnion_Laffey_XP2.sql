@@ -2,11 +2,6 @@
 -- Author: HSbF6HSO3F
 -- DateCreated: 2023/11/21 17:07:56
 --------------------------------------------------------------
---Update Units
-UPDATE Units
-SET StrategicResource='RESOURCE_OIL'
-WHERE UnitType='UNIT_BENSON_CLASS';
-
 --Units_XP2
 INSERT INTO Units_XP2
 		(UnitType,				ResourceCost,	ResourceMaintenanceType,ResourceMaintenanceAmount)

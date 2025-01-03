@@ -170,6 +170,9 @@
     <Content Include="Data\Flasher\EagleUnion_Flasher_Leader.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Data\Flasher\EagleUnion_Flasher_Moment.sql">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Data\Flasher\EagleUnion_Flasher_UnitAbilities.xml">
       <SubType>Content</SubType>
     </Content>
@@ -180,6 +183,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Laffey\EagleUnion_Laffey_Agendas.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Laffey\EagleUnion_Laffey_Moment.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Laffey\EagleUnion_Laffey_UnitAbilities.xml">

@@ -32,6 +32,7 @@
 			 Maintenance="6"
 			 BaseMoves="4"
 			 BaseSightRange="3"
+			 StrategicResource="RESOURCE_OIL"
 			 ZoneOfControl="false"
 			 Domain="DOMAIN_SEA"
 			 Combat="70"
@@ -47,9 +48,6 @@
 			 TraitType="TRAIT_LEADER_UNIT_GATO_CLASS"
 			 PrereqTech="TECH_ELECTRICITY"/>
 	</Units>
-	<MomentIllustrations>
-		<Row MomentIllustrationType="MOMENT_ILLUSTRATION_UNIQUE_UNIT" MomentDataType="MOMENT_DATA_UNIT" GameDataType="UNIT_GATO_CLASS" Texture="Moment_Gato_class.dds"/>
-	</MomentIllustrations>
 	<UnitUpgrades>
 		<Row Unit="UNIT_GATO_CLASS" UpgradeUnit="UNIT_NUCLEAR_SUBMARINE"/>
 	</UnitUpgrades>
