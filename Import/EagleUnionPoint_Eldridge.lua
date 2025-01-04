@@ -7,6 +7,7 @@ include('EagleUnionCore')
 
 --||===================local variables====================||--
 
+local EldridgeScience = 0.2
 local EldridgePerPop = 2
 local EldridgeReduction = 15
 local EldridgeAddLimit = 25
@@ -14,8 +15,27 @@ local EldridgeAddLimit = 25
 --||====================base functions====================||--
 
 --添加新额外点数
-EaglePointManager.Points.Extra.Eldridge = {
-    Tooltip = 'LOC_EAGLE_POINT_FROM_ELDRIDGE_DE173',
+EaglePointManager.Points.Extra.EldridgeScience = {
+    Tooltip = 'LOC_EAGLE_POINT_FROM_SCIENCE_ELDRIDGE_DE173',
+    GetPointYield = function(playerID)
+        local point = 0
+        --是否是埃尔德里奇
+        if EagleCore.CheckLeaderMatched(playerID, 'LEADER_ELDRIDGE_DE173') then
+            --获取玩家科技
+            local techs = Players[playerID]:GetTechs()
+            local researchCost = techs:GetScienceYield()
+            point = researchCost * EldridgeScience
+        end
+        return EagleCore.Floor(point)
+    end,
+    GetTooltip = function(self, playerID)
+        local yield = self.GetPointYield(playerID)
+        return yield ~= 0 and Locale.Lookup(self.Tooltip, yield) or ''
+    end
+}
+
+EaglePointManager.Points.Extra.EldridgeCitizen = {
+    Tooltip = 'LOC_EAGLE_POINT_FROM_CITIZEN_ELDRIDGE_DE173',
     GetPointYield = function(playerID)
         local point = 0
         --是否是埃尔德里奇
