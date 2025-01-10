@@ -27,6 +27,7 @@
 	<AiFavoredItems>
 		<!--通用-->
 		<Row ListType="SolomonsNightDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="SolomonsNightDistricts"				Item="DISTRICT_IVY_LEAGUE"					Favored="true"/>
 		<Row ListType="SolomonsNightDistricts"				Item="DISTRICT_HARBOR"						Favored="true"/>
 		<Row ListType="SolomonsNightTechs"					Item="TECH_WRITING"							Favored="true"/>
 		<Row ListType="SolomonsNightTechs"					Item="TECH_CELESTIAL_NAVIGATION"			Favored="true"/>

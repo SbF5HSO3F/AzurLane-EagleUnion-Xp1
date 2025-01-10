@@ -23,6 +23,7 @@
 	<AiFavoredItems>
 		<!--通用-->
 		<Row ListType="FishAreFriendsDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="FishAreFriendsDistricts"				Item="DISTRICT_IVY_LEAGUE"					Favored="true"/>
 		<Row ListType="FishAreFriendsTechs"					Item="TECH_WRITING"							Favored="true"/>
 		<!--小鱼们的伙伴-->
 		<Row ListType="FishAreFriendsPreferDiplomatic"		Item="DIPLOACTION_DECLARE_FRIENDSHIP"		Favored="true"/>

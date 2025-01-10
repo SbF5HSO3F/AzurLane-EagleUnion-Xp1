@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Eldridge_Agendas -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2025/1/10 17:18:02 -->
+<GameData>
+	<Types>
+		<Row Type="TRAIT_AGENDA_OPERATION_RAINBOW" Kind="KIND_TRAIT"/>
+	</Types>
+	<AiListTypes>
+		<!--通用-->
+		<Row ListType="OperationRainbowDistricts"/>
+		<Row ListType="OperationRainbowTechs"/>
+		<!--彩虹计划-->
+		<Row ListType="OperationRainbowPreferDiplomatic"/>
+	</AiListTypes>
+	<AiLists>
+		<!--通用-->
+		<Row ListType="OperationRainbowDistricts"				AgendaType="TRAIT_AGENDA_OPERATION_RAINBOW"	System="Districts"/>
+		<Row ListType="OperationRainbowTechs"					LeaderType="LEADER_FLASHER_SS249"			System="Technologies"/>
+		<!--彩虹计划-->
+
+	</AiLists>
+	<AiFavoredItems>
+		<!--通用-->
+		<Row ListType="OperationRainbowDistricts"				Item="DISTRICT_SANTA_CLARA_VALLEY"			Favored="true"/>
+		<Row ListType="OperationRainbowDistricts"				Item="DISTRICT_IVY_LEAGUE"			        Favored="true"/>
+		<Row ListType="OperationRainbowTechs"					Item="TECH_WRITING"							Favored="true"/>
+		<!--彩虹计划-->
+        
+	</AiFavoredItems>
+	<Traits>
+		<!--彩虹计划-->
+		<Row TraitType="TRAIT_AGENDA_OPERATION_RAINBOW"/>
+	</Traits>
+	<AgendaTraits>
+		<!--彩虹计划-->
+		<Row AgendaType="AGENDA_OPERATION_RAINBOW" TraitType="TRAIT_AGENDA_OPERATION_RAINBOW"/>
+	</AgendaTraits>
+</GameData>

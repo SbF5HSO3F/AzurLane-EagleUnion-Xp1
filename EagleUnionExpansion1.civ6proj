@@ -63,6 +63,7 @@
         </UpdateText>
         <UpdateText id="Eldridge">
           <File priority="90">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
+          <File priority="80">Text/zh_Hant_HK/EagleUnion_Eldridge_HKText.xml</File>
         </UpdateText>
       </FrontEndActions>
     ]]></FrontEndActionData>
@@ -114,31 +115,33 @@
           <File priority="90">Text/zh_Hans_CN/EagleUnion_Laffey_CNText.xml</File>
           <File priority="80">Text/zh_Hant_HK/EagleUnion_Laffey_HKText.xml</File>
         </UpdateText>
-      <UpdateDatabase id="Flasher">
-        <File priority="100">Data/Flasher/EagleUnion_Flasher_Leader.xml</File>
-        <File priority="90">Data/Flasher/EagleUnion_Flasher_UnitAbilities.xml</File>
-        <File priority="80">Data/Flasher/EagleUnion_Flasher_Units.xml</File>
-        <File priority="70">Data/Flasher/EagleUnion_Flasher_Agendas.xml</File>
-      </UpdateDatabase>
-      <UpdateDatabase id="Flasher_XP2">
-        <Properties>
-          <RuleSet>RULESET_EXPANSION_2</RuleSet>
-        </Properties>
-        <File>Data/Flasher/EagleUnion_Flasher_XP2.sql</File>
-      </UpdateDatabase>
-      <UpdateText id="Flasher_Text">
-        <File priority="100">Text/en_US/EagleUnion_Flasher_EnText.xml</File>
-        <File priority="90">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File>
-        <File priority="80">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File>
-      </UpdateText>
-      <UpdateDatabase id="Eldridge">
-        <File priority="100">Data/Eldridge/EagleUnion_Eldridge_Leader.xml</File>
-      </UpdateDatabase>
-      <UpdateText id="Eldridge_Text">
-        <File priority="90">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
-      </UpdateText>
-    </InGameActions>
-  ]]></InGameActionData>
+        <UpdateDatabase id="Flasher">
+          <File priority="100">Data/Flasher/EagleUnion_Flasher_Leader.xml</File>
+          <File priority="90">Data/Flasher/EagleUnion_Flasher_UnitAbilities.xml</File>
+          <File priority="80">Data/Flasher/EagleUnion_Flasher_Units.xml</File>
+          <File priority="70">Data/Flasher/EagleUnion_Flasher_Agendas.xml</File>
+        </UpdateDatabase>
+        <UpdateDatabase id="Flasher_XP2">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_2</RuleSet>
+          </Properties>
+          <File>Data/Flasher/EagleUnion_Flasher_XP2.sql</File>
+        </UpdateDatabase>
+        <UpdateText id="Flasher_Text">
+          <File priority="100">Text/en_US/EagleUnion_Flasher_EnText.xml</File>
+          <File priority="90">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File>
+          <File priority="80">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File>
+        </UpdateText>
+        <UpdateDatabase id="Eldridge">
+          <File priority="100">Data/Eldridge/EagleUnion_Eldridge_Leader.xml</File>
+          <File priority="90">Data/Eldridge/EagleUnion_Eldridge_Agendas.xml</File>
+        </UpdateDatabase>
+        <UpdateText id="Eldridge_Text">
+          <File priority="90">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
+          <File priority="80">Text/zh_Hant_HK/EagleUnion_Eldridge_HKText.xml</File>
+        </UpdateText>
+      </InGameActions>
+    ]]></InGameActionData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -161,6 +164,9 @@
     <Folder Include="UI\Additions" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\Eldridge\EagleUnion_Eldridge_Agendas.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Data\Eldridge\EagleUnion_Eldridge_Leader.xml">
       <SubType>Content</SubType>
     </Content>
@@ -221,6 +227,9 @@
     <Content Include="Scripts\EagleUnionLaffey.lua">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Text\en_US\EagleUnion_Eldridge_EnText.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Text\en_US\EagleUnion_Flasher_EnText.xml">
       <SubType>Content</SubType>
     </Content>
@@ -234,6 +243,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\zh_Hans_CN\EagleUnion_Laffey_CNText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\zh_Hant_HK\EagleUnion_Eldridge_HKText.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\zh_Hant_HK\EagleUnion_Flasher_HKText.xml">

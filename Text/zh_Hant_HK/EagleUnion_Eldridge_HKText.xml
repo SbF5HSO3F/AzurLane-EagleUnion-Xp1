@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Eldridge_HKText -->
+<!-- Author: HSbF6HSO3F -->
+<!-- DateCreated: 2025/1/9 14:18:03 -->
+<GameData>
+	<LocalizedText>
+		<!--領袖介紹-->
+		<Replace Tag="LOC_LEADER_ELDRIDGE_DE173_NAME" Language="zh_Hant_HK">
+			<Text>埃爾德裏奇</Text>
+		</Replace>
+		<!--加載-->
+		<Replace Tag="LOC_LOADING_INFO_LEADER_ELDRIDGE_DE173" Language="zh_Hant_HK">
+			<Text></Text>
+		</Replace>
+		<!--百科-->
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_QUOTE" Language="zh_Hant_HK">
+			<Text>會放電喔。但是不會瞬間移動……</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
+			<Text></Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
+			<Text></Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
+			<Text>埃爾德裏奇號（USS Eldridge ，DE-173）是美國坎農級護航驅逐艦，艦名是為了紀念在所羅門群島行動中陣亡的美國海軍少校約翰·埃爾德裏奇（1903-1942）。埃爾德裏奇號於1943年2月22日開工，1943年7月25日下水，1943年8月27日正式服役。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
+			<Text>1944年1月4日至1945年5月9日期間，她在地中海執行任務，九次航行中成功護航至卡薩布蘭卡，比澤特和奧蘭。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
+			<Text>1945年5月28日，她離開紐約市，在太平洋地區執行護航任務。8月7日抵達沖繩，進行當地護送和巡邏。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
+			<Text>1946年6月17日，從美國海軍退役。1951年1月15日，希臘海軍通過「共同防禦援助計劃」獲得埃爾德裏奇號，並改名為「利昂」號（HS Leon，D54），隨後她主要負責東愛琴海的巡邏工作和海軍軍校的訓練。1992年11月15日，埃爾德裏奇從希臘海軍退役，隨後於1999年11月11日被出售拆解，結束了自己充滿傳說的一生。</Text>
+		</Replace>
+		<!--領袖議程-->
+
+		<!--領袖能力-->
+		<!--Operation Rainbow-->
+		<Replace Tag="LOC_TRAIT_LEADER_PHILADELPHIA_EXPERIMENT_NAME" Language="zh_Hant_HK">
+			<Text>費城實驗</Text>
+		</Replace>
+		<Replace Tag="LOC_TRAIT_LEADER_PHILADELPHIA_EXPERIMENT_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>每回合獲得等同於你每回合獲得的 [ICON_Science] 科技值20%的 [ICON_ResearchPoint] 研究點數。所有單位獲得「彩虹計劃」和「電氣功率」單位命令。城市每點 [ICON_CITIZEN] 人口提供+2 [ICON_ResearchPoint] 研究點數。[ICON_ResearchPoint] 研究點數花費-15%且減免上限+25%。</Text>
+		</Replace>
+		<!--Lua浮動文字顯示-->
+		<Replace Tag="LOC_RAINBOW_TITLE" Language="zh_Hant_HK">
+			<Text>彩虹計劃</Text>
+		</Replace>
+		<Replace Tag="LOC_RAINBOW_DESC" Language="zh_Hant_HK">
+			<Text>轉移至任意一座城市。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNITCOMMAND_RAINBOW_NOMOVEMENT" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]該單位沒有剩余 [ICON_MOVEMENT] 移動力[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_UNITCOMMAND_RAINBOW_NOPLOT" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]該單位沒有可供轉移的城市[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_VOLTAGE_TITLE" Language="zh_Hant_HK">
+			<Text>電氣功率</Text>
+		</Replace>
+		<Replace Tag="LOC_VOLTAGE_DESC" Language="zh_Hant_HK">
+			<Text>每回合限一次，對相鄰敵方單位造成{1_num}點傷害。</Text>
+		</Replace>
+		<Replace Tag="LOC_UNITCOMMAND_VOLTAGE_LIMIT" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]本回合已發動[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_UNITCOMMAND_VOLTAGE_NOTARGET" Language="zh_Hant_HK">
+			<Text>[COLOR_RED]必須相鄰敵方單位[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_SCIENCE_ELDRIDGE_DE173" Language="zh_Hant_HK">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 來自每回合科技值</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_FROM_CITIZEN_ELDRIDGE_DE173" Language="zh_Hant_HK">
+			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 來自全體人民</Text>
+		</Replace>
+		<Replace Tag="LOC_EAGLE_POINT_REDUCTION_ELDRIDGE_DE173" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]{1_percent : number +#.#;-#.#}% 來自費城實驗</Text>
+		</Replace>
+		<!--特殊加成-->
+
+		<!--領袖項目-->
+
+		<!--領袖單位-->
+
+		<!--特殊晉升-->
+
+		<!--特殊能力-->
+
+		<!--外交對話-->
+		<![CDATA[<!--同意宣布友誼-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲，願意和你做朋友……要睡一會兒嗎？</Text>
+		</Replace>
+		<!--拒絕宣布友誼-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>呣……不要搖我……</Text>
+		</Replace>
+		<!--請求宣布友誼-->
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲，想跟你做朋友呢……你，願意嗎？</Text>
+		</Replace>
+		<!--宣布友誼被接受-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>嗯？這是拉菲心情好的表現喔……</Text>
+		</Replace>
+		<!--宣布友誼被拒絕-->
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲很可怕麼？</Text>
+		</Replace>
+		<!--被宣戰-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>自我限製解除……再次化身鬼神也無所謂的……</Text>
+		</Replace>
+		<!--宣戰-->
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲決定對你宣戰。嗯……拉菲決定對你宣戰……嗯……</Text>
+		</Replace>
+		<!--接受代表團-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>代表團……拉菲收到了哦……</Text>
+		</Replace>
+		<!--拒絕代表團-->
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲，要睡一會兒……</Text>
+		</Replace>
+		<!--派出代表團-->
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>嗯……願意接收拉菲的代表團麼？</Text>
+		</Replace>
+		<!--被譴責-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲，很，可，怕，麼？</Text>
+		</Replace>
+		<!--譴責-->
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>逞英雄可沒意思……（譴責你）</Text>
+		</Replace>
+		<!--初次見面-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>我是備受期待的本森級驅逐艦拉菲，在三次所羅門海戰有著極為活躍的表現……你說戰艦？那是什麼？</Text>
+		</Replace>
+		<!--初次見面，邀請參觀附近城市-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>願意到訪拉菲附近的城市麼？</Text>
+		</Replace>
+		<!--初次見面，感謝玩家提供最近城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>嗚……謝謝……</Text>
+		</Replace>
+		<!--初次見面，請求交換城市位置-->
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲想看看你的城市呢……拉菲的城市，也會給你看的……</Text>
+		</Replace>
+		<!--歡迎語？-->
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>要一起睡會兒麼？</Text>
+		</Replace>
+		<!--示好-->
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>嗯，拉菲喜歡你……</Text>
+		</Replace>
+		<!--敵視-->
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>Zzzzzzzzz……</Text>
+		</Replace>
+		<!--請求結盟-->
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲，想跟你結盟呢……</Text>
+		</Replace>
+		<!--同意和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>嗯……就這樣吧……</Text>
+		</Replace>
+		<!--拒絕和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>這點程度和我當時可差遠了……</Text>
+		</Replace>
+		<!--請求和平-->
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲想要和平……呼……拉菲，要睡一會兒……</Text>
+		</Replace>
+		<!--接受開放邊界請求-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>開放邊界？嗯……去吧……</Text>
+		</Replace>
+		<!--拒絕開放邊界請求-->
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲對開放邊界不感興趣……</Text>
+		</Replace>
+		<!--請求開放邊界-->
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲，想要通過你的邊境呢……</Text>
+		</Replace>
+		<!--要求移開邊境部隊-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>浩浩蕩蕩的艦隊……拉菲，能看見……</Text>
+		</Replace>
+		<!--拒絕移開邊境部隊-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲，需要這只軍隊呆在這兒……</Text>
+		</Replace>
+		<!--同意移開邊境部隊-->
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲會移走軍隊的……嗯……</Text>
+		</Replace>
+		<!--經受不住時間考驗-->
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲…還能戰鬥……</Text>
+		</Replace>
+		<!--同意交易-->
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>嗯……</Text>
+		</Replace>
+		<!--拒絕交易-->
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_ELDRIDGE_DE173_ANY" Language="zh_Hant_HK">
+			<Text>拉菲……不接受……</Text>
+		</Replace>]]>
+	</LocalizedText>
+</GameData>
