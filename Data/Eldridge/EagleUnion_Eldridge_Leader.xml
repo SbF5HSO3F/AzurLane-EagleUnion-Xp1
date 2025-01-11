@@ -5,7 +5,7 @@
 <GameData>
     <Types>
 		<!--埃尔德里奇-->
-		<Row Type="LEADER_ELDRIDGE_DE173"			Kind="KIND_LEADER"/>
+		<Row Type="LEADER_ELDRIDGE_DE173"					Kind="KIND_LEADER"/>
         <Row Type="TRAIT_LEADER_PHILADELPHIA_EXPERIMENT"	Kind="KIND_TRAIT"/>
 	</Types>
 	<Leaders>

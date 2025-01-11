@@ -11,14 +11,14 @@
 		<Row ListType="OperationRainbowDistricts"/>
 		<Row ListType="OperationRainbowTechs"/>
 		<!--彩虹计划-->
-		<Row ListType="OperationRainbowPreferDiplomatic"/>
+		<Row ListType="OperationRainbowPreferYield"/>
 	</AiListTypes>
 	<AiLists>
 		<!--通用-->
 		<Row ListType="OperationRainbowDistricts"				AgendaType="TRAIT_AGENDA_OPERATION_RAINBOW"	System="Districts"/>
-		<Row ListType="OperationRainbowTechs"					LeaderType="LEADER_FLASHER_SS249"			System="Technologies"/>
+		<Row ListType="OperationRainbowTechs"					LeaderType="LEADER_ELDRIDGE_DE173"			System="Technologies"/>
 		<!--彩虹计划-->
-
+        <Row ListType="OperationRainbowPreferYield"             AgendaType="TRAIT_AGENDA_OPERATION_RAINBOW" System="Yields"/>
 	</AiLists>
 	<AiFavoredItems>
 		<!--通用-->
@@ -26,7 +26,7 @@
 		<Row ListType="OperationRainbowDistricts"				Item="DISTRICT_IVY_LEAGUE"			        Favored="true"/>
 		<Row ListType="OperationRainbowTechs"					Item="TECH_WRITING"							Favored="true"/>
 		<!--彩虹计划-->
-        
+        <Row ListType="OperationRainbowPreferYield"             Item="YIELD_SCIENCE"                                        Value="20"/>
 	</AiFavoredItems>
 	<Traits>
 		<!--彩虹计划-->
@@ -36,4 +36,116 @@
 		<!--彩虹计划-->
 		<Row AgendaType="AGENDA_OPERATION_RAINBOW" TraitType="TRAIT_AGENDA_OPERATION_RAINBOW"/>
 	</AgendaTraits>
+    <TraitModifiers>
+		<!--高科技值-->
+		<Row>
+			<TraitType>TRAIT_AGENDA_OPERATION_RAINBOW</TraitType>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_HAS_HIGH_SCIENCE</ModifierId>
+		</Row>
+        <!--是邻居-->
+        <Row>
+			<TraitType>TRAIT_AGENDA_OPERATION_RAINBOW</TraitType>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_ARE_NEIGHBORS</ModifierId>
+		</Row>
+        <!--不是邻居且低科技值-->
+        <Row>
+			<TraitType>TRAIT_AGENDA_OPERATION_RAINBOW</TraitType>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_WARNING</ModifierId>
+		</Row>
+	</TraitModifiers>
+	<Modifiers>
+		<!--高科技值-->
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_HAS_HIGH_SCIENCE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+            <SubjectRequirementSetId>PLAYER_HAS_HIGH_SCIENCE</SubjectRequirementSetId>
+		</Row>
+        <!--是邻居-->
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_ARE_NEIGHBORS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>PLAYERS_ARE_NEIGHBORS</SubjectRequirementSetId>
+		</Row>
+        <!--不是邻居且低科技值-->
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_WARNING</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_DIPLOMACY_SIMPLE_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>ELDRIDGE_WARNING_REQUIREMENT</SubjectRequirementSetId>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--高科技值-->
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_HAS_HIGH_SCIENCE</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_HAS_HIGH_SCIENCE</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_OPERATION_RAINBOW_HAS_HIGH_SCIENCE</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_HAS_HIGH_SCIENCE</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_OPERATION_RAINBOW_HAS_HIGH_SCIENCE_REASON</Value>
+		</Row>
+        <!--是邻居-->
+        <Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_ARE_NEIGHBORS</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_ARE_NEIGHBORS</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_OPERATION_RAINBOW_ARE_NEIGHBORS</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_ARE_NEIGHBORS</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_KUDO_OPERATION_RAINBOW_ARE_NEIGHBORS_REASON</Value>
+		</Row>
+        <!--不是邻居且低科技值-->
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_WARNING</ModifierId>
+			<Name>InitialValue</Name>
+			<Value>-10</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_WARNING</ModifierId>
+			<Name>SimpleModifierDescription</Name>
+			<Value>LOC_DIPLO_OPERATION_RAINBOW_WARNING</Value>
+		</Row>
+		<Row>
+			<ModifierId>AGENDA_OPERATION_RAINBOW_WARNING</ModifierId>
+			<Name>StatementKey</Name>
+			<Value>LOC_DIPLO_WARNING_OPERATION_RAINBOW_ANY_REASON</Value>
+		</Row>
+	</ModifierArguments>
+    <!--条件集-->
+	<RequirementSets>
+		<Row>
+			<RequirementSetId>ELDRIDGE_WARNING_REQUIREMENT</RequirementSetId>
+			<RequirementSetType>REQUIREMENTSET_TEST_ALL</RequirementSetType>
+		</Row>
+	</RequirementSets>
+	<RequirementSetRequirements>
+		<Row>
+			<RequirementSetId>ELDRIDGE_WARNING_REQUIREMENT</RequirementSetId>
+			<RequirementId>REQUIRES_MAJOR_CIV_OPPONENT</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>ELDRIDGE_WARNING_REQUIREMENT</RequirementSetId>
+			<RequirementId>REQUIRES_MET_30_TURNS_AGO</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>ELDRIDGE_WARNING_REQUIREMENT</RequirementSetId>
+			<RequirementId>REQUIRES_HAS_LOW_SCIENCE</RequirementId>
+		</Row>
+		<Row>
+			<RequirementSetId>ELDRIDGE_WARNING_REQUIREMENT</RequirementSetId>
+			<RequirementId>REQUIRES_NOT_NEIGHBOR_CIVS</RequirementId>
+		</Row>
+	</RequirementSetRequirements>
 </GameData>

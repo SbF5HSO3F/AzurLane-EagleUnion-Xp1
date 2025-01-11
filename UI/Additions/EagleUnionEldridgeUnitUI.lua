@@ -177,21 +177,40 @@ EldridgeUnitPanel = {
             Sources = {
                 --来自战斗力
                 Combat = {
+                    Tooltip = 'LOC_VOLTAGE_BUFF_FROM_COMBAT',
                     GetModifier = function(playerID, unitID)
                         --get the unit
                         local pUnit = UnitManager.GetUnit(playerID, unitID)
                         --get the combat
                         return pUnit:GetCombat()
+                    end,
+                    GetTooltip = function(self, playerID, unitID)
+                        local modifier = self.GetModifier(playerID, unitID)
+                        return modifier ~= 0 and Locale.Lookup(self.Tooltip, modifier) or ''
                     end
                 }
             },
-            GetVoltDamage = function(self, pUnit)
+            GetModifier = function(self, playerID, unitID)
                 local modifier = 0
                 --get the owner and player
-                local ownerID, unitID = pUnit:GetOwner(), pUnit:GetID()
                 for _, source in pairs(self.Sources) do
-                    modifier = modifier + source.GetModifier(ownerID, unitID)
+                    modifier = modifier + source.GetModifier(playerID, unitID)
                 end
+                return modifier
+            end,
+            GetTooltip = function(self, playerID, unitID)
+                local tooltip, tooltips = '', ''
+                for _, source in pairs(self.Sources) do
+                    tooltips = tooltips .. source:GetTooltip(playerID, unitID)
+                end
+                if tooltips ~= '' then
+                    local modifier = self:GetModifier(playerID, unitID)
+                    tooltip = Locale.Lookup('LOC_VOLTAGE_BUFF', modifier) .. tooltips
+                end
+                return tooltip
+            end,
+            GetVoltDamage = function(self, pUnit)
+                local modifier = self:GetModifier(pUnit:GetOwner(), pUnit:GetID())
                 return math.ceil(modifier * voltageDamage / 100 + voltageDamage)
             end
         },
@@ -244,6 +263,11 @@ EldridgeUnitPanel = {
             --the tooltip
             local tooltip = Locale.Lookup('LOC_VOLTAGE_TITLE') .. '[NEWLINE][NEWLINE]'
                 .. Locale.Lookup('LOC_VOLTAGE_DESC', damage)
+            --get the damage tooltip
+            local damageTooltip = self.VoltManager:GetTooltip(pUnit:GetOwner(), pUnit:GetID())
+            if damageTooltip ~= '' then
+                tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. damageTooltip
+            end
             if disable then
                 tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
             end

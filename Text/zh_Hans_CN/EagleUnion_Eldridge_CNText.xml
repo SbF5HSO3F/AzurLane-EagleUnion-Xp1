@@ -10,17 +10,17 @@
 		</Replace>
 		<!--加载-->
 		<Replace Tag="LOC_LOADING_INFO_LEADER_ELDRIDGE_DE173" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>神秘的“彩虹计划”故事中的主角，埃尔德里奇，您已经准备好向世人展示你的传奇色彩。您的军队将在各个城市间神秘穿梭，并对您的敌人施加以雷霆的怒火。您将利用您的人民的聪明才智，把白鹰联邦建设成一个伟大的国家。待白鹰联邦繁荣昌盛之时，您将成为诸多传说中最为传奇的主角。</Text>
 		</Replace>
 		<!--百科-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_QUOTE" Language="zh_Hans_CN">
 			<Text>会放电喔。但是不会瞬间移动……</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>埃尔德里奇将利用她在研究点数方面的优势而取得胜利。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>作为神秘的“彩虹计划”的主角，埃尔德里奇在 [ICON_ResearchPoint] 研究点数方面有着独得的优势：她可以从 [ICON_Science] 科技值中轻松地获取 [ICON_ResearchPoint] 科研点数，并且拥有更高的花费减免上限。在游戏早期，埃尔德里奇可以利用从城市里的 [ICON_CITIZEN] 人民获取的 [ICON_ResearchPoint] 科研点数和自带的花费减免，尽快地完成关键科技和市政的研究。而在游戏后期，埃尔德里奇可以通过从 [ICON_Science] 科技值获得的大量 [ICON_ResearchPoint] 研究点数和低廉的 [ICON_ResearchPoint] 研究点数花费，快速确立白鹰联邦科技胜利的地位。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
 			<Text>埃尔德里奇号（USS Eldridge ，DE-173）是美国坎农级护航驱逐舰，舰名是为了纪念在所罗门群岛行动中阵亡的美国海军少校约翰·埃尔德里奇（1903-1942）。埃尔德里奇号于1943年2月22日开工，1943年7月25日下水，1943年8月27日正式服役。</Text>
@@ -39,7 +39,25 @@
 			<Text>彩虹计划</Text>
 		</Replace>
 		<Replace Tag="LOC_AGENDA_OPERATION_RAINBOW_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>喜欢与其相邻的文明。</Text>
+			<Text>喜欢与她相邻或拥有较高 [ICON_Science] 科技值的文明，讨厌 [ICON_Science] 科技值低下且远离她的文明。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_OPERATION_RAINBOW_HAS_HIGH_SCIENCE" Language="zh_Hans_CN">
+			<Text>埃尔德里奇喜欢拥有高科技值的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_OPERATION_RAINBOW_HAS_HIGH_SCIENCE_REASON" Language="zh_Hans_CN">
+			<Text>您拥有高科技值</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_OPERATION_RAINBOW_ARE_NEIGHBORS" Language="zh_Hans_CN">
+			<Text>埃尔德里奇喜欢与其相邻的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_OPERATION_RAINBOW_ARE_NEIGHBORS_REASON" Language="zh_Hans_CN">
+			<Text>您是她的邻居</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_OPERATION_RAINBOW_WARNING" Language="zh_Hans_CN">
+			<Text>埃尔德里奇讨厌不是邻居且科技值低下的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_OPERATION_RAINBOW_ANY_REASON" Language="zh_Hans_CN">
+			<Text>您科技值低下，且并非她的邻居</Text>
 		</Replace>
 		<!--领袖能力-->
 		<!--Operation Rainbow-->
@@ -67,6 +85,12 @@
 		</Replace>
 		<Replace Tag="LOC_VOLTAGE_DESC" Language="zh_Hans_CN">
 			<Text>每回合限一次，对相邻敌方单位造成{1_num}点伤害。</Text>
+		</Replace>
+		<Replace Tag="LOC_VOLTAGE_BUFF" Language="zh_Hans_CN">
+			<Text>造成的伤害{1_point : number +#.#;-#.#}%</Text>
+		</Replace>
+		<Replace Tag="LOC_VOLTAGE_BUFF_FROM_COMBAT" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#}% 来自战斗力</Text>
 		</Replace>
 		<Replace Tag="LOC_UNITCOMMAND_VOLTAGE_LIMIT" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]本回合已发动[ENDCOLOR]</Text>

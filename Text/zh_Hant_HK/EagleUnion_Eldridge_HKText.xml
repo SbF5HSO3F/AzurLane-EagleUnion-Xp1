@@ -10,17 +10,17 @@
 		</Replace>
 		<!--加載-->
 		<Replace Tag="LOC_LOADING_INFO_LEADER_ELDRIDGE_DE173" Language="zh_Hant_HK">
-			<Text></Text>
+			<Text>神秘的「彩虹計劃」故事中的主角，埃爾德裏奇，您已經準備好向世人展示你的傳奇色彩。您的軍隊將在各個城市間神秘穿梭，並對您的敵人施加以雷霆的怒火。您將利用您的人民的聰明才智，把白鷹聯邦建設成一個偉大的國家。待白鷹聯邦繁榮昌盛之時，您將成為諸多傳說中最為傳奇的主角。</Text>
 		</Replace>
 		<!--百科-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_QUOTE" Language="zh_Hant_HK">
 			<Text>會放電喔。但是不會瞬間移動……</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
-			<Text></Text>
+			<Text>埃爾德裏奇將利用她在研究點數方面的優勢而取得勝利。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
-			<Text></Text>
+			<Text>作為神秘的「彩虹計劃」的主角，埃爾德裏奇在 [ICON_ResearchPoint] 研究點數方面有著獨得的優勢：她可以從 [ICON_Science] 科技值中輕松地獲取 [ICON_ResearchPoint] 科研點數，並且擁有更高的花費減免上限。在遊戲早期，埃爾德裏奇可以利用從城市裏的 [ICON_CITIZEN] 人民獲取的 [ICON_ResearchPoint] 科研點數和自帶的花費減免，盡快地完成關鍵科技和市政的研究。而在遊戲後期，埃爾德裏奇可以通過從 [ICON_Science] 科技值獲得的大量 [ICON_ResearchPoint] 研究點數和低廉的 [ICON_ResearchPoint] 研究點數花費，快速確立白鷹聯邦科技勝利的地位。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ELDRIDGE_DE173_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
 			<Text>埃爾德裏奇號（USS Eldridge ，DE-173）是美國坎農級護航驅逐艦，艦名是為了紀念在所羅門群島行動中陣亡的美國海軍少校約翰·埃爾德裏奇（1903-1942）。埃爾德裏奇號於1943年2月22日開工，1943年7月25日下水，1943年8月27日正式服役。</Text>
@@ -35,7 +35,30 @@
 			<Text>1946年6月17日，從美國海軍退役。1951年1月15日，希臘海軍通過「共同防禦援助計劃」獲得埃爾德裏奇號，並改名為「利昂」號（HS Leon，D54），隨後她主要負責東愛琴海的巡邏工作和海軍軍校的訓練。1992年11月15日，埃爾德裏奇從希臘海軍退役，隨後於1999年11月11日被出售拆解，結束了自己充滿傳說的一生。</Text>
 		</Replace>
 		<!--領袖議程-->
-
+		<Replace Tag="LOC_AGENDA_OPERATION_RAINBOW_NAME" Language="zh_Hant_HK">
+			<Text>彩虹計劃</Text>
+		</Replace>
+		<Replace Tag="LOC_AGENDA_OPERATION_RAINBOW_DESCRIPTION" Language="zh_Hant_HK">
+			<Text>喜歡與她相鄰或擁有較高 [ICON_Science] 科技值的文明，討厭 [ICON_Science] 科技值低下且遠離她的文明。</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_OPERATION_RAINBOW_HAS_HIGH_SCIENCE" Language="zh_Hant_HK">
+			<Text>埃爾德裏奇喜歡擁有高科技值的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_OPERATION_RAINBOW_HAS_HIGH_SCIENCE_REASON" Language="zh_Hant_HK">
+			<Text>您擁有高科技值</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_OPERATION_RAINBOW_ARE_NEIGHBORS" Language="zh_Hant_HK">
+			<Text>埃爾德裏奇喜歡與其相鄰的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_KUDO_OPERATION_RAINBOW_ARE_NEIGHBORS_REASON" Language="zh_Hant_HK">
+			<Text>您是她的鄰居</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_OPERATION_RAINBOW_WARNING" Language="zh_Hant_HK">
+			<Text>埃爾德裏奇討厭不是鄰居且科技值低下的文明</Text>
+		</Replace>
+		<Replace Tag="LOC_DIPLO_WARNING_OPERATION_RAINBOW_ANY_REASON" Language="zh_Hant_HK">
+			<Text>您科技值低下，且並非她的鄰居</Text>
+		</Replace>
 		<!--領袖能力-->
 		<!--Operation Rainbow-->
 		<Replace Tag="LOC_TRAIT_LEADER_PHILADELPHIA_EXPERIMENT_NAME" Language="zh_Hant_HK">
@@ -62,6 +85,12 @@
 		</Replace>
 		<Replace Tag="LOC_VOLTAGE_DESC" Language="zh_Hant_HK">
 			<Text>每回合限一次，對相鄰敵方單位造成{1_num}點傷害。</Text>
+		</Replace>
+		<Replace Tag="LOC_VOLTAGE_BUFF" Language="zh_Hant_HK">
+			<Text>造成的傷害{1_point : number +#.#;-#.#}%</Text>
+		</Replace>
+		<Replace Tag="LOC_VOLTAGE_BUFF_FROM_COMBAT" Language="zh_Hant_HK">
+			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#}% 來自戰鬥力</Text>
 		</Replace>
 		<Replace Tag="LOC_UNITCOMMAND_VOLTAGE_LIMIT" Language="zh_Hant_HK">
 			<Text>[COLOR_RED]本回合已發動[ENDCOLOR]</Text>
