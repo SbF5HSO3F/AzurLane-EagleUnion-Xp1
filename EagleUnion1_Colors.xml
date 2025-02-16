@@ -51,6 +51,19 @@
 			<Type>ELDRIDGE_DE173_WHITE</Type>
 			<Color>235,240,243,255</Color>
 		</Row>
+		<!--企业-->
+		<Row>
+			<Type>ENTERPRISE_CV6_WHITE</Type>
+			<Color>241,235,229,255</Color>
+		</Row>
+		<Row>
+			<Type>ENTERPRISE_CV6_DARK</Type>
+			<Color>46,46,46,255</Color>
+		</Row>
+		<Row>
+			<Type>ENTERPRISE_CV6_GOLDEN</Type>
+			<Color>248,207,70,255</Color>
+		</Row>
 	</Colors>
 	<PlayerColors>
 		<!--拉菲-->
@@ -83,6 +96,15 @@
 			<Alt1SecondaryColor>ELDRIDGE_DE173_WHITE</Alt1SecondaryColor>
 			<Alt2PrimaryColor>ELDRIDGE_DE173_WHITE</Alt2PrimaryColor>
 			<Alt2SecondaryColor>ELDRIDGE_DE173_BULE</Alt2SecondaryColor>
+		</Row>
+		<!--企业-->
+		<Row>
+			<Type>LEADER_ENTERPRISE_CV6</Type>
+			<Usage>Unique</Usage>
+			<PrimaryColor>ENTERPRISE_CV6_WHITE</PrimaryColor>
+			<SecondaryColor>ENTERPRISE_CV6_DARK</SecondaryColor>
+			<Alt1PrimaryColor>ENTERPRISE_CV6_DARK</Alt1PrimaryColor>
+			<Alt1SecondaryColor>ENTERPRISE_CV6_GOLDEN</Alt1SecondaryColor>
 		</Row>
 	</PlayerColors>
 </GameData>

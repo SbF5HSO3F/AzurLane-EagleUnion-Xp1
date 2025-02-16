@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_Enterprise_Leader -->
+<!-- Author: HSbF6HSO3F -->
+<!-- DateCreated: 2025/2/16 9:07:23 -->
+<GameData>
+	<Types>
+		<!--企业-->
+		<Row Type="LEADER_ENTERPRISE_CV6"				    Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM"	Kind="KIND_TRAIT"/>
+	</Types>
+	<Leaders>
+		<!--企业-->
+		<Row LeaderType="LEADER_ENTERPRISE_CV6" Name="LOC_LEADER_ENTERPRISE_CV6_NAME" Sex="Female" InheritFrom="LEADER_DEFAULT" SceneLayers="4"/>
+	</Leaders>
+	<CivilizationLeaders>
+		<Row CivilizationType="CIVILIZATION_EAGLE_UNION" LeaderType="LEADER_ENTERPRISE_CV6"	CapitalName="LOC_CITY_NAME_EAGLE_UNION_WASHINGTON_DC"/>
+	</CivilizationLeaders>
+	<Traits>
+		<!--企业-->
+		<Row TraitType="TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM"	Name="LOC_TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM_NAME"	Description="LOC_TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM_DESCRIPTION"/>
+	</Traits>
+	<LeaderTraits>
+		<!--企业-->
+		<Row LeaderType="LEADER_ENTERPRISE_CV6"	TraitType="TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM"/>
+	</LeaderTraits>
+	<HistoricalAgendas>
+
+	</HistoricalAgendas>
+	<Agendas>
+
+	</Agendas>
+	<LeaderQuotes>
+		<Row LeaderType="LEADER_ENTERPRISE_CV6"	Quote="LOC_PEDIA_LEADERS_PAGE_LEADER_ENTERPRISE_CV6_QUOTE" />
+	</LeaderQuotes>
+	<LoadingInfo>
+		<Row LeaderType="LEADER_ENTERPRISE_CV6"	ForegroundImage="IMG_EAGLE_UNION_LEADER_ENTERPRISE_CV6_LOADING_FOREGROUND"	BackgroundImage="IMG_EAGLE_UNION_LOADING_BACKGROUND"/>
+	</LoadingInfo>
+	<DiplomacyInfo>
+		<Row Type="LEADER_ENTERPRISE_CV6"	BackgroundImage="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND.dds"/>
+	</DiplomacyInfo>
+	<TraitModifiers>
+		<!--KANSEN-->
+		<Row>
+			<TraitType>TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
+		</Row>
+		<Row>
+			<TraitType>TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM</TraitType>
+			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
+		</Row>
+	</TraitModifiers>
+    <Modifiers>
+        <!--企业交战减益-->
+          <Row>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_ATTACH_DEBUFF</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+            <SubjectRequirementSetId>EAGLE_UNION_UNIT_IS_COMBAT</SubjectRequirementSetId>
+            <SubjectStackLimit>1</SubjectStackLimit>
+		</Row>
+		<Row>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
+		</Row>
+        <!--战斗力减少-->
+        <Row>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_ATTACH_PROPERTY</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
+		</Row>
+        <Row>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_COMBAT</ModifierId>
+			<ModifierType>MODIFIER_UNIT_ADJUST_PROPERTY</ModifierType>
+		</Row>
+    </Modifiers>
+    <ModifierStrings>
+		<Row ModifierId="SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF" Context="Preview" Text="LOC_PREVIEW_SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF_DESCRIPTION"/>
+	</ModifierStrings>
+    <ModifierArguments>
+        <!--企业交战减益-->
+        <Row>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_ATTACH_DEBUFF</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF</Value>
+		</Row>
+		<Row>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF</ModifierId>
+			<Name>Key</Name>
+			<Value>AtWarWithEnterprise</Value>
+		</Row>
+        <!--战斗力减少-->
+        <Row>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_ATTACH_PROPERTY</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>SOARING_WINGS_OF_FREEDOM_WAR_COMBAT</Value>
+		</Row>
+        <Row>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_COMBAT</ModifierId>
+			<Name>Key</Name>
+			<Value>AtWarWithEnterprise</Value>
+		</Row>
+		<Row>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_COMBAT</ModifierId>
+			<Name>Amount</Name>
+			<Value>-1</Value>
+		</Row>
+    </ModifierArguments>
+</GameData>

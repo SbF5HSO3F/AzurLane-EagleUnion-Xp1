@@ -21,6 +21,10 @@
 			<m_EntryID text="LAFFEY_DD459_DEFAULT "/>
 			<m_ObjectName text="LAFFEY_DD459_DEFAULT "/>
 		</Element>
+		<Element>
+			<m_EntryID text="ENTERPRISE_CV6_DEFAULT"/>
+			<m_ObjectName text="ENTERPRISE_CV6_DEFAULT"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

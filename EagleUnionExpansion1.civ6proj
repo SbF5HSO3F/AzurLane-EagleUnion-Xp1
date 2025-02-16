@@ -62,8 +62,12 @@
           <File priority="80">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File>
         </UpdateText>
         <UpdateText id="Eldridge">
+          <File priority="100">Text/en_US/EagleUnion_Eldridge_EnText.xml</File>
           <File priority="90">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
           <File priority="80">Text/zh_Hant_HK/EagleUnion_Eldridge_HKText.xml</File>
+        </UpdateText>
+        <UpdateText id="Enterprise">
+          <File priority="90">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
         </UpdateText>
       </FrontEndActions>
     ]]></FrontEndActionData>
@@ -97,6 +101,7 @@
           <File>Scripts/EagleUnionLaffey.lua</File>
           <File>Scripts/EagleUnionFlasher.lua</File>
           <File>Scripts/EagleUnionEldridge.lua</File>
+          <File>Scripts/EagleUnionEnterprise.lua</File>
         </AddGameplayScripts>
         <UpdateDatabase id="Laffey">
           <File priority="100">Data/Laffey/EagleUnion_Laffey_Leader.xml</File>
@@ -137,8 +142,15 @@
           <File priority="90">Data/Eldridge/EagleUnion_Eldridge_Agendas.xml</File>
         </UpdateDatabase>
         <UpdateText id="Eldridge_Text">
+          <File priority="100">Text/en_US/EagleUnion_Eldridge_EnText.xml</File>
           <File priority="90">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
           <File priority="80">Text/zh_Hant_HK/EagleUnion_Eldridge_HKText.xml</File>
+        </UpdateText>
+        <UpdateDatabase id="Enterprise">
+          <File priority="100">Data/Enterprise/EagleUnion_Enterprise_Leader.xml</File>
+        </UpdateDatabase>
+        <UpdateText id="Enterprise_Text">
+          <File priority="90">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
         </UpdateText>
       </InGameActions>
     ]]></InGameActionData>
@@ -154,6 +166,7 @@
     <Folder Include="Data\Laffey" />
     <Folder Include="Data\Flasher" />
     <Folder Include="Data\Eldridge" />
+    <Folder Include="Data\Enterprise" />
     <Folder Include="Import" />
     <Folder Include="Scripts" />
     <Folder Include="UI" />
@@ -168,6 +181,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Eldridge\EagleUnion_Eldridge_Leader.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\Enterprise\EagleUnion_Enterprise_Leader.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\Flasher\EagleUnion_Flasher_Agendas.xml">
@@ -221,6 +237,9 @@
     <Content Include="Scripts\EagleUnionEldridge.lua">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Scripts\EagleUnionEnterprise.lua">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Scripts\EagleUnionFlasher.lua">
       <SubType>Content</SubType>
     </Content>
@@ -237,6 +256,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\zh_Hans_CN\EagleUnion_Eldridge_CNText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\zh_Hans_CN\EagleUnion_Enterprise_CNText.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\zh_Hans_CN\EagleUnion_Flasher_CNText.xml">

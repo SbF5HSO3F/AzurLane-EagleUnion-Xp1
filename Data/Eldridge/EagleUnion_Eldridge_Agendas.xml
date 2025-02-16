@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- EagleUnion_Eldridge_Agendas -->
-<!-- Author: jjj -->
+<!-- Author: HSbF6HSO3F -->
 <!-- DateCreated: 2025/1/10 17:18:02 -->
 <GameData>
 	<Types>
@@ -123,6 +123,11 @@
 			<Value>LOC_DIPLO_WARNING_OPERATION_RAINBOW_ANY_REASON</Value>
 		</Row>
 	</ModifierArguments>
+	<ModifierStrings>
+		<Row ModifierId="AGENDA_OPERATION_RAINBOW_HAS_HIGH_SCIENCE"	Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_OPERATION_RAINBOW_ARE_NEIGHBORS"	Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+		<Row ModifierId="AGENDA_OPERATION_RAINBOW_WARNING"			Context="Sample" Text="LOC_TOOLTIP_SAMPLE_DIPLOMACY_ALL"/>
+	</ModifierStrings>
     <!--条件集-->
 	<RequirementSets>
 		<Row>
