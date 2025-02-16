@@ -96,6 +96,7 @@
           </Properties>
           <File>UI/Additions/EagleUnionFlasherUI.xml</File>
           <File>UI/Additions/EagleUnionEldridgeUnitUI.xml</File>
+          <File>UI/Additions/EagleUnionEnterpriseUnitPanel.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Script">
           <File>Scripts/EagleUnionLaffey.lua</File>
@@ -280,6 +281,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="UI\Additions\EagleUnionEldridgeUnitUI.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\EagleUnionEnterpriseUnitPanel.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\EagleUnionEnterpriseUnitPanel.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UI\Additions\EagleUnionFlasherUI.lua">

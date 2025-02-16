@@ -32,10 +32,21 @@
 			<Text>翱翔的自由之翼</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>与你处于战争状态的文明每回合将-1 [ICON_Strength] 战斗力。</Text>
+			<Text>与你处于战争状态的主流文明每回合将-1 [ICON_Strength] 战斗力。军事单位每回合可恢复一次全部生命值。</Text>
 		</Replace>
 		<!--Lua浮动文字显示-->
-
+		<Replace Tag="LOC_ENTERPRISE_TITLE" Language="zh_Hans_CN">
+			<Text>灰色幽灵</Text>
+		</Replace>
+		<Replace Tag="LOC_ENTERPRISE_RECOVER_DESC" Language="zh_Hans_CN">
+			<Text>每回合限一次，恢复全部生命值。</Text>
+		</Replace>
+		<Replace Tag="LOC_ENTERPRISE_REASON_NO_DAMAGE" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]单位尚未受伤[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_ENTERPRISE_REASON_HAS_USED" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]本回合已发动[ENDCOLOR]</Text>
+		</Replace>
 		<!--特殊加成-->
 		
 		<!--领袖项目-->

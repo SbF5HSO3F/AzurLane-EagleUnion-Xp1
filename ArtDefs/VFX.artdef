@@ -53,6 +53,27 @@
 				<m_Name text="ELDRIDGE_VOLTAGE_USER"/>
 				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
 			</Element>
+			<Element>
+				<m_Fields>
+					<m_Values>
+						<Element class="AssetObjects..BLPEntryValue">
+							<m_EntryName text="FX_Great_Scientist_Activate_01"/>
+							<m_XLPClass text="VFX"/>
+							<m_XLPPath text="vfx_a.xlp"/>
+							<m_BLPPackage text="VFX_A"/>
+							<m_LibraryName text="VFX"/>
+							<m_ParamName text="Asset"/>
+						</Element>
+						<Element class="AssetObjects..StringValue">
+							<m_Value text="Guru_Heal_VFX"/>
+							<m_ParamName text="Audio"/>
+						</Element>
+					</m_Values>
+				</m_Fields>
+				<m_ChildCollections/>
+				<m_Name text="ENTERPRISE_RECOVER"/>
+				<m_AppendMergedParameterCollections>false</m_AppendMergedParameterCollections>
+			</Element>
 		</Element>
 		<Element>
 			<m_CollectionName text="MaterialVFX"/>

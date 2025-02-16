@@ -19,6 +19,7 @@ for _, player in ipairs(Game.GetPlayers()) do
 end
 
 Key_1 = 'HasEnterpriseDebuff'
+Key_2 = 'EnterpriseRecoverTurns'
 Modifier_1 = 'SOARING_WINGS_OF_FREEDOM_ATTACH_DEBUFF'
 Modifier_2 = 'SOARING_WINGS_OF_FREEDOM_ATTACH_PROPERTY'
 
@@ -32,6 +33,9 @@ function EnterpriseTurnBegin(playerID, isFirst)
     if #Enterprises == 0 then return end
     --get the player diplomacy
     local pPlayer = Players[playerID]
+    --the player is major player?
+    if not pPlayer:IsMajor() then return end
+    --get the player diplomacy
     local diplomacy = pPlayer:GetDiplomacy()
     --check the player is at war with enterprise player
     for _, enterprise in ipairs(Enterprises) do
@@ -45,6 +49,23 @@ function EnterpriseTurnBegin(playerID, isFirst)
     end
 end
 
+--||=================GameEvents functions=================||--
+
+--recover
+function EnterpriseRecover(playerID, param)
+    --get the unit
+    local pUnit = UnitManager.GetUnit(playerID, param.UnitID)
+    if pUnit then
+        --recover
+        pUnit:SetDamage(0)
+        --set the recover turns
+        pUnit:SetProperty(Key_2, Game.GetCurrentGameTurn())
+        --report the active
+        --report the activation
+        UnitManager.ReportActivation(pUnit, "ENTERPRISE_RECOVER")
+    end
+end
+
 --||======================initialize======================||--
 
 --initialization function
@@ -52,6 +73,7 @@ function Initialize()
     -----------------------Events-----------------------
     Events.PlayerTurnActivated.Add(EnterpriseTurnBegin)
     ---------------------GameEvents---------------------
+    GameEvents.EnterpriseRecover.Add(EnterpriseRecover)
     ----------------------------------------------------
     ----------------------------------------------------
     print('Initial success!')

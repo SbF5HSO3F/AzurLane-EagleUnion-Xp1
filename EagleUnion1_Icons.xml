@@ -42,5 +42,7 @@
 		<!--埃尔德里奇图标-->
 		<Row Name="ICON_ELDRIDGE_RAINBOW"								Atlas="ICON_ATLAS_UNIT_ACTIONS"						Index="76"/>
 		<Row Name="ICON_ELDRIDGE_VOLTAGE"								Atlas="ICON_ATLAS_UNIT_ACTIONS"						Index="51"/>
+		<!--企业图标-->
+		<Row Name="ICON_ENTERPRISE_RECOVER"								Atlas="ICON_ATLAS_UNIT_ACTIONS"						Index="75"/>
 	</IconDefinitions>
 </GameData>

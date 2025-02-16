@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnionEnterpriseUnitPanel -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2025/2/16 21:29:49 -->
+<Context Name="EnterpriseContext">
+	<Grid ID="EnterpriseGrid" Anchor="R,B" Size="Auto,41" AutoSizePadding="2,0" Texture="SelectionPanel_ActionGroupSlot" SliceCorner="5,19" SliceSize="1,1" SliceTextureSize="12,41" ConsumeMouse="1" Hidden="1">
+		<Stack ID="EnterpriseActionStack" Anchor="C,B" StackGrowth="Right" StackPadding="2">
+
+			<Button ID="Recover" Anchor="C,B" Size="44,53" Texture="UnitPanel_ActionButton">
+				<Image ID="RecoverIcon" Anchor="C,C" Offset="0,-2" Size="38,38" Icon="ICON_ENTERPRISE_RECOVER"/>
+			</Button>
+
+		</Stack>
+	</Grid>
+</Context>
