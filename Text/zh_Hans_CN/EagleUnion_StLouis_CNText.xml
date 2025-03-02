@@ -35,8 +35,26 @@
 		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION" Language="zh_Hans_CN">
 			<Text>建造者可在无主单元格上创建奢侈品资源。</Text>
 		</Replace>
-		<!--Lua浮动文字显示-->
-
+		<!--Lua文字-->
+        <Replace Tag="LOC_STLOUIS_CREATE_TITLE" Language="zh_Hans_CN">
+			<Text>创建资源</Text>
+		</Replace>
+        <Replace Tag="LOC_STLOUIS_CREATE_DESC" Language="zh_Hans_CN">
+			<Text>在无主单元格上随机创建一种奢侈品资源。</Text>
+		</Replace>
+        <Replace Tag="LOC_STLOUIS_CREATE_DETAIL" Language="zh_Hans_CN">
+			<Text>资源列表：</Text>
+		</Replace>
+        <Replace Tag="LOC_STLOUIS_CREATE_RESOURCE" Language="zh_Hans_CN">
+			<Text>[NEWLINE][ICON_Bullet]{1_Icon} {2_Name}</Text>
+		</Replace>
+        <!--Warning-->
+		<Replace Tag="LOC_STLOUIS_NOT_NO_OWNER" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]必须位于无主单元格[ENDCOLOR]</Text>
+		</Replace>
+        <Replace Tag="LOC_STLOUIS_NO_PLACEABLE_RESOURCES" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]该单元格无有效资源[ENDCOLOR]</Text>
+		</Replace>
 		<!--特殊加成-->
 		
 		<!--领袖项目-->

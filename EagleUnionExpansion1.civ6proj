@@ -100,12 +100,14 @@
           <File>UI/Additions/FlasherExtraPanel.xml</File>
           <File>UI/Additions/EldridgeUnitPanel.xml</File>
           <File>UI/Additions/EnterpriseUnitPanel.xml</File>
+          <File>UI/Additions/StLouisUnitPanel.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Script">
           <File>Scripts/EagleUnionLaffey.lua</File>
           <File>Scripts/EagleUnionFlasher.lua</File>
           <File>Scripts/EagleUnionEldridge.lua</File>
           <File>Scripts/EagleUnionEnterprise.lua</File>
+          <File>Scripts/EagleUnionStLouis.lua</File>
         </AddGameplayScripts>
         <UpdateDatabase id="Laffey">
           <File priority="100">Data/Laffey/EagleUnion_Laffey_Leader.xml</File>
@@ -272,6 +274,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\EagleUnionLaffey.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Scripts\EagleUnionStLouis.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\en_US\EagleUnion_Eldridge_EnText.xml">
