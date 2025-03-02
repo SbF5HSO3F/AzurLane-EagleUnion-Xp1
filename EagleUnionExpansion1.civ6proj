@@ -168,6 +168,7 @@
     <Folder Include="Data\Flasher" />
     <Folder Include="Data\Eldridge" />
     <Folder Include="Data\Enterprise" />
+    <Folder Include="Data\StLouis" />
     <Folder Include="Import" />
     <Folder Include="Scripts" />
     <Folder Include="UI" />

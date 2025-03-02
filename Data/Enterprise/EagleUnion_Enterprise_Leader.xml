@@ -48,17 +48,21 @@
 			<TraitType>TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM</TraitType>
 			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
 		</Row>
+        <!--企业交战增益-->
+		<Row>
+			<TraitType>TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM</TraitType>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_ATTACH_BUFF</ModifierId>
+		</Row>
 	</TraitModifiers>
     <Modifiers>
-        <!--企业交战减益-->
+        <!--企业交战增益-->
           <Row>
-			<ModifierId>SOARING_WINGS_OF_FREEDOM_ATTACH_DEBUFF</ModifierId>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_ATTACH_BUFF</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNITS_ATTACH_MODIFIER</ModifierType>
             <SubjectRequirementSetId>EAGLE_UNION_UNIT_IS_COMBAT</SubjectRequirementSetId>
-            <SubjectStackLimit>1</SubjectStackLimit>
 		</Row>
 		<Row>
-			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF</ModifierId>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_BUFF</ModifierId>
 			<ModifierType>MODIFIER_UNIT_ADJUST_COMBAT_STRENGTH</ModifierType>
 		</Row>
         <!--战斗力减少-->
@@ -72,19 +76,19 @@
 		</Row>
     </Modifiers>
     <ModifierStrings>
-		<Row ModifierId="SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF" Context="Preview" Text="LOC_PREVIEW_SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF_DESCRIPTION"/>
+		<Row ModifierId="SOARING_WINGS_OF_FREEDOM_WAR_BUFF" Context="Preview" Text="LOC_PREVIEW_SOARING_WINGS_OF_FREEDOM_WAR_BUFF_DESCRIPTION"/>
 	</ModifierStrings>
     <ModifierArguments>
-        <!--企业交战减益-->
+        <!--企业交战增益-->
         <Row>
-			<ModifierId>SOARING_WINGS_OF_FREEDOM_ATTACH_DEBUFF</ModifierId>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_ATTACH_BUFF</ModifierId>
 			<Name>ModifierId</Name>
-			<Value>SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF</Value>
+			<Value>SOARING_WINGS_OF_FREEDOM_WAR_BUFF</Value>
 		</Row>
 		<Row>
-			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF</ModifierId>
+			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_BUFF</ModifierId>
 			<Name>Key</Name>
-			<Value>AtWarWithEnterprise</Value>
+			<Value>EnterpriseInWar</Value>
 		</Row>
         <!--战斗力减少-->
         <Row>
@@ -95,12 +99,12 @@
         <Row>
 			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_COMBAT</ModifierId>
 			<Name>Key</Name>
-			<Value>AtWarWithEnterprise</Value>
+			<Value>EnterpriseInWar</Value>
 		</Row>
 		<Row>
 			<ModifierId>SOARING_WINGS_OF_FREEDOM_WAR_COMBAT</ModifierId>
 			<Name>Amount</Name>
-			<Value>-1</Value>
+			<Value>1</Value>
 		</Row>
     </ModifierArguments>
 </GameData>

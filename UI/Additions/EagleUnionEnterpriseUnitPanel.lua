@@ -1,5 +1,5 @@
 -- EagleUnionEnterpriseUnitPanel
--- Author: jjj
+-- Author: HSbF6HSO3F
 -- DateCreated: 2025/2/16 21:29:35
 --------------------------------------------------------------
 --||=======================include========================||--
@@ -7,8 +7,8 @@ include('EagleUnionCore')
 
 --||==================global variables====================||--
 
-Key_1 = 'EnterpriseRecoverTurns'
-Resaon_1 = DB.MakeHash('ENTERPRISE_RECOVER')
+KeyRecover = 'EnterpriseRecoverTurns'
+Reason_1 = DB.MakeHash('ENTERPRISE_RECOVER')
 
 --||======================MetaTable=======================||--
 
@@ -52,7 +52,7 @@ EnterpriseUnitPanel = {
             --the detail
             local detail = { Disable = true, Reason = '' }
             --get the unit property
-            local turns = pUnit:GetProperty(Key_1) or 0
+            local turns = pUnit:GetProperty(KeyRecover) or 0
             --check the turns
             if turns >= Game.GetCurrentGameTurn() then
                 detail.Reason = Locale.Lookup('LOC_ENTERPRISE_REASON_HAS_USED')
@@ -136,7 +136,7 @@ end
 --On Unit Active
 function EnterpriseUnitActive(owner, unitID, x, y, eReason)
     local pUnit = UnitManager.GetUnit(owner, unitID)
-    if eReason == Resaon_1 then
+    if eReason == Reason_1 then
         SimUnitSystem.SetAnimationState(pUnit, "SPAWN", "IDLE")
         --get the unit x and y
         local uX, uY = pUnit:GetX(), pUnit:GetY()

@@ -32,7 +32,7 @@
 			<Text>翱翔的自由之翼</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_SOARING_WINGS_OF_FREEDOM_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>与你处于战争状态的主流文明每回合将-1 [ICON_Strength] 战斗力。军事单位每回合可恢复一次全部生命值。</Text>
+			<Text>与主流文明处于战争状态时，每回合将+1 [ICON_Strength] 战斗力。军事单位每回合可恢复一次全部生命值。</Text>
 		</Replace>
 		<!--Lua浮动文字显示-->
 		<Replace Tag="LOC_ENTERPRISE_TITLE" Language="zh_Hans_CN">
@@ -56,8 +56,8 @@
 		<!--特殊晋升-->
 
 		<!--特殊能力-->
-		<Replace Tag="LOC_PREVIEW_SOARING_WINGS_OF_FREEDOM_WAR_DEBUFF_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>{Property : number +#;-#} [ICON_Strength] 战斗力来自持续与企业处于战争状态</Text>
+		<Replace Tag="LOC_PREVIEW_SOARING_WINGS_OF_FREEDOM_WAR_BUFF_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>{Property : number +#;-#} [ICON_Strength] 战斗力来自持续处于战争状态</Text>
 		</Replace>
 		<!--外交对话-->
 		<![CDATA[<!--同意宣布友谊-->
