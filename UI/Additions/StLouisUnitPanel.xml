@@ -5,11 +5,12 @@
 <Context Name="StLouisContext">
 	<Grid ID="StLouisGrid" Anchor="R,B" Size="Auto,41" AutoSizePadding="2,0" Texture="SelectionPanel_ActionGroupSlot" SliceCorner="5,19" SliceSize="1,1" SliceTextureSize="12,41" ConsumeMouse="1" Hidden="1">
 		<Stack ID="StLouisActionStack" Anchor="C,B" StackGrowth="Right" StackPadding="2">
-
 			<Button ID="Create" Anchor="C,B" Size="44,53" Texture="UnitPanel_ActionButton">
 				<Image ID="CreateIcon" Anchor="C,C" Offset="0,-2" Size="38,38" Icon="ICON_STLOUIS_CREATE"/>
 			</Button>
-
+            <Button ID="Remove" Anchor="C,B" Size="44,53" Texture="UnitPanel_ActionButton">
+				<Image ID="RemoveIcon" Anchor="C,C" Offset="0,-2" Size="38,38" Icon="ICON_STLOUIS_REMOVE"/>
+			</Button>
 		</Stack>
 	</Grid>
 </Context>

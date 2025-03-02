@@ -48,5 +48,6 @@
 		<Row Name="ICON_ENTERPRISE_RECOVER"								Atlas="ATLAS_EAGLE_UNION_ACTION"					Index="2"/>
 		<!--圣路易斯图标-->
 		<Row Name="ICON_STLOUIS_CREATE"									Atlas="ATLAS_EAGLE_UNION_ACTION"					Index="3"/>
+		<Row Name="ICON_STLOUIS_REMOVE"									Atlas="ATLAS_EAGLE_UNION_ACTION"					Index="4"/>
 	</IconDefinitions>
 </GameData>

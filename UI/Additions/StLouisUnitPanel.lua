@@ -11,6 +11,7 @@ include('EagleResources')
 local resources = EagleResources:new({ ['RESOURCECLASS_LUXURY'] = true })
 
 local Reason_1 = DB.MakeHash("STLOUIS_CREATED")
+local Reason_2 = DB.MakeHash("STLOUIS_REMOVED")
 
 --||======================MetaTable=======================||--
 
@@ -22,6 +23,7 @@ StLouisUnitPanel = {
             ) and unit ~= nil then
             Controls.StLouisGrid:SetHide(false)
             self.Create:Refresh(unit)
+            self.Remove:Refresh(unit)
         else
             Controls.StLouisGrid:SetHide(true)
         end
@@ -35,6 +37,7 @@ StLouisUnitPanel = {
             Controls.StLouisGrid:ChangeParent(context)
             --Register Callback
             self.Create:Register()
+            self.Remove:Register()
             --reset the button
             self:Refresh()
         end
@@ -101,6 +104,52 @@ StLouisUnitPanel = {
             Controls.Create:RegisterCallback(Mouse.eLClick, function() self:Callback() end)
             Controls.Create:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
         end
+    },
+    Remove = {
+        GetDetail = function(unit)
+            local detail = { Disable = true, Reason = '' }
+            local plot = Map.GetPlot(unit:GetX(), unit:GetY())
+            if plot:GetResourceType() == -1 then
+                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
+                return detail
+            end
+            detail.Disable = false
+            return detail
+        end,
+        Refresh = function(self, unit)
+            local detail = self.GetDetail(unit)
+            local disable = detail.Disable
+            --set the button disable
+            Controls.Remove:SetDisabled(disable)
+            Controls.Remove:SetAlpha((disable and 0.7) or 1)
+            --the tooltip
+            local tooltip = Locale.Lookup('LOC_STLOUIS_REMOVE_TITLE')
+                .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_REMOVE_DESC')
+            if disable then
+                tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
+            end
+            --set the tooltip
+            Controls.Remove:SetToolTipString(tooltip)
+        end,
+        Callback = function(self)
+            local unit = UI.GetHeadSelectedUnit()
+            if unit == nil then return end
+            local detail = self.GetDetail(unit)
+            if detail.Disable then return end
+            local x, y = unit:GetX(), unit:GetY()
+            UI.RequestPlayerOperation(Game.GetLocalPlayer(),
+                PlayerOperations.EXECUTE_SCRIPT, {
+                    UnitID = unit:GetID(),
+                    X = x,
+                    Y = y,
+                    OnStart = 'StLouisRemoved',
+                }
+            ); Network.BroadcastPlayerInfo()
+        end,
+        Register = function(self)
+            Controls.Remove:RegisterCallback(Mouse.eLClick, function() self:Callback() end)
+            Controls.Remove:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+        end
     }
 }
 
@@ -121,16 +170,22 @@ end
 --On Unit Active
 function StLouisUnitActive(owner, unitID, x, y, eReason)
     local pUnit = UnitManager.GetUnit(owner, unitID)
+    --get the unit x and y
+    local uX, uY = pUnit:GetX(), pUnit:GetY()
     if eReason == Reason_1 then
         SimUnitSystem.SetAnimationState(pUnit, "SPAWN", "IDLE")
-        --get the unit x and y
-        local uX, uY = pUnit:GetX(), pUnit:GetY()
         --play the effect
         WorldView.PlayEffectAtXY("IMPROVEMENT_CREATED", uX, uY)
         WorldView.PlayEffectAtXY("EAGLE_CREATED", uX, uY)
-        --refersh the panel
-        StLouisUnitPanel:Refresh()
+    elseif eReason == Reason_2 then
+        SimUnitSystem.SetAnimationState(pUnit, "SPAWN", "IDLE")
+        --play the effect
+        WorldView.PlayEffectAtXY("EAGLE_DESTROY", uX, uY)
+        --play the sound
+        UI.PlaySound("Unit_CondemnHeretic_2D")
     end
+    --refersh the panel
+    StLouisUnitPanel:Refresh()
 end
 
 --Add a button to Unit Panel
