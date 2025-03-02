@@ -94,9 +94,9 @@
           <Properties>
             <Context>InGame</Context>
           </Properties>
-          <File>UI/Additions/EagleUnionFlasherUI.xml</File>
-          <File>UI/Additions/EagleUnionEldridgeUnitUI.xml</File>
-          <File>UI/Additions/EagleUnionEnterpriseUnitPanel.xml</File>
+          <File>UI/Additions/FlasherExtraPanel.xml</File>
+          <File>UI/Additions/EldridgeUnitPanel.xml</File>
+          <File>UI/Additions/EnterpriseUnitPanel.xml</File>
         </AddUserInterfaces>
         <AddGameplayScripts id="Script">
           <File>Scripts/EagleUnionLaffey.lua</File>
@@ -110,10 +110,17 @@
           <File priority="80">Data/Laffey/EagleUnion_Laffey_Units.xml</File>
           <File priority="70">Data/Laffey/EagleUnion_Laffey_Agendas.xml</File>
         </UpdateDatabase>
+        <UpdateDatabase id="Laffey_XP1">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_1</RuleSet>
+          </Properties>
+          <File>Data/Laffey/EagleUnion_Laffey_Moment.sql</File>
+        </UpdateDatabase>
         <UpdateDatabase id="Laffey_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
+          <File>Data/Laffey/EagleUnion_Laffey_Moment.sql</File>
           <File>Data/Laffey/EagleUnion_Laffey_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="Laffey_Text">
@@ -127,10 +134,17 @@
           <File priority="80">Data/Flasher/EagleUnion_Flasher_Units.xml</File>
           <File priority="70">Data/Flasher/EagleUnion_Flasher_Agendas.xml</File>
         </UpdateDatabase>
+        <UpdateDatabase id="Flasher_XP1">
+          <Properties>
+            <RuleSet>RULESET_EXPANSION_1</RuleSet>
+          </Properties>
+          <File>Data/Flasher/EagleUnion_Flasher_Moment.sql</File>
+        </UpdateDatabase>
         <UpdateDatabase id="Flasher_XP2">
           <Properties>
             <RuleSet>RULESET_EXPANSION_2</RuleSet>
           </Properties>
+          <File>Data/Flasher/EagleUnion_Flasher_Moment.sql</File>
           <File>Data/Flasher/EagleUnion_Flasher_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="Flasher_Text">
@@ -224,6 +238,9 @@
     <Content Include="Data\Laffey\EagleUnion_Laffey_Leader.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Data\StLouis\EagleUnion_StLouis_Leader.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="EagleUnion1_Colors.xml">
       <SubType>Content</SubType>
     </Content>
@@ -278,22 +295,22 @@
     <Content Include="Text\zh_Hant_HK\EagleUnion_Laffey_HKText.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnionEldridgeUnitUI.lua">
+    <Content Include="UI\Additions\EldridgeUnitPanel.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnionEldridgeUnitUI.xml">
+    <Content Include="UI\Additions\EldridgeUnitPanel.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnionEnterpriseUnitPanel.lua">
+    <Content Include="UI\Additions\EnterpriseUnitPanel.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnionEnterpriseUnitPanel.xml">
+    <Content Include="UI\Additions\EnterpriseUnitPanel.xml">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnionFlasherUI.lua">
+    <Content Include="UI\Additions\FlasherExtraPanel.lua">
       <SubType>Content</SubType>
     </Content>
-    <Content Include="UI\Additions\EagleUnionFlasherUI.xml">
+    <Content Include="UI\Additions\FlasherExtraPanel.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

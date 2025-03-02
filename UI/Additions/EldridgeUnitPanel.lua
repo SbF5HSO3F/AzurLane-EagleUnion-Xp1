@@ -1,4 +1,4 @@
--- EagleUnion_EldridgeUnitUI
+-- EldridgeUnitPanel
 -- Author: HSbF6HSO3F
 -- DateCreated: 2024/12/24 20:39:42
 --------------------------------------------------------------
@@ -407,6 +407,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('EagleUnionEldridgeUnitUI_', true)
+include('EldridgeUnitPanel_', true)
 
 Initialize()

@@ -1,4 +1,4 @@
--- EagleUnionEnterpriseUnitPanel
+-- EnterpriseUnitPanel
 -- Author: HSbF6HSO3F
 -- DateCreated: 2025/2/16 21:29:35
 --------------------------------------------------------------
@@ -181,6 +181,6 @@ function Initialize()
     print('Initial success!')
 end
 
-include('EagleUnionEnterpriseUnitPanel_', true)
+include('EnterpriseUnitPanel_', true)
 
 Initialize()
