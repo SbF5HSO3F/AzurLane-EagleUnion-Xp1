@@ -25,6 +25,10 @@
 			<m_EntryID text="ENTERPRISE_CV6_DEFAULT"/>
 			<m_ObjectName text="ENTERPRISE_CV6_DEFAULT"/>
 		</Element>
+		<Element>
+			<m_EntryID text="ST_LOUIS_CL49_DEFAULT"/>
+			<m_ObjectName text="ST_LOUIS_CL49_DEFAULT"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

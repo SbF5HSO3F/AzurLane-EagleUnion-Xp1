@@ -69,6 +69,9 @@
         <UpdateText id="Enterprise">
           <File priority="90">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
         </UpdateText>
+        <UpdateText id="StLouis">
+          <File priority="90">Text/zh_Hans_CN/EagleUnion_StLouis_CNText.xml</File>
+        </UpdateText>
       </FrontEndActions>
     ]]></FrontEndActionData>
     <AssociationData><![CDATA[
@@ -166,6 +169,12 @@
         </UpdateDatabase>
         <UpdateText id="Enterprise_Text">
           <File priority="90">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
+        </UpdateText>
+        <UpdateDatabase id="StLouis">
+          <File priority="100">Data/StLouis/EagleUnion_StLouis_Leader.xml</File>
+        </UpdateDatabase>
+        <UpdateText id="StLouis">
+          <File priority="90">Text/zh_Hans_CN/EagleUnion_StLouis_CNText.xml</File>
         </UpdateText>
       </InGameActions>
     ]]></InGameActionData>
@@ -286,6 +295,9 @@
     <Content Include="Text\zh_Hans_CN\EagleUnion_Laffey_CNText.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Text\zh_Hans_CN\EagleUnion_StLouis_CNText.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Text\zh_Hant_HK\EagleUnion_Eldridge_HKText.xml">
       <SubType>Content</SubType>
     </Content>
@@ -311,6 +323,12 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="UI\Additions\FlasherExtraPanel.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\StLouisUnitPanel.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="UI\Additions\StLouisUnitPanel.xml">
       <SubType>Content</SubType>
     </Content>
   </ItemGroup>

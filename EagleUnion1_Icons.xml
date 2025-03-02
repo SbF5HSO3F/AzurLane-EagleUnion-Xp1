@@ -23,6 +23,8 @@
 		<Row Name="ICON_LEADER_ELDRIDGE_DE173"							Atlas="ATLAS_EAGLE_UNION_XP1_LEADERS"				Index="2"/>
 		<!--企业-->
 		<Row Name="ICON_LEADER_ENTERPRISE_CV6"							Atlas="ATLAS_EAGLE_UNION_XP1_LEADERS"				Index="3"/>
+		<!--圣路易斯-->
+		<Row Name="ICON_LEADER_ST_LOUIS_CL49"							Atlas="ATLAS_EAGLE_UNION_XP1_LEADERS"				Index="4"/>
 		<!--本森级驱逐舰-->
 		<Row Name="ICON_UNIT_BENSON_CLASS"								Atlas="ICON_ATLAS_UNITS"							Index="85"/>
 		<Row Name="ICON_UNIT_BENSON_CLASS_FOW"							Atlas="ICON_ATLAS_UNITS_FOW"						Index="85"/>
@@ -45,6 +47,6 @@
 		<!--企业图标-->
 		<Row Name="ICON_ENTERPRISE_RECOVER"								Atlas="ATLAS_EAGLE_UNION_ACTION"					Index="2"/>
 		<!--圣路易斯图标-->
-		
+
 	</IconDefinitions>
 </GameData>

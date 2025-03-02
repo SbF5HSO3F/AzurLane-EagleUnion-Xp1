@@ -64,6 +64,11 @@
 			<Type>ENTERPRISE_CV6_GOLDEN</Type>
 			<Color>248,207,70,255</Color>
 		</Row>
+		<!--圣路易斯-->
+		<Row>
+			<Type>ST_LOUIS_DARK_BULE</Type>
+			<Color>31,70,126,255</Color>
+		</Row>
 	</Colors>
 	<PlayerColors>
 		<!--拉菲-->
@@ -105,6 +110,15 @@
 			<SecondaryColor>ENTERPRISE_CV6_DARK</SecondaryColor>
 			<Alt1PrimaryColor>ENTERPRISE_CV6_DARK</Alt1PrimaryColor>
 			<Alt1SecondaryColor>ENTERPRISE_CV6_GOLDEN</Alt1SecondaryColor>
+		</Row>
+		<!--圣路易斯-->
+		<Row>
+			<Type>LEADER_ST_LOUIS_CL49</Type>
+			<Usage>Unique</Usage>
+			<PrimaryColor>ST_LOUIS_DARK_BULE</PrimaryColor>
+			<SecondaryColor>EAGLE_UNION_WHITE</SecondaryColor>
+			<Alt1PrimaryColor>EAGLE_UNION_WHITE</Alt1PrimaryColor>
+			<Alt1SecondaryColor>ST_LOUIS_DARK_BULE</Alt1SecondaryColor>
 		</Row>
 	</PlayerColors>
 </GameData>
