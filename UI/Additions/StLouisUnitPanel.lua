@@ -173,16 +173,15 @@ function StLouisUnitActive(owner, unitID, x, y, eReason)
     --get the unit x and y
     local uX, uY = pUnit:GetX(), pUnit:GetY()
     if eReason == Reason_1 then
-        SimUnitSystem.SetAnimationState(pUnit, "SPAWN", "IDLE")
+        SimUnitSystem.SetAnimationState(pUnit, "ACTION_1", "IDLE")
         --play the effect
         WorldView.PlayEffectAtXY("IMPROVEMENT_CREATED", uX, uY)
         WorldView.PlayEffectAtXY("EAGLE_CREATED", uX, uY)
     elseif eReason == Reason_2 then
-        SimUnitSystem.SetAnimationState(pUnit, "SPAWN", "IDLE")
+        SimUnitSystem.SetAnimationState(pUnit, "ACTION_2", "IDLE")
         --play the effect
+        WorldView.PlayEffectAtXY("IMPROVEMENT_CREATED", uX, uY)
         WorldView.PlayEffectAtXY("EAGLE_DESTROY", uX, uY)
-        --play the sound
-        UI.PlaySound("Unit_CondemnHeretic_2D")
     end
     --refersh the panel
     StLouisUnitPanel:Refresh()

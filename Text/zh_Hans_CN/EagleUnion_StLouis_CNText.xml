@@ -61,13 +61,17 @@
         <Replace Tag="LOC_STLOUIS_NO_PLACEABLE_RESOURCES" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]该单元格无有效资源[ENDCOLOR]</Text>
 		</Replace>
-		
 		<!--特殊加成-->
 		
 		<!--领袖项目-->
 
 		<!--领袖单位-->
-
+		<Replace Tag="LOC_UNIT_ST_EXPLORER_NAME" Language="zh_Hans_CN">
+			<Text>勘探者</Text>
+		</Replace>
+        <Replace Tag="LOC_UNIT_ST_EXPLORER_DESCRIPTION" Language="zh_Hans_CN">
+			<Text>圣路易斯特色平民单位，可在无主单元格上创建资源。</Text>
+		</Replace>
 		<!--特殊晋升-->
 
 		<!--特殊能力-->

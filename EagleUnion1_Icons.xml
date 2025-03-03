@@ -49,5 +49,8 @@
 		<!--圣路易斯图标-->
 		<Row Name="ICON_STLOUIS_CREATE"									Atlas="ATLAS_EAGLE_UNION_ACTION"					Index="3"/>
 		<Row Name="ICON_STLOUIS_REMOVE"									Atlas="ATLAS_EAGLE_UNION_ACTION"					Index="4"/>
+		<!--勘探者-->
+		<Row Name="ICON_UNIT_ST_EXPLORER"                      			Atlas="ATLAS_EAGLE_UNION_UNITS" 					Index="1"/>
+		<Row Name="ICON_UNIT_ST_EXPLORER_PORTRAIT"                      Atlas="ICON_ATLAS_UNIT_PORTRAITS_2" 				Index="45"/>
 	</IconDefinitions>
 </GameData>

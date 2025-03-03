@@ -174,8 +174,9 @@
         </UpdateText>
         <UpdateDatabase id="StLouis">
           <File priority="100">Data/StLouis/EagleUnion_StLouis_Leader.xml</File>
+          <File priority="90">Data/StLouis/EagleUnion_StLouis_Units.xml</File>
         </UpdateDatabase>
-        <UpdateText id="StLouis">
+        <UpdateText id="StLouis_Text">
           <File priority="90">Text/zh_Hans_CN/EagleUnion_StLouis_CNText.xml</File>
         </UpdateText>
       </InGameActions>
@@ -250,6 +251,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Data\StLouis\EagleUnion_StLouis_Leader.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Data\StLouis\EagleUnion_StLouis_Units.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="EagleUnion1_Colors.xml">

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- EagleUnion_StLouis_Units -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2025/3/3 9:02:19 -->
+<GameData>
+	<Types>
+		<Row Type="UNIT_ST_EXPLORER"	Kind="KIND_UNIT"/>
+	</Types>
+	<UnitAiInfos>
+		<Row UnitType="UNIT_ST_EXPLORER" AiType="UNITTYPE_CIVILIAN"/>
+	</UnitAiInfos>
+	<Tags>
+		<Row Tag="CLASS_ST_EXPLORER" Vocabulary="ABILITY_CLASS"/>
+	</Tags>
+	<TypeTags>
+		<Row Type="UNIT_ST_EXPLORER" Tag="CLASS_LANDCIVILIAN"/>
+		<Row Type="UNIT_ST_EXPLORER" Tag="CLASS_ST_EXPLORER"/>
+	</TypeTags>
+	<Units>
+		<Row UnitType="UNIT_ST_EXPLORER" 
+             Cost="50" 
+             BaseMoves="4" 
+             BaseSightRange="2" 
+             ZoneOfControl="false"
+             Domain="DOMAIN_LAND" 
+             FormationClass="FORMATION_CLASS_CIVILIAN"
+             CanCapture="False"
+             Name="LOC_UNIT_ST_EXPLORER_NAME" 
+             Description="LOC_UNIT_ST_EXPLORER_DESCRIPTION" 
+             PurchaseYield="YIELD_GOLD" 
+             CanRetreatWhenCaptured="true" 
+             CanEarnExperience="false"  
+             CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" 
+             CostProgressionParam1="50"
+             TraitType="TRAIT_LEADER_UNIT_ST_EXPLORER"/>
+	</Units>
+</GameData>

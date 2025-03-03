@@ -5,8 +5,9 @@
 <GameData>
 	<Types>
 		<!--圣路易斯-->
-		<Row Type="LEADER_ST_LOUIS_CL49"		Kind="KIND_LEADER"/>
-		<Row Type="TRAIT_LEADER_LUXURY_HANDLE"	Kind="KIND_TRAIT"/>
+		<Row Type="LEADER_ST_LOUIS_CL49"		    Kind="KIND_LEADER"/>
+		<Row Type="TRAIT_LEADER_LUXURY_HANDLE"	    Kind="KIND_TRAIT"/>
+		<Row Type="TRAIT_LEADER_UNIT_ST_EXPLORER"	Kind="KIND_TRAIT"/>
 	</Types>
 	<Leaders>
 		<!--圣路易斯-->
@@ -17,11 +18,13 @@
 	</CivilizationLeaders>
 	<Traits>
 		<!--圣路易斯-->
-		<Row TraitType="TRAIT_LEADER_LUXURY_HANDLE"	Name="LOC_TRAIT_LEADER_LUXURY_HANDLE_NAME" Description="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_LUXURY_HANDLE"	    Name="LOC_TRAIT_LEADER_LUXURY_HANDLE_NAME"  Description="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION"/>
+		<Row TraitType="TRAIT_LEADER_UNIT_ST_EXPLORER"	Name="LOC_UNIT_ST_EXPLORER_NAME"            Description="LOC_UNIT_ST_EXPLORER_DESCRIPTION"/>
 	</Traits>
 	<LeaderTraits>
 		<!--圣路易斯-->
 		<Row LeaderType="LEADER_ST_LOUIS_CL49" TraitType="TRAIT_LEADER_LUXURY_HANDLE"/>
+		<Row LeaderType="LEADER_ST_LOUIS_CL49" TraitType="TRAIT_LEADER_UNIT_ST_EXPLORER"/>
 	</LeaderTraits>
 	<HistoricalAgendas>
 
