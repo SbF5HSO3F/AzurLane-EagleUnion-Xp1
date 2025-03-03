@@ -60,7 +60,7 @@
 			<Text>发现猎物！</Text>
 		</Replace>
 		<Replace Tag="LOC_FLASHER_HUNTRESS_GOLD" Language="zh_Hans_CN">
-			<Text>[COLOR_FLOAT_GOLD]+{1_num}[ENDCOLOR] [ICON_GOLD]</Text>
+			<Text>[COLOR_FLOAT_GOLD]+{1_num}[ENDCOLOR] [ICON_GoldLarge]</Text>
 		</Replace>
 		<Replace Tag="LOC_FLASHER_HUNTRESS_DESC" Language="zh_Hans_CN">
 			<Text>您已经累积击杀{1_num}个单位，因此在击杀下一个单位时您将获得{2_num} [ICON_Gold] 金币。</Text>

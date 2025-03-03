@@ -10,6 +10,8 @@ include('EagleResources')
 
 local resources = EagleResources:new({ ['RESOURCECLASS_LUXURY'] = true })
 
+local explorer = GameInfo.Units['UNIT_ST_EXPLORER'].Index
+local baseGold = 40
 local Reason_1 = DB.MakeHash("STLOUIS_CREATED")
 local Reason_2 = DB.MakeHash("STLOUIS_REMOVED")
 
@@ -20,7 +22,7 @@ StLouisUnitPanel = {
         local unit = UI.GetHeadSelectedUnit()
         if EagleCore.CheckLeaderMatched(
                 Game.GetLocalPlayer(), 'LEADER_ST_LOUIS_CL49'
-            ) and unit ~= nil then
+            ) and unit ~= nil and unit:GetType() == explorer then
             Controls.StLouisGrid:SetHide(false)
             self.Create:Refresh(unit)
             self.Remove:Refresh(unit)
@@ -46,12 +48,26 @@ StLouisUnitPanel = {
         --Get the detail
         GetDetail = function(unit)
             local detail = { Disable = true, Rescource = {}, Reason = '' }
+            --get the unit remain movenment
+            if unit:GetMovesRemaining() == 0 then
+                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_MOVES')
+                return detail
+            end
             --the unit plot can place resource
             local plot = Map.GetPlot(unit:GetX(), unit:GetY())
             if plot:GetOwner() ~= -1 then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NOT_NO_OWNER')
                 return detail
             end
+            --the plot has resource
+            local index = plot:GetResourceType()
+            local resourceHash = plot:GetResourceTypeHash()
+            local resourceData = Players[unit:GetOwner()]:GetResources()
+            if index ~= -1 and resourceData:IsResourceVisible(resourceHash)then
+                detail.Reason = Locale.Lookup('LOC_STLOUIS_HAS_RESOURCES')
+                return detail
+            end
+            --get the placeable resources
             detail.Rescource = resources:GetPlaceableResources(plot)
             if #detail.Rescource == 0 then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
@@ -62,24 +78,30 @@ StLouisUnitPanel = {
         end,
         --refresh the button
         Refresh = function(self, unit)
-            local detail = self.GetDetail(unit)
-            local disable = detail.Disable
-            --set the button disable
-            Controls.Create:SetDisabled(disable)
-            Controls.Create:SetAlpha((disable and 0.7) or 1)
-            --the tooltip
-            local tooltip = Locale.Lookup('LOC_STLOUIS_CREATE_TITLE')
-                .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_CREATE_DESC')
-            if disable then
-                tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
-            else
-                tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_CREATE_DETAIL')
-                for _, resource in ipairs(detail.Rescource) do
-                    tooltip = tooltip .. Locale.Lookup('LOC_STLOUIS_CREATE_RESOURCE', resource.Icon, resource.Name)
+            if unit:GetActionCharges() > 0 then
+                Controls.Create:SetHide(false)
+                --get the detail
+                local detail = self.GetDetail(unit)
+                local disable = detail.Disable
+                --set the button disable
+                Controls.Create:SetDisabled(disable)
+                Controls.Create:SetAlpha((disable and 0.7) or 1)
+                --the tooltip
+                local tooltip = Locale.Lookup('LOC_STLOUIS_CREATE_TITLE')
+                    .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_CREATE_DESC')
+                if disable then
+                    tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
+                else
+                    tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_CREATE_DETAIL')
+                    for _, resource in ipairs(detail.Rescource) do
+                        tooltip = tooltip .. Locale.Lookup('LOC_STLOUIS_CREATE_RESOURCE', resource.Icon, resource.Name)
+                    end
                 end
+                --set the tooltip
+                Controls.Create:SetToolTipString(tooltip)
+            else
+                Controls.Create:SetHide(true)
             end
-            --set the tooltip
-            Controls.Create:SetToolTipString(tooltip)
         end,
         Callback = function(self)
             local unit = UI.GetHeadSelectedUnit()
@@ -106,18 +128,37 @@ StLouisUnitPanel = {
         end
     },
     Remove = {
-        GetDetail = function(unit)
-            local detail = { Disable = true, Reason = '' }
+        GetGold = function(playerId)
+            local percent = EagleCore:GetPlayerProgress(playerId)
+            local gold = baseGold * (1 + 9 * percent / 100)
+            return math.ceil(EagleCore:ModifyBySpeed(gold))
+        end,
+        GetDetail = function(self, unit)
+            local detail = { Disable = true, Rescource = {}, Gold = 0, Reason = '' }
+            --get the unit remain movenment
+            if unit:GetMovesRemaining() == 0 then
+                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_MOVES')
+                return detail
+            end
+            --get the plot
             local plot = Map.GetPlot(unit:GetX(), unit:GetY())
-            if plot:GetResourceType() == -1 then
+            local resource = plot:GetResourceType()
+            local resourceHash = plot:GetResourceTypeHash()
+            local resourceData = Players[unit:GetOwner()]:GetResources()
+            --the plot has resource?
+            if resource == -1 or resourceData:IsResourceVisible(resourceHash) == false then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
                 return detail
             end
+            local resourceDef = GameInfo.Resources[resourceHash]
+            detail.Rescource.Name = resourceDef.Name
+            detail.Rescource.Icon = '[ICON_' .. resourceDef.ResourceType .. ']'
+            detail.Gold = self.GetGold(unit:GetOwner())
             detail.Disable = false
             return detail
         end,
         Refresh = function(self, unit)
-            local detail = self.GetDetail(unit)
+            local detail = self:GetDetail(unit)
             local disable = detail.Disable
             --set the button disable
             Controls.Remove:SetDisabled(disable)
@@ -127,6 +168,11 @@ StLouisUnitPanel = {
                 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_REMOVE_DESC')
             if disable then
                 tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
+            else
+                local resource = detail.Rescource
+                tooltip = tooltip .. '[NEWLINE][NEWLINE]' ..
+                    Locale.Lookup('LOC_STLOUIS_REMOVE_DETAIL', resource.Icon, resource.Name) ..
+                    Locale.Lookup('LOC_STLOUIS_REMOVE_REWARD', detail.Gold)
             end
             --set the tooltip
             Controls.Remove:SetToolTipString(tooltip)
@@ -134,14 +180,15 @@ StLouisUnitPanel = {
         Callback = function(self)
             local unit = UI.GetHeadSelectedUnit()
             if unit == nil then return end
-            local detail = self.GetDetail(unit)
+            local detail = self:GetDetail(unit)
             if detail.Disable then return end
             local x, y = unit:GetX(), unit:GetY()
             UI.RequestPlayerOperation(Game.GetLocalPlayer(),
                 PlayerOperations.EXECUTE_SCRIPT, {
-                    UnitID = unit:GetID(),
-                    X = x,
-                    Y = y,
+                    UnitID  = unit:GetID(),
+                    Gold    = detail.Gold,
+                    X       = x,
+                    Y       = y,
                     OnStart = 'StLouisRemoved',
                 }
             ); Network.BroadcastPlayerInfo()

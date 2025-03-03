@@ -5,6 +5,7 @@
 <GameData>
 	<Types>
 		<Row Type="UNIT_ST_EXPLORER"	Kind="KIND_UNIT"/>
+        <Row Type="ABILITY_ST_EXPLORER"	Kind="KIND_ABILITY"/>
 	</Types>
 	<UnitAiInfos>
 		<Row UnitType="UNIT_ST_EXPLORER" AiType="UNITTYPE_CIVILIAN"/>
@@ -13,8 +14,9 @@
 		<Row Tag="CLASS_ST_EXPLORER" Vocabulary="ABILITY_CLASS"/>
 	</Tags>
 	<TypeTags>
-		<Row Type="UNIT_ST_EXPLORER" Tag="CLASS_LANDCIVILIAN"/>
-		<Row Type="UNIT_ST_EXPLORER" Tag="CLASS_ST_EXPLORER"/>
+		<Row Type="UNIT_ST_EXPLORER"    Tag="CLASS_LANDCIVILIAN"/>
+		<Row Type="UNIT_ST_EXPLORER"    Tag="CLASS_ST_EXPLORER"/>
+        <Row Type="ABILITY_ST_EXPLORER"	Tag="CLASS_ST_EXPLORER"/>
 	</TypeTags>
 	<Units>
 		<Row UnitType="UNIT_ST_EXPLORER" 
@@ -34,4 +36,33 @@
              CostProgressionParam1="50"
              TraitType="TRAIT_LEADER_UNIT_ST_EXPLORER"/>
 	</Units>
+    <Units_MODE>
+		<Row UnitType="UNIT_ST_EXPLORER" ActionCharges="3"/>
+	</Units_MODE>
+    <TypeProperties>
+        <Row Type="UNIT_ST_EXPLORER"	Name="CAN_TELEPORT_TO_CITY"     Value="true"/>
+		<Row Type="UNIT_ST_EXPLORER"	Name="CAN_MOVE_AFTER_PURCHASE"  Value="true"/>
+	</TypeProperties>
+    <UnitAbilities>
+		<Row UnitAbilityType="ABILITY_ST_EXPLORER" Name="LOC_ABILITY_ST_EXPLORER_NAME" Description="LOC_ABILITY_ST_EXPLORER_DESCRIPTION"/>
+	</UnitAbilities>
+	<UnitAbilityModifiers>
+		<Row>
+			<UnitAbilityType>ABILITY_ST_EXPLORER</UnitAbilityType>
+			<ModifierId>ST_EXPLORER_ENTER_FOREIGN_LANDS</ModifierId>
+		</Row>
+	</UnitAbilityModifiers>
+	<Modifiers>
+		<Row>
+			<ModifierId>ST_EXPLORER_ENTER_FOREIGN_LANDS</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_ENTER_FOREIGN_LANDS</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<Row>
+			<ModifierId>ST_EXPLORER_ENTER_FOREIGN_LANDS</ModifierId>
+			<Name>Enter</Name>
+			<Value>true</Value>
+		</Row>
+	</ModifierArguments>
 </GameData>
