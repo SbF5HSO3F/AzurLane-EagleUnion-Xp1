@@ -93,6 +93,10 @@
 			<m_EntryID text="IMG_EAGLE_UNION_LEADER_ST_LOUIS_CL49_LOADING_FOREGROUND"/>
 			<m_ObjectName text="IMG_EAGLE_UNION_LEADER_ST_LOUIS_CL49_LOADING_FOREGROUND"/>
 		</Element>
+		<Element>
+			<m_EntryID text="Moment_St_Explorer"/>
+			<m_ObjectName text="Moment_St_Explorer"/>
+		</Element>
 	</m_Entries>
 	<m_AllowedPlatforms>
 		<Element>WINDOWS</Element>

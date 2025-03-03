@@ -11,6 +11,9 @@
             <Button ID="Remove" Anchor="C,B" Size="44,53" Texture="UnitPanel_ActionButton">
 				<Image ID="RemoveIcon" Anchor="C,C" Offset="0,-2" Size="38,38" Icon="ICON_STLOUIS_REMOVE"/>
 			</Button>
+            <Button ID="Improv" Anchor="C,B" Size="44,53" Texture="UnitPanel_ActionButton">
+				<Image ID="ImprovIcon" Anchor="C,C" Offset="0,-2" Size="38,38" Icon="ICON_STLOUIS_IMPROV"/>
+			</Button>
 		</Stack>
 	</Grid>
 </Context>

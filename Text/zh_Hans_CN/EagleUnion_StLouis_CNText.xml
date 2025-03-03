@@ -63,6 +63,12 @@
 		<Replace Tag="LOC_STLOUIS_REMOVE_TEXT" Language="zh_Hans_CN">
 			<Text>[COLOR_FLOAT_GOLD]+{1_num}[ENDCOLOR] [ICON_GoldLarge]</Text>
 		</Replace>
+		<Replace Tag="LOC_STLOUIS_IMPROV_TITLE" Language="zh_Hans_CN">
+			<Text>改良资源</Text>
+		</Replace>
+        <Replace Tag="LOC_STLOUIS_IMPROV_DESC" Language="zh_Hans_CN">
+			<Text>位于相邻己方单元格的资源上时使用。勘探者将改良此资源并将该单元格纳入领土。结束当前回合。</Text>
+		</Replace>
         <!--Warning-->
 		<Replace Tag="LOC_STLOUIS_NO_MOVES" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]无剩余移动力[ENDCOLOR]</Text>
@@ -75,6 +81,12 @@
 		</Replace>
         <Replace Tag="LOC_STLOUIS_NO_PLACEABLE_RESOURCES" Language="zh_Hans_CN">
 			<Text>[COLOR_RED]该单元格无有效资源[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_STLOUIS_NO_ADJACENT_OWNER" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]必须相邻己方单元格[ENDCOLOR]</Text>
+		</Replace>
+		<Replace Tag="LOC_STLOUIS_NO_IMPROVEMENT" Language="zh_Hans_CN">
+			<Text>[COLOR_RED]无有效改良设施[ENDCOLOR]</Text>
 		</Replace>
 		<!--特殊加成-->
 		

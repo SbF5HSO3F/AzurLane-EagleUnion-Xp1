@@ -14,6 +14,7 @@ local explorer = GameInfo.Units['UNIT_ST_EXPLORER'].Index
 local baseGold = 40
 local Reason_1 = DB.MakeHash("STLOUIS_CREATED")
 local Reason_2 = DB.MakeHash("STLOUIS_REMOVED")
+local Reason_3 = DB.MakeHash("STLOUIS_IMPROVE")
 
 --||======================MetaTable=======================||--
 
@@ -26,6 +27,7 @@ StLouisUnitPanel = {
             Controls.StLouisGrid:SetHide(false)
             self.Create:Refresh(unit)
             self.Remove:Refresh(unit)
+            self.Improv:Refresh(unit)
         else
             Controls.StLouisGrid:SetHide(true)
         end
@@ -40,6 +42,7 @@ StLouisUnitPanel = {
             --Register Callback
             self.Create:Register()
             self.Remove:Register()
+            self.Improv:Register()
             --reset the button
             self:Refresh()
         end
@@ -63,7 +66,7 @@ StLouisUnitPanel = {
             local index = plot:GetResourceType()
             local resourceHash = plot:GetResourceTypeHash()
             local resourceData = Players[unit:GetOwner()]:GetResources()
-            if index ~= -1 and resourceData:IsResourceVisible(resourceHash)then
+            if index ~= -1 and resourceData:IsResourceVisible(resourceHash) then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_HAS_RESOURCES')
                 return detail
             end
@@ -197,6 +200,104 @@ StLouisUnitPanel = {
             Controls.Remove:RegisterCallback(Mouse.eLClick, function() self:Callback() end)
             Controls.Remove:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
         end
+    },
+    Improv = {
+        GetDetail = function(unit)
+            local detail = { Disable = true, Improvement = {}, Reason = '' }
+            --get the unit remain movenment
+            if unit:GetMovesRemaining() == 0 then
+                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_MOVES')
+                return detail
+            end
+            local x, y = unit:GetX(), unit:GetY()
+            --get the plot
+            local plot = Map.GetPlot(x, y)
+            --the plot is no owner
+            if plot:GetOwner() ~= -1 then
+                detail.Reason = Locale.Lookup('LOC_STLOUIS_NOT_NO_OWNER')
+                return detail
+            end
+            --the plot has resource
+            local resource = plot:GetResourceType()
+            local resourceHash = plot:GetResourceTypeHash()
+            local resourceData = Players[unit:GetOwner()]:GetResources()
+            if resource == -1 or resourceData:IsResourceVisible(resourceHash) == false then
+                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
+                return detail
+            end
+            --get the next owner plot
+            local adjacentOwner = false
+            for _, tplot in ipairs(Map.GetAdjacentPlots(x, y)) do
+                if tplot:GetOwner() == unit:GetOwner() then
+                    adjacentOwner = true
+                    break
+                end
+            end
+            if adjacentOwner == false then
+                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_ADJACENT_OWNER')
+                return detail
+            end
+            --get the improvement
+            local resDef = GameInfo.Resources[resourceHash]
+            local resourceType = resDef.ResourceType
+            local hasFeature = plot:GetFeatureType() ~= -1
+            local hasImprovement = false
+            for row in GameInfo.Improvement_ValidResources() do
+                if row.ResourceType == resourceType and not (hasFeature and row.MustRemoveFeature) then
+                    local improtDef = GameInfo.Improvements[row.ImprovementType]
+                    detail.Improvement = { Index = improtDef.Index, Name = improtDef.Name, Icon = improtDef.Icon }
+                    hasImprovement = true
+                end
+            end
+            if hasImprovement == false then
+                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_IMPROVEMENT')
+                return detail
+            end
+            detail.Disable = false
+            return detail
+        end,
+        Refresh = function(self, unit)
+            --get the detail
+            local detail = self.GetDetail(unit)
+            --set the button disable
+            local disable = detail.Disable
+            Controls.Improv:SetDisabled(disable)
+            Controls.Improv:SetAlpha((disable and 0.7) or 1)
+            --set the button icon
+            if detail.Improvement and detail.Improvement.Icon then
+                Controls.ImprovIcon:SetIcon(detail.Improvement.Icon)
+            else
+                Controls.ImprovIcon:SetIcon('ICON_STLOUIS_IMPROV')
+            end
+            --the tooltip
+            local tooltip = Locale.Lookup('LOC_STLOUIS_IMPROV_TITLE')
+                .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_IMPROV_DESC')
+            if disable then
+                tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
+            end
+            --set the tooltip
+            Controls.Improv:SetToolTipString(tooltip)
+        end,
+        Callback = function(self)
+            local unit = UI.GetHeadSelectedUnit()
+            if unit == nil then return end
+            local detail = self.GetDetail(unit)
+            if detail.Disable then return end
+            local x, y = unit:GetX(), unit:GetY()
+            UI.RequestPlayerOperation(Game.GetLocalPlayer(),
+                PlayerOperations.EXECUTE_SCRIPT, {
+                    UnitID  = unit:GetID(),
+                    X       = x,
+                    Y       = y,
+                    Index   = detail.Improvement.Index,
+                    OnStart = 'StLouisImprove',
+                }
+            ); Network.BroadcastPlayerInfo()
+        end,
+        Register = function(self)
+            Controls.Improv:RegisterCallback(Mouse.eLClick, function() self:Callback() end)
+            Controls.Improv:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
+        end
     }
 }
 
@@ -229,6 +330,8 @@ function StLouisUnitActive(owner, unitID, x, y, eReason)
         --play the effect
         WorldView.PlayEffectAtXY("IMPROVEMENT_CREATED", uX, uY)
         WorldView.PlayEffectAtXY("EAGLE_DESTROY", uX, uY)
+    elseif eReason == Reason_3 then
+        SimUnitSystem.SetAnimationState(pUnit, "ACTION_1", "IDLE")
     end
     --refersh the panel
     StLouisUnitPanel:Refresh()

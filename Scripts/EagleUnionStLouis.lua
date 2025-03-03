@@ -9,6 +9,7 @@ include('EagleUnionPoint')
 --||===================local variables====================||--
 
 local goldKey = 'StLouisGold'
+local ability = 'ABILITY_ST_IMPROVED'
 
 --||====================base functions====================||--
 
@@ -84,6 +85,23 @@ function StLouisRemoved(playerID, param)
     UnitManager.ReportActivation(unit, "STLOUIS_REMOVED")
 end
 
+--改良单元格
+function StLouisImprove(playerID, param)
+    local plot = Map.GetPlot(param.X, param.Y)
+    --set the improvement
+    ImprovementBuilder.SetImprovementType(plot, param.Index, playerID)
+    --get the unit
+    local unit = UnitManager.GetUnit(playerID, param.UnitID)
+    --add the plot into your city
+    local unitAbility = unit:GetAbility()
+    unitAbility:ChangeAbilityCount(ability, 1)
+    unitAbility:ChangeAbilityCount(ability, -unitAbility:GetAbilityCount(ability))
+    --end the unit turn
+    StLouisEndTurn(unit)
+    --report the unit active
+    UnitManager.ReportActivation(unit, "STLOUIS_IMPROVE")
+end
+
 --||======================initialize======================||--
 
 --initialization function
@@ -93,6 +111,7 @@ function Initialize()
     ---------------------GameEvents---------------------
     GameEvents.StLouisCreated.Add(StLouisCreated)
     GameEvents.StLouisRemoved.Add(StLouisRemoved)
+    GameEvents.StLouisImprove.Add(StLouisImprove)
     ----------------------------------------------------
     ----------------------------------------------------
     print('Initial success!')

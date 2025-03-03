@@ -6,6 +6,7 @@
 	<Types>
 		<Row Type="UNIT_ST_EXPLORER"	Kind="KIND_UNIT"/>
         <Row Type="ABILITY_ST_EXPLORER"	Kind="KIND_ABILITY"/>
+        <Row Type="ABILITY_ST_IMPROVED"	Kind="KIND_ABILITY"/>
 	</Types>
 	<UnitAiInfos>
 		<Row UnitType="UNIT_ST_EXPLORER" AiType="UNITTYPE_CIVILIAN"/>
@@ -17,6 +18,7 @@
 		<Row Type="UNIT_ST_EXPLORER"    Tag="CLASS_LANDCIVILIAN"/>
 		<Row Type="UNIT_ST_EXPLORER"    Tag="CLASS_ST_EXPLORER"/>
         <Row Type="ABILITY_ST_EXPLORER"	Tag="CLASS_ST_EXPLORER"/>
+        <Row Type="ABILITY_ST_IMPROVED"	Tag="CLASS_ST_EXPLORER"/>
 	</TypeTags>
 	<Units>
 		<Row UnitType="UNIT_ST_EXPLORER" 
@@ -45,20 +47,36 @@
 	</TypeProperties>
     <UnitAbilities>
 		<Row UnitAbilityType="ABILITY_ST_EXPLORER" Name="LOC_ABILITY_ST_EXPLORER_NAME" Description="LOC_ABILITY_ST_EXPLORER_DESCRIPTION"/>
+		<Row UnitAbilityType="ABILITY_ST_IMPROVED" Inactive="true"/>
 	</UnitAbilities>
 	<UnitAbilityModifiers>
+        <!--进入外国领土-->
 		<Row>
 			<UnitAbilityType>ABILITY_ST_EXPLORER</UnitAbilityType>
 			<ModifierId>ST_EXPLORER_ENTER_FOREIGN_LANDS</ModifierId>
 		</Row>
+        <!--纳入领土-->
+		<Row>
+			<UnitAbilityType>ABILITY_ST_IMPROVED</UnitAbilityType>
+			<ModifierId>ST_EXPLORER_GRANT_PLOT</ModifierId>
+		</Row>
 	</UnitAbilityModifiers>
 	<Modifiers>
+        <!--进入外国领土-->
 		<Row>
 			<ModifierId>ST_EXPLORER_ENTER_FOREIGN_LANDS</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_UNIT_ADJUST_ENTER_FOREIGN_LANDS</ModifierType>
 		</Row>
+        <!--纳入领土-->
+		<Row>
+			<ModifierId>ST_EXPLORER_GRANT_PLOT</ModifierId>
+			<ModifierType>MODIFIER_UNIT_GRANT_PLOT</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+		</Row>
 	</Modifiers>
 	<ModifierArguments>
+        <!--进入外国领土-->
 		<Row>
 			<ModifierId>ST_EXPLORER_ENTER_FOREIGN_LANDS</ModifierId>
 			<Name>Enter</Name>
