@@ -30,10 +30,10 @@
 		<!--领袖能力-->
 		<!--Operation Rainbow-->
 		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_NAME" Language="zh_Hans_CN">
-			<Text>Luxury Handle</Text>
+			<Text>鎏金执舵</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>消耗 [ICON_Gold] 金币时，获得所消耗 [ICON_Gold] 金币25%的 [ICON_ResearchPoint] 研究点数。</Text>
+			<Text>消耗 [ICON_Gold] 金币时，获得所消耗 [ICON_Gold] 金币25%的 [ICON_ResearchPoint] 研究点数。城市奢侈品资源+2 [ICON_Culture] 文化值，改良的奢侈品资源提供+1 [ICON_TradeRoute] 贸易路线容量。</Text>
 		</Replace>
 		<!--Lua文字-->
         <Replace Tag="LOC_STLOUIS_CREATE_TITLE" Language="zh_Hans_CN">

@@ -42,7 +42,7 @@
 		<Row Type="LEADER_ST_LOUIS_CL49" BackgroundImage="IMG_EAGLE_UNION_DIPLOMACY_BACKGROUND.dds"/>
 	</DiplomacyInfo>
 	<TraitModifiers>
-    <!--KANSEN-->
+    	<!--KANSEN-->
 		<Row>
 			<TraitType>TRAIT_LEADER_LUXURY_HANDLE</TraitType>
 			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SAILING</ModifierId>
@@ -51,5 +51,57 @@
 			<TraitType>TRAIT_LEADER_LUXURY_HANDLE</TraitType>
 			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
 		</Row>
+		<!--奢侈品+2文化值-->
+		<Row>
+			<TraitType>TRAIT_LEADER_LUXURY_HANDLE</TraitType>
+			<ModifierId>ST_LOUIS_ADD_LUXURY_YIELD</ModifierId>
+		</Row>
+		<!--改良奢侈品+1贸易路线-->
+		<Row>
+			<TraitType>TRAIT_LEADER_LUXURY_HANDLE</TraitType>
+			<ModifierId>ST_LOUIS_ATTACH_IMPROVED_LUXURY</ModifierId>
+		</Row>
     </TraitModifiers>
+	<Modifiers>
+		<!--奢侈品+2文化值-->
+		<Row>
+			<ModifierId>ST_LOUIS_ADD_LUXURY_YIELD</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_PLOT_YIELD</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_LUXURY</SubjectRequirementSetId>
+		</Row>
+		<!--改良奢侈品+1贸易路线-->
+		<Row>
+			<ModifierId>ST_LOUIS_ATTACH_IMPROVED_LUXURY</ModifierId>
+			<ModifierType>MODIFIER_EAGLE_UNION_PLAYER_IMPROVEMENTS_ATTACH_MODIFIER</ModifierType>
+			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_LUXURY</SubjectRequirementSetId>
+		</Row>
+		<Row>
+			<ModifierId>ST_LOUIS_LUXURY_ADD_ROUTE</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
+		</Row>
+	</Modifiers>
+	<ModifierArguments>
+		<!--奢侈品+2文化值-->
+		<Row>
+			<ModifierId>ST_LOUIS_ADD_LUXURY_YIELD</ModifierId>
+			<Name>Amount</Name>
+			<Value>2</Value>
+		</Row>
+		<Row>
+			<ModifierId>ST_LOUIS_ADD_LUXURY_YIELD</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_CULTURE</Value>
+		</Row>
+		<!--改良奢侈品+1贸易路线-->
+		<Row>
+			<ModifierId>ST_LOUIS_ATTACH_IMPROVED_LUXURY</ModifierId>
+			<Name>ModifierId</Name>
+			<Value>ST_LOUIS_LUXURY_ADD_ROUTE</Value>
+		</Row>
+		<Row>
+			<ModifierId>ST_LOUIS_LUXURY_ADD_ROUTE</ModifierId>
+			<Name>Amount</Name>
+			<Value>1</Value>
+		</Row>
+	</ModifierArguments>
 </GameData>
