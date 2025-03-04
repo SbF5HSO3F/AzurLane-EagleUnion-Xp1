@@ -9,6 +9,7 @@ include('EagleUnionPoint')
 --||===================local variables====================||--
 
 local goldKey = 'StLouisGold'
+local percent = 25
 local ability = 'ABILITY_ST_IMPROVED'
 
 --||====================base functions====================||--
@@ -31,6 +32,7 @@ function StLouisTreasuryChanged(playerID, yield, balance)
         local change = lastGold - balance
         --if the change is positive, grant the yield
         if change > 0 then
+            change = EagleCore.Round(change * percent / 100)
             --grant the point
             EaglePointManager:ChangeEaglePoint(playerID, change)
         end

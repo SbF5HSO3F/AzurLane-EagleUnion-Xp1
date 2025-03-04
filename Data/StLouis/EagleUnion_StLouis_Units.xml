@@ -22,7 +22,7 @@
 	</TypeTags>
 	<Units>
 		<Row UnitType="UNIT_ST_EXPLORER" 
-             Cost="50" 
+             Cost="20" 
              BaseMoves="4" 
              BaseSightRange="2" 
              ZoneOfControl="false"
@@ -35,7 +35,7 @@
              CanRetreatWhenCaptured="true" 
              CanEarnExperience="false"  
              CostProgressionModel="COST_PROGRESSION_PREVIOUS_COPIES" 
-             CostProgressionParam1="50"
+             CostProgressionParam1="60"
              TraitType="TRAIT_LEADER_UNIT_ST_EXPLORER"/>
 	</Units>
     <Units_MODE>

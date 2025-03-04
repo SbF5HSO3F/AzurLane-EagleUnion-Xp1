@@ -33,14 +33,14 @@
 			<Text>Luxury Handle</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>消耗 [ICON_Gold] 金币时将获得等量的 [ICON_ResearchPoint] 研究点数。</Text>
+			<Text>消耗 [ICON_Gold] 金币时，获得所消耗 [ICON_Gold] 金币25%的 [ICON_ResearchPoint] 研究点数。</Text>
 		</Replace>
 		<!--Lua文字-->
         <Replace Tag="LOC_STLOUIS_CREATE_TITLE" Language="zh_Hans_CN">
 			<Text>创建资源</Text>
 		</Replace>
         <Replace Tag="LOC_STLOUIS_CREATE_DESC" Language="zh_Hans_CN">
-			<Text>位于无主的空白单元格上使用。勘探者将随机创建一种奢侈品资源。消耗1点次数并结束当前回合。</Text>
+			<Text>位于无主的空白单元格上使用，勘探者将随机创建一种奢侈品资源。消耗1点次数并结束当前回合。</Text>
 		</Replace>
         <Replace Tag="LOC_STLOUIS_CREATE_DETAIL" Language="zh_Hans_CN">
 			<Text>资源列表：</Text>
@@ -52,7 +52,7 @@
 			<Text>移除资源</Text>
 		</Replace>
         <Replace Tag="LOC_STLOUIS_REMOVE_DESC" Language="zh_Hans_CN">
-			<Text>位于资源上时使用。勘探者将移除该单元格上的资源并结束当前回合。现有改良设施将被摧毁。</Text>
+			<Text>位于资源上时使用，勘探者将移除该单元格上的资源并结束当前回合。现有改良设施将被摧毁。</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_REMOVE_DETAIL" Language="zh_Hans_CN">
 			<Text>移除：{1_Icon} {2_Name}</Text>
@@ -64,10 +64,13 @@
 			<Text>[COLOR_FLOAT_GOLD]+{1_num}[ENDCOLOR] [ICON_GoldLarge]</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_IMPROV_TITLE" Language="zh_Hans_CN">
-			<Text>改良资源</Text>
+			<Text>占据资源</Text>
 		</Replace>
         <Replace Tag="LOC_STLOUIS_IMPROV_DESC" Language="zh_Hans_CN">
-			<Text>位于相邻己方单元格的资源上时使用。勘探者将改良此资源并将该单元格纳入领土。结束当前回合。</Text>
+			<Text>位于相邻己方单元格的资源上时使用，勘探者将改良此资源并结束当前回合。该单元格将纳入领土。</Text>
+		</Replace>
+		<Replace Tag="LOC_STLOUIS_IMPROVEMENT" Language="zh_Hans_CN">
+			<Text>创建改良设施：{1_Name}</Text>
 		</Replace>
         <!--Warning-->
 		<Replace Tag="LOC_STLOUIS_NO_MOVES" Language="zh_Hans_CN">
@@ -97,7 +100,7 @@
 			<Text>勘探者</Text>
 		</Replace>
         <Replace Tag="LOC_UNIT_ST_EXPLORER_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>圣路易斯特色平民单位，可在无主单元格上创建奢侈品资源和移除单元格上的资源。</Text>
+			<Text>圣路易斯特色平民单位，能够改良与己方领土相邻的资源并将该单元格纳入领土和移除资源以获得 [ICON_Gold] 金币并摧毁该单元格上的改良设施。[NEWLINE]拥有3点使用次数，可消耗次数在无主的空白单元格上创建奢侈品资源。</Text>
 		</Replace>
 		<!--特殊晋升-->
 

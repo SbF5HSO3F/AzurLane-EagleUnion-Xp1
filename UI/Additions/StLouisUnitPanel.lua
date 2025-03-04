@@ -8,7 +8,8 @@ include('EagleResources')
 
 --||===================local variables====================||--
 
-local resources = EagleResources:new({ ['RESOURCECLASS_LUXURY'] = true })
+local luxuries = EagleResources:new({ ["RESOURCECLASS_LUXURY"] = true })
+local resources = EagleResources:new(true)
 
 local explorer = GameInfo.Units['UNIT_ST_EXPLORER'].Index
 local baseGold = 40
@@ -70,8 +71,8 @@ StLouisUnitPanel = {
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_HAS_RESOURCES')
                 return detail
             end
-            --get the placeable resources
-            detail.Rescource = resources:GetPlaceableResources(plot)
+            --get the placeable luxuries
+            detail.Rescource = luxuries:GetPlaceableResources(plot)
             if #detail.Rescource == 0 then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
                 return detail
@@ -218,10 +219,10 @@ StLouisUnitPanel = {
                 return detail
             end
             --the plot has resource
-            local resource = plot:GetResourceType()
+            local resourceType = plot:GetResourceType()
             local resourceHash = plot:GetResourceTypeHash()
             local resourceData = Players[unit:GetOwner()]:GetResources()
-            if resource == -1 or resourceData:IsResourceVisible(resourceHash) == false then
+            if resourceType == -1 or resourceData:IsResourceVisible(resourceHash) == false then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
                 return detail
             end
@@ -239,20 +240,13 @@ StLouisUnitPanel = {
             end
             --get the improvement
             local resDef = GameInfo.Resources[resourceHash]
-            local resourceType = resDef.ResourceType
-            local hasFeature = plot:GetFeatureType() ~= -1
-            local hasImprovement = false
-            for row in GameInfo.Improvement_ValidResources() do
-                if row.ResourceType == resourceType and not (hasFeature and row.MustRemoveFeature) then
-                    local improtDef = GameInfo.Improvements[row.ImprovementType]
-                    detail.Improvement = { Index = improtDef.Index, Name = improtDef.Name, Icon = improtDef.Icon }
-                    hasImprovement = true
-                end
-            end
-            if hasImprovement == false then
+            local resource = resources:GetResource(resDef.ResourceType)
+            local improvement = resource:GetImprovement(plot)
+            if not improvement or not next(improvement) then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_IMPROVEMENT')
                 return detail
             end
+            detail.Improvement = improvement
             detail.Disable = false
             return detail
         end,
@@ -264,14 +258,19 @@ StLouisUnitPanel = {
             Controls.Improv:SetDisabled(disable)
             Controls.Improv:SetAlpha((disable and 0.7) or 1)
             --set the button icon
-            if detail.Improvement and detail.Improvement.Icon then
-                Controls.ImprovIcon:SetIcon(detail.Improvement.Icon)
+            local imTooltip, improvement = '', detail.Improvement
+            if improvement and improvement.Icon then
+                Controls.ImprovIcon:SetIcon(improvement.Icon)
+                imTooltip = Locale.Lookup('LOC_STLOUIS_IMPROVEMENT', improvement.Name)
             else
                 Controls.ImprovIcon:SetIcon('ICON_STLOUIS_IMPROV')
             end
             --the tooltip
             local tooltip = Locale.Lookup('LOC_STLOUIS_IMPROV_TITLE')
                 .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_IMPROV_DESC')
+            if imTooltip ~= '' then
+                tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. imTooltip
+            end
             if disable then
                 tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
             end
