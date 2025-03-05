@@ -11,6 +11,8 @@ include('EagleUnionPoint')
 local goldKey = 'StLouisGold'
 local percent = 25
 local ability = 'ABILITY_ST_IMPROVED'
+local modifier_1 = 'ST_LOUIS_GRANT_GOLD_BASED_ON_EXCESS_LUXURIES'
+local modifier_2 = 'ST_LOUIS_GRANT_TOURISM_BASED_ON_EXCESS_LUXURIES'
 
 --||====================base functions====================||--
 
@@ -38,6 +40,19 @@ function StLouisTreasuryChanged(playerID, yield, balance)
         end
         --set the last faith balance
         pPlayer:SetProperty(goldKey, balance)
+    end
+end
+
+function StLouisCreateTradeRoute(playerID, oPlayerID, oCityID, tPlayerID, tCityID)
+    if EagleCore.CheckLeaderMatched(playerID, 'LEADER_ST_LOUIS_CL49') then
+        --get the city
+        local city = CityManager.GetCity(oPlayerID, oCityID)
+        if not city then return end
+        --attach the modifier
+        city:AttachModifierByID(modifier_1)
+        if tPlayerID ~= oPlayerID then
+            city:AttachModifierByID(modifier_2)
+        end
     end
 end
 
@@ -111,6 +126,7 @@ end
 function Initialize()
     -----------------------Events-----------------------
     Events.TreasuryChanged.Add(StLouisTreasuryChanged)
+    Events.TradeRouteActivityChanged.Add(StLouisCreateTradeRoute)
     ---------------------GameEvents---------------------
     GameEvents.StLouisCreated.Add(StLouisCreated)
     GameEvents.StLouisRemoved.Add(StLouisRemoved)

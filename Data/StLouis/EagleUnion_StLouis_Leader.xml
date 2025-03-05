@@ -51,6 +51,11 @@
 			<TraitType>TRAIT_LEADER_LUXURY_HANDLE</TraitType>
 			<ModifierId>EAGLE_UNION_KANSEN_UNLOCKED_TECH_SHIPBUILDING</ModifierId>
 		</Row>
+		<!--金币消耗减少-->
+		<Row>
+			<TraitType>TRAIT_LEADER_LUXURY_HANDLE</TraitType>
+			<ModifierId>LUXURY_HANDLE_GOLD_PURCHASES</ModifierId>
+		</Row>
 		<!--奢侈品+2文化值-->
 		<Row>
 			<TraitType>TRAIT_LEADER_LUXURY_HANDLE</TraitType>
@@ -63,6 +68,11 @@
 		</Row>
     </TraitModifiers>
 	<Modifiers>
+		<!--金币消耗减少-->
+		<Row>
+			<ModifierId>LUXURY_HANDLE_GOLD_PURCHASES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GOVERNMENT_FLAT_BONUS</ModifierType>
+		</Row>
 		<!--奢侈品+2文化值-->
 		<Row>
 			<ModifierId>ST_LOUIS_ADD_LUXURY_YIELD</ModifierId>
@@ -76,11 +86,35 @@
 			<SubjectRequirementSetId>EAGLE_UNION_PLOT_HAS_LUXURY</SubjectRequirementSetId>
 		</Row>
 		<Row>
-			<ModifierId>ST_LOUIS_LUXURY_ADD_ROUTE</ModifierId>
+			<ModifierId>ST_LOUIS_IMPROVED_LUXURY_ADD_ROUTE</ModifierId>
 			<ModifierType>MODIFIER_PLAYER_ADJUST_TRADE_ROUTE_CAPACITY</ModifierType>
+		</Row>
+		<!--奢侈品buff-->
+		<Row>
+			<ModifierId>ST_LOUIS_GRANT_GOLD_BASED_ON_EXCESS_LUXURIES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_YIELD_PER_EXCESS_LUXURIES</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
+		</Row>
+		<Row>
+			<ModifierId>ST_LOUIS_GRANT_TOURISM_BASED_ON_EXCESS_LUXURIES</ModifierId>
+			<ModifierType>MODIFIER_PLAYER_GRANT_TOURISM_PER_EXCESS_LUXURIES</ModifierType>
+			<RunOnce>true</RunOnce>
+			<Permanent>true</Permanent>
 		</Row>
 	</Modifiers>
 	<ModifierArguments>
+		<!--金币消耗减少-->
+		<Row>
+			<ModifierId>LUXURY_HANDLE_GOLD_PURCHASES</ModifierId>
+			<Name>Amount</Name>
+			<Value>20</Value>
+		</Row>
+		<Row>
+			<ModifierId>LUXURY_HANDLE_GOLD_PURCHASES</ModifierId>
+			<Name>BonusType</Name>
+			<Value>GOVERNMENTBONUS_GOLD_PURCHASES</Value>
+		</Row>
 		<!--奢侈品+2文化值-->
 		<Row>
 			<ModifierId>ST_LOUIS_ADD_LUXURY_YIELD</ModifierId>
@@ -96,12 +130,28 @@
 		<Row>
 			<ModifierId>ST_LOUIS_ATTACH_IMPROVED_LUXURY</ModifierId>
 			<Name>ModifierId</Name>
-			<Value>ST_LOUIS_LUXURY_ADD_ROUTE</Value>
+			<Value>ST_LOUIS_IMPROVED_LUXURY_ADD_ROUTE</Value>
 		</Row>
 		<Row>
-			<ModifierId>ST_LOUIS_LUXURY_ADD_ROUTE</ModifierId>
+			<ModifierId>ST_LOUIS_IMPROVED_LUXURY_ADD_ROUTE</ModifierId>
 			<Name>Amount</Name>
 			<Value>1</Value>
+		</Row>
+		<!--奢侈品buff-->
+		<Row>
+			<ModifierId>ST_LOUIS_GRANT_GOLD_BASED_ON_EXCESS_LUXURIES</ModifierId>
+			<Name>YieldType</Name>
+			<Value>YIELD_GOLD</Value>
+		</Row>
+		<Row>
+			<ModifierId>ST_LOUIS_GRANT_GOLD_BASED_ON_EXCESS_LUXURIES</ModifierId>
+			<Name>Amount</Name>
+			<Value>50</Value>
+		</Row>
+		<Row>
+			<ModifierId>ST_LOUIS_GRANT_TOURISM_BASED_ON_EXCESS_LUXURIES</ModifierId>
+			<Name>Amount</Name>
+			<Value>10</Value>
 		</Row>
 	</ModifierArguments>
 </GameData>
