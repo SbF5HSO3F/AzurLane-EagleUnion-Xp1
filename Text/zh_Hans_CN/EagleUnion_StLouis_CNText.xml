@@ -23,7 +23,19 @@
 			<Text></Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
-			<Text></Text>
+			<Text>圣路易斯号（USS St. Louis，CL-49）是美国海军布鲁克林级轻型巡洋舰8号舰（圣路易斯级1号舰），是第五艘以“密苏里州圣路易斯市”命名的美国海军舰艇。1936年12月10日动工，1938年4月15日下水，1939年5月19日服役。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+			<Text>在珍珠港、阿留申群岛、瓜达尔卡纳尔岛（简称：瓜岛）、新乔治亚、布干维尔岛、菲律宾海战役、莱特湾、空袭日本、冲绳战役当中，皆能见到她的身影。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+			<Text>战后不久，在1946年6月20日退役。1951年出售给巴西海军，重新服役成为塔曼达雷号（Tamandaré，C-12），直到1976年才退役。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+			<Text>1980年，卖给中国台湾的拆船业者准备拆除。1980年8月24日，在拖往中国台湾途中，于好望角附近浸水沉没。</Text>
+		</Replace>
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_5" Language="zh_Hans_CN">
+			<Text>第二次世界大战期间，她获得十一枚战斗之星。</Text>
 		</Replace>
 		<!--领袖议程-->
 
