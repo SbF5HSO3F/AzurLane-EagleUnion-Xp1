@@ -45,7 +45,7 @@
 			<Text>鎏金执舵</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>使用 [ICON_Gold] 金币购买时费用-20%。消耗 [ICON_Gold] 金币时，获得所消耗 [ICON_Gold] 金币25%的 [ICON_ResearchPoint] 研究点数。城市奢侈品资源+2 [ICON_Culture] 文化值，改良的奢侈品资源提供+1 [ICON_TradeRoute] 贸易路线容量。创建 [ICON_TradeRoute] 贸易路线时，将根据所拥有的多余奢侈品资源数量提供50点 [ICON_Gold] 金币和10点 [ICON_Tourism] 旅游业绩（标准速度下）。</Text>
+			<Text>使用 [ICON_Gold] 金币购买时费用-20%。消耗 [ICON_Gold] 金币时，获得所消耗 [ICON_Gold] 金币25%的 [ICON_ResearchPoint] 研究点数。城市奢侈品资源+2 [ICON_Culture] 文化值，改良的奢侈品资源提供+1 [ICON_TradeRoute] 贸易路线容量。创建国际 [ICON_TradeRoute] 贸易路线时，将根据所拥有的多余奢侈品资源数量提供50点 [ICON_Gold] 金币和10点 [ICON_Tourism] 旅游业绩（标准速度下）。</Text>
 		</Replace>
 		<!--Lua文字-->
         <Replace Tag="LOC_STLOUIS_CREATE_TITLE" Language="zh_Hans_CN">

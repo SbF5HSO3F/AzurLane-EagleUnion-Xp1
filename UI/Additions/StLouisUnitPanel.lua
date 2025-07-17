@@ -22,9 +22,7 @@ local Reason_3 = DB.MakeHash("STLOUIS_IMPROVE")
 StLouisUnitPanel = {
     Refresh = function(self)
         local unit = UI.GetHeadSelectedUnit()
-        if EagleCore.CheckLeaderMatched(
-                Game.GetLocalPlayer(), 'LEADER_ST_LOUIS_CL49'
-            ) and unit ~= nil and unit:GetType() == explorer then
+        if unit ~= nil and unit:GetType() == explorer then
             Controls.StLouisGrid:SetHide(false)
             self.Create:Refresh(unit)
             self.Remove:Refresh(unit)
@@ -317,6 +315,7 @@ end
 --On Unit Active
 function StLouisUnitActive(owner, unitID, x, y, eReason)
     local pUnit = UnitManager.GetUnit(owner, unitID)
+    if pUnit == nil then return end
     --get the unit x and y
     local uX, uY = pUnit:GetX(), pUnit:GetY()
     if eReason == Reason_1 then

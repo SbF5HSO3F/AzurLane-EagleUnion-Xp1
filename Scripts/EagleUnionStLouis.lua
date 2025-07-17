@@ -43,16 +43,16 @@ function StLouisTreasuryChanged(playerID, yield, balance)
     end
 end
 
-function StLouisCreateTradeRoute(playerID, oPlayerID, oCityID, tPlayerID, tCityID)
-    if EagleCore.CheckLeaderMatched(playerID, 'LEADER_ST_LOUIS_CL49') then
+function StLouisCreateTradeRoute(playerID, oPlayerID, oCityID, tPlayerID)
+    if EagleCore.CheckLeaderMatched(
+            playerID, 'LEADER_ST_LOUIS_CL49'
+        ) and oPlayerID ~= tPlayerID then
         --get the city
         local city = CityManager.GetCity(oPlayerID, oCityID)
         if not city then return end
         --attach the modifier
         city:AttachModifierByID(modifier_1)
-        if tPlayerID ~= oPlayerID then
-            city:AttachModifierByID(modifier_2)
-        end
+        city:AttachModifierByID(modifier_2)
     end
 end
 

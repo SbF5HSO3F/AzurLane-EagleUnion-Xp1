@@ -52,8 +52,8 @@ function FlasherMoveComplete(playerID, unitID, iX, iY)
     --get the current turns
     local currentTurn = Game.GetCurrentGameTurn()
     --check the unit
-    local lastTrun = pUnit:GetProperty(turnKey) or 0
-    if lastTrun >= currentTurn then return end
+    local lastTurn = pUnit:GetProperty(turnKey) or 0
+    if lastTurn >= currentTurn then return end
     --get the range
     local range = pUnit:GetProperty(searchRange) or 0
     --is combat unit?
