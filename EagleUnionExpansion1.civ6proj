@@ -72,6 +72,9 @@
         <UpdateText id="StLouis">
           <File priority="90">Text/zh_Hans_CN/EagleUnion_StLouis_CNText.xml</File>
         </UpdateText>
+        <UpdateDatabase id="GoldenAge" criteria="GoldenAge">
+          <File>ModSupport/GoldenAge/GoldenAge_Config.sql</File>
+        </UpdateDatabase>
       </FrontEndActions>
     ]]></FrontEndActionData>
     <AssociationData><![CDATA[
@@ -193,6 +196,14 @@
         </UpdateText>
       </InGameActions>
     ]]></InGameActionData>
+    <ActionCriteriaData><![CDATA[
+      <ActionCriteria>
+        <Criteria id="GoldenAge" any="1">
+          <ModInUse>236af578-08bc-4278-ab57-c700ab3e1457</ModInUse>
+          <ModInUse>a739fbf8-0b8d-40a3-8fd7-ddd8c8e2183b</ModInUse>
+        </Criteria>
+      </ActionCriteria>
+    ]]></ActionCriteriaData>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Default' ">
     <OutputPath>.</OutputPath>
@@ -208,6 +219,8 @@
     <Folder Include="Data\Enterprise" />
     <Folder Include="Data\StLouis" />
     <Folder Include="Import" />
+    <Folder Include="ModSupport" />
+    <Folder Include="ModSupport\GoldenAge" />
     <Folder Include="Scripts" />
     <Folder Include="UI" />
     <Folder Include="Text" />
@@ -281,6 +294,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Import\EagleUnionPoint_Eldridge.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModSupport\GoldenAge\GoldenAge_Config.sql">
       <SubType>Content</SubType>
     </Content>
     <Content Include="Scripts\EagleUnionEldridge.lua">
