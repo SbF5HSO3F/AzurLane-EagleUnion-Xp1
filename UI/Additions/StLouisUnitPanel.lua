@@ -49,7 +49,7 @@ StLouisUnitPanel = {
     Create = {
         --Get the detail
         GetDetail = function(unit)
-            local detail = { Disable = true, Rescource = {}, Reason = '' }
+            local detail = { Disable = true, Recource = {}, Reason = '' }
             --get the unit remain movenment
             if unit:GetMovesRemaining() == 0 then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_MOVES')
@@ -70,8 +70,8 @@ StLouisUnitPanel = {
                 return detail
             end
             --get the placeable luxuries
-            detail.Rescource = luxuries:GetPlaceableResources(plot)
-            if #detail.Rescource == 0 then
+            detail.Recource = luxuries:GetPlaceableResources(plot)
+            if #detail.Recource == 0 then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
                 return detail
             end
@@ -95,7 +95,7 @@ StLouisUnitPanel = {
                     tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
                 else
                     tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_CREATE_DETAIL')
-                    for _, resource in ipairs(detail.Rescource) do
+                    for _, resource in ipairs(detail.Recource) do
                         tooltip = tooltip .. Locale.Lookup('LOC_STLOUIS_CREATE_RESOURCE', resource.Icon, resource.Name)
                     end
                 end
@@ -111,7 +111,7 @@ StLouisUnitPanel = {
             local detail = self.GetDetail(unit)
             if detail.Disable then return end
             local x, y, list = unit:GetX(), unit:GetY(), {}
-            for _, resource in ipairs(detail.Rescource) do
+            for _, resource in ipairs(detail.Recource) do
                 table.insert(list, resource.Index)
             end
             UI.RequestPlayerOperation(Game.GetLocalPlayer(),
@@ -130,13 +130,8 @@ StLouisUnitPanel = {
         end
     },
     Remove = {
-        GetGold = function(playerId)
-            local percent = EagleCore:GetPlayerProgress(playerId)
-            local gold = baseGold * (1 + 9 * percent / 100)
-            return math.ceil(EagleCore:ModifyBySpeed(gold))
-        end,
         GetDetail = function(self, unit)
-            local detail = { Disable = true, Rescource = {}, Gold = 0, Reason = '' }
+            local detail = { Disable = true, Recource = {}, Harvest = '', Reason = '' }
             --get the unit remain movenment
             if unit:GetMovesRemaining() == 0 then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_MOVES')
@@ -153,9 +148,11 @@ StLouisUnitPanel = {
                 return detail
             end
             local resourceDef = GameInfo.Resources[resourceHash]
-            detail.Rescource.Name = resourceDef.Name
-            detail.Rescource.Icon = '[ICON_' .. resourceDef.ResourceType .. ']'
-            detail.Gold = self.GetGold(unit:GetOwner())
+            detail.Recource.Name = resourceDef.Name
+            detail.Recource.Type = resourceDef.ResourceType
+            detail.Recource.Icon = '[ICON_' .. resourceDef.ResourceType .. ']'
+            local resourceStru = resources:GetResource(resourceDef.ResourceType)
+            detail.Harvest = resourceStru:GetHarvestYieldsTooltip(unit:GetOwner())
             detail.Disable = false
             return detail
         end,
@@ -171,10 +168,10 @@ StLouisUnitPanel = {
             if disable then
                 tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
             else
-                local resource = detail.Rescource
+                local resource = detail.Recource
                 tooltip = tooltip .. '[NEWLINE][NEWLINE]' ..
                     Locale.Lookup('LOC_STLOUIS_REMOVE_DETAIL', resource.Icon, resource.Name) ..
-                    Locale.Lookup('LOC_STLOUIS_REMOVE_REWARD', detail.Gold)
+                    detail.Harvest
             end
             --set the tooltip
             Controls.Remove:SetToolTipString(tooltip)
@@ -187,11 +184,11 @@ StLouisUnitPanel = {
             local x, y = unit:GetX(), unit:GetY()
             UI.RequestPlayerOperation(Game.GetLocalPlayer(),
                 PlayerOperations.EXECUTE_SCRIPT, {
-                    UnitID  = unit:GetID(),
-                    Gold    = detail.Gold,
-                    X       = x,
-                    Y       = y,
-                    OnStart = 'StLouisRemoved',
+                    UnitID   = unit:GetID(),
+                    Recource = detail.Recource.Type,
+                    X        = x,
+                    Y        = y,
+                    OnStart  = 'StLouisRemoved',
                 }
             ); Network.BroadcastPlayerInfo()
         end,

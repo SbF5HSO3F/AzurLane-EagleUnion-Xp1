@@ -5,6 +5,7 @@
 --||=======================include========================||--
 include('EagleUnionCore')
 include('EagleUnionPoint')
+include('EagleResources')
 
 --||===================local variables====================||--
 
@@ -13,6 +14,8 @@ local percent = 25
 local ability = 'ABILITY_ST_IMPROVED'
 local modifier_1 = 'ST_LOUIS_GRANT_GOLD_BASED_ON_EXCESS_LUXURIES'
 local modifier_2 = 'ST_LOUIS_GRANT_TOURISM_BASED_ON_EXCESS_LUXURIES'
+
+local resources = EagleResources:new(true)
 
 --||====================base functions====================||--
 
@@ -82,18 +85,8 @@ function StLouisRemoved(playerID, param)
     --remove the imporvement
     ImprovementBuilder.SetImprovementType(plot, -1)
     --the reward
-    local gold, player = param.Gold, Players[playerID]
-    player:GetTreasury():ChangeGoldBalance(gold)
-    --set the message
-    local message = Locale.Lookup('LOC_STLOUIS_REMOVE_TEXT', gold)
-    --add the message to the game
-    local messageData = {
-        MessageType = 0,
-        MessageText = message,
-        PlotX       = param.X,
-        PlotY       = param.Y,
-        Visibility  = RevealedState.VISIBLE,
-    }; Game.AddWorldViewText(messageData)
+    local resource = resources:GetResource(param.Recource)
+    resource:GrantHarvestYields(playerID, param.X, param.Y)
     --get the unit
     local unit = UnitManager.GetUnit(playerID, param.UnitID)
     --end the unit turn
