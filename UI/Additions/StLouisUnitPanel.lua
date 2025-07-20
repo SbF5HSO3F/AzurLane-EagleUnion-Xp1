@@ -25,24 +25,31 @@ local Reason_3 = DB.MakeHash("STLOUIS_IMPROVE")
 StLouisUnitPanel = {
     Refresh = function(self)
         local unit = UI.GetHeadSelectedUnit()
+        local unitPanel = ContextPtr:LookUpControl("/InGame/UnitPanel")
         if unit ~= nil and unit:GetType() == explorer then
-            Controls.ResourcePanel:SetHide(false)
-            self.Create:Refresh(unit)
+            -- the button refresh first
             Controls.StLouisGrid:SetHide(false)
             self.Remove:Refresh(unit)
             self.Improv:Refresh(unit)
+            --reset the Unit Panel
+            unitPanel:RequestRefresh()
+            -- then the resource panel
+            Controls.ResourcePanel:SetHide(false)
+            self.Create:Refresh(unit)
         else
-            Controls.ResourcePanel:SetHide(true)
             Controls.StLouisGrid:SetHide(true)
+            Controls.ResourcePanel:SetHide(true)
         end
         --reset the Unit Panel
-        ContextPtr:LookUpControl("/InGame/UnitPanel"):RequestRefresh()
+        unitPanel:RequestRefresh()
     end,
     Init = function(self)
         local PanelSlide = ContextPtr:LookUpControl("/InGame/UnitPanel/UnitPanelSlide")
         if PanelSlide then
             --change the parent
             Controls.ResourcePanel:ChangeParent(PanelSlide)
+            -- reparent it to cover the Resource Panel
+            ContextPtr:LookUpControl('/InGame/UnitPanel/UnitPanelBaseContainer'):Reparent()
         end
         local ActionStack = ContextPtr:LookUpControl("/InGame/UnitPanel/StandardActionsStack")
         if ActionStack then
@@ -58,32 +65,22 @@ StLouisUnitPanel = {
     Create = {
         --Get the detail
         GetDetail = function(unit)
-            local detail = { Disable = true, Recource = {}, Reason = '' }
+            local detail = { Disable = true, Recource = {} }
             --get the unit remain movenment
-            if unit:GetMovesRemaining() == 0 then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_MOVES')
-                return detail
-            end
+            if unit:GetMovesRemaining() == 0 then return detail end
             --the unit plot can place resource
             local plot = Map.GetPlot(unit:GetX(), unit:GetY())
-            if plot:GetOwner() ~= -1 then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NOT_NO_OWNER')
-                return detail
-            end
+            if plot:GetOwner() ~= -1 then return detail end
             --the plot has resource
             local index = plot:GetResourceType()
             local resourceHash = plot:GetResourceTypeHash()
             local resourceData = Players[unit:GetOwner()]:GetResources()
             if index ~= -1 and resourceData:IsResourceVisible(resourceHash) then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_HAS_RESOURCES')
                 return detail
             end
             --get the placeable luxuries
             detail.Recource = luxuries:GetPlaceableResources(plot)
-            if #detail.Recource == 0 then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
-                return detail
-            end
+            if #detail.Recource == 0 then return detail end
             detail.Disable = false
             return detail
         end,
@@ -134,6 +131,7 @@ StLouisUnitPanel = {
                         end
                     end
                 end
+                -- set the size of the panel
                 local RES_PANEL_ART_PADDING_X = 24;
                 local RES_PANEL_ART_PADDING_Y = 20;
                 Controls.ResourcesStack:CalculateSize();
@@ -141,6 +139,9 @@ StLouisUnitPanel = {
                 local stackHeight = Controls.ResourcesStack:GetSizeY();
                 Controls.ResourcePanel:SetSizeX(stackWidth + RES_PANEL_ART_PADDING_X)
                 Controls.ResourcePanel:SetSizeY(stackHeight + RES_PANEL_ART_PADDING_Y)
+                -- set the offset of the panel
+                local container = ContextPtr:LookUpControl('/InGame/UnitPanel/UnitPanelBaseContainer')
+                Controls.ResourcePanel:SetOffsetX(container:GetSizeX() + 162)
             else
                 Controls.ResourcePanel:SetHide(true)
             end
