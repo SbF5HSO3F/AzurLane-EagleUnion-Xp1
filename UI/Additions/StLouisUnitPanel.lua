@@ -96,6 +96,10 @@ StLouisUnitPanel = {
                 --get the detail
                 local detail = self.GetDetail(unit)
                 local count = #detail.Recource
+                if count == 0 then
+                    Controls.ResourcePanel:SetHide(true)
+                    return
+                end
                 for i = 1, count, 3 do
                     local columnInstance = m_ResourceIM:GetInstance()
                     for iRow = 1, 3, 1 do
@@ -125,6 +129,7 @@ StLouisUnitPanel = {
                             )
                             -- tooltip
                             local tooltip = Locale.Lookup('LOC_STLOUIS_CREATE_RESOURCE', resource.Icon, resource.Name)
+                            tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. resource:GetChangeYieldsTooltip()
                             instance.ResourceButton:SetToolTipString(tooltip)
                         end
                     end
@@ -139,29 +144,6 @@ StLouisUnitPanel = {
             else
                 Controls.ResourcePanel:SetHide(true)
             end
-        end,
-        Callback = function(self)
-            local unit = UI.GetHeadSelectedUnit()
-            if unit == nil then return end
-            local detail = self.GetDetail(unit)
-            if detail.Disable then return end
-            local x, y, list = unit:GetX(), unit:GetY(), {}
-            for _, resource in ipairs(detail.Recource) do
-                table.insert(list, resource.Index)
-            end
-            UI.RequestPlayerOperation(Game.GetLocalPlayer(),
-                PlayerOperations.EXECUTE_SCRIPT, {
-                    UnitID = unit:GetID(),
-                    X = x,
-                    Y = y,
-                    List = list,
-                    OnStart = 'StLouisCreated',
-                }
-            ); Network.BroadcastPlayerInfo()
-        end,
-        Register = function(self)
-            Controls.Create:RegisterCallback(Mouse.eLClick, function() self:Callback() end)
-            Controls.Create:RegisterCallback(Mouse.eMouseEnter, EagleUnionEnter)
         end
     },
     Remove = {
