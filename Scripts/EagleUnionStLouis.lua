@@ -63,11 +63,9 @@ end
 
 --创建随机资源
 function StLouisCreated(playerID, param)
-    local plot, list = Map.GetPlot(param.X, param.Y), param.List
-    --get the random resource index
-    local index = list[EagleCore.tableRandom(#list)]
+    local plot = Map.GetPlot(param.X, param.Y)
     --create deer resource
-    ResourceBuilder.SetResourceType(plot, index, 1)
+    ResourceBuilder.SetResourceType(plot, param.Index, 1)
     --get the unit
     local unit = UnitManager.GetUnit(playerID, param.UnitID)
     unit:ChangeActionCharges(-1)

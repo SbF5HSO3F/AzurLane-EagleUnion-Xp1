@@ -16,4 +16,22 @@
 			</Button>
 		</Stack>
 	</Grid>
+
+	<Grid ID="ResourcePanel" Anchor="R,B" Offset="501,0" Size="51,160" Texture="UnitPanel_SpecialActionsFrame" SliceCorner="14,14">
+		<Stack ID="ResourcesStack" Anchor="R,T" Offset="11,0" StackGrowth="Left" Padding="6" />
+	</Grid>
+
+	<Instance Name="ResourceColumnInstance">
+		<Container ID="Top" Size="38,140">
+			<Image ID="Row1" Anchor="L,T" Offset="0,15" Texture="UnitPanel_SpecialActionSlot" />
+			<Image ID="Row2" Anchor="L,T" Offset="0,60" Texture="UnitPanel_SpecialActionSlot" />
+			<Image ID="Row3" Anchor="L,T" Offset="0,105" Texture="UnitPanel_SpecialActionSlot" />
+		</Container>
+	</Instance>
+
+	<Instance Name="ResourceInstance">
+		<Button ID="ResourceButton" Anchor="L,T" Offset="-4,-4" Size="44,53" Texture="Controls_IconButton.dds">
+			<Image ID="ResourceIcon" Anchor="C,C" Offset="0,-1" Size="38,38" Icon="ICON_STLOUIS_CREATE"/>
+		</Button>
+	</Instance>
 </Context>

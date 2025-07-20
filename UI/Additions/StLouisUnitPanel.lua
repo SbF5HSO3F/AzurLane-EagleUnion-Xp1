@@ -6,13 +6,16 @@
 include('EagleUnionCore')
 include('EagleResources')
 
+include('InstanceManager');
+
 --||===================local variables====================||--
 
 local luxuries = EagleResources:new({ ["RESOURCECLASS_LUXURY"] = true })
 local resources = EagleResources:new(true)
 
+local m_ResourceIM = InstanceManager:new("ResourceColumnInstance", "Top", Controls.ResourcesStack);
+
 local explorer = GameInfo.Units['UNIT_ST_EXPLORER'].Index
-local baseGold = 40
 local Reason_1 = DB.MakeHash("STLOUIS_CREATED")
 local Reason_2 = DB.MakeHash("STLOUIS_REMOVED")
 local Reason_3 = DB.MakeHash("STLOUIS_IMPROVE")
@@ -23,28 +26,34 @@ StLouisUnitPanel = {
     Refresh = function(self)
         local unit = UI.GetHeadSelectedUnit()
         if unit ~= nil and unit:GetType() == explorer then
-            Controls.StLouisGrid:SetHide(false)
+            Controls.ResourcePanel:SetHide(false)
             self.Create:Refresh(unit)
+            Controls.StLouisGrid:SetHide(false)
             self.Remove:Refresh(unit)
             self.Improv:Refresh(unit)
         else
+            Controls.ResourcePanel:SetHide(true)
             Controls.StLouisGrid:SetHide(true)
         end
         --reset the Unit Panel
         ContextPtr:LookUpControl("/InGame/UnitPanel"):RequestRefresh()
     end,
     Init = function(self)
-        local context = ContextPtr:LookUpControl("/InGame/UnitPanel/StandardActionsStack")
-        if context then
+        local PanelSlide = ContextPtr:LookUpControl("/InGame/UnitPanel/UnitPanelSlide")
+        if PanelSlide then
             --change the parent
-            Controls.StLouisGrid:ChangeParent(context)
+            Controls.ResourcePanel:ChangeParent(PanelSlide)
+        end
+        local ActionStack = ContextPtr:LookUpControl("/InGame/UnitPanel/StandardActionsStack")
+        if ActionStack then
+            --change the parent
+            Controls.StLouisGrid:ChangeParent(ActionStack)
             --Register Callback
-            self.Create:Register()
             self.Remove:Register()
             self.Improv:Register()
-            --reset the button
-            self:Refresh()
         end
+        --reset the button
+        self:Refresh()
     end,
     Create = {
         --Get the detail
@@ -80,29 +89,55 @@ StLouisUnitPanel = {
         end,
         --refresh the button
         Refresh = function(self, unit)
+            m_ResourceIM:DestroyInstances()
+            m_ResourceIM:ResetInstances()
             if unit:GetActionCharges() > 0 then
-                Controls.Create:SetHide(false)
+                Controls.ResourcePanel:SetHide(false)
                 --get the detail
                 local detail = self.GetDetail(unit)
-                local disable = detail.Disable
-                --set the button disable
-                Controls.Create:SetDisabled(disable)
-                Controls.Create:SetAlpha((disable and 0.7) or 1)
-                --the tooltip
-                local tooltip = Locale.Lookup('LOC_STLOUIS_CREATE_TITLE')
-                    .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_CREATE_DESC')
-                if disable then
-                    tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. detail.Reason
-                else
-                    tooltip = tooltip .. '[NEWLINE][NEWLINE]' .. Locale.Lookup('LOC_STLOUIS_CREATE_DETAIL')
-                    for _, resource in ipairs(detail.Recource) do
-                        tooltip = tooltip .. Locale.Lookup('LOC_STLOUIS_CREATE_RESOURCE', resource.Icon, resource.Name)
+                local count = #detail.Recource
+                for i = 1, count, 3 do
+                    local columnInstance = m_ResourceIM:GetInstance()
+                    for iRow = 1, 3, 1 do
+                        if (i + iRow) - 1 <= count then
+                            local resource = detail.Recource[i + iRow - 1]
+                            local slotName = "Row" .. tostring(iRow)
+                            local instance = {}
+                            ContextPtr:BuildInstanceForControl("ResourceInstance", instance, columnInstance[slotName])
+                            -- the resource icon
+                            instance.ResourceIcon:SetIcon('ICON_' .. resource.Type)
+                            -- callback
+                            instance.ResourceButton:RegisterCallback(Mouse.eLClick,
+                                function()
+                                    local pUnit = UI.GetHeadSelectedUnit()
+                                    if pUnit == nil then return end
+                                    local x, y = pUnit:GetX(), pUnit:GetY()
+                                    UI.RequestPlayerOperation(Game.GetLocalPlayer(),
+                                        PlayerOperations.EXECUTE_SCRIPT, {
+                                            UnitID = pUnit:GetID(),
+                                            X = x,
+                                            Y = y,
+                                            Index = resource.Index,
+                                            OnStart = 'StLouisCreated',
+                                        }
+                                    ); Network.BroadcastPlayerInfo()
+                                end
+                            )
+                            -- tooltip
+                            local tooltip = Locale.Lookup('LOC_STLOUIS_CREATE_RESOURCE', resource.Icon, resource.Name)
+                            instance.ResourceButton:SetToolTipString(tooltip)
+                        end
                     end
                 end
-                --set the tooltip
-                Controls.Create:SetToolTipString(tooltip)
+                local RES_PANEL_ART_PADDING_X = 24;
+                local RES_PANEL_ART_PADDING_Y = 20;
+                Controls.ResourcesStack:CalculateSize();
+                local stackWidth  = Controls.ResourcesStack:GetSizeX();
+                local stackHeight = Controls.ResourcesStack:GetSizeY();
+                Controls.ResourcePanel:SetSizeX(stackWidth + RES_PANEL_ART_PADDING_X)
+                Controls.ResourcePanel:SetSizeY(stackHeight + RES_PANEL_ART_PADDING_Y)
             else
-                Controls.Create:SetHide(true)
+                Controls.ResourcePanel:SetHide(true)
             end
         end,
         Callback = function(self)

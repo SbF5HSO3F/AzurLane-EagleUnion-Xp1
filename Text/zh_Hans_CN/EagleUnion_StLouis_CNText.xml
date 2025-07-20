@@ -54,6 +54,9 @@
         <Replace Tag="LOC_STLOUIS_CREATE_DESC" Language="zh_Hans_CN">
 			<Text>位于无主的空白单元格上使用，勘探者将随机创建一种奢侈品资源。消耗1点次数并结束当前回合。</Text>
 		</Replace>
+		<Replace Tag="LOC_STLOUIS_CREATE_RESOURCE" Language="zh_Hans_CN">
+			<Text>创建 {1_Icon} {2_Name}</Text>
+		</Replace>
         <Replace Tag="LOC_STLOUIS_CREATE_DETAIL" Language="zh_Hans_CN">
 			<Text>资源列表：</Text>
 		</Replace>
