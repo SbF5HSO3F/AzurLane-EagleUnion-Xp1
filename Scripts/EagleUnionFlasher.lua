@@ -3,7 +3,7 @@
 -- DateCreated: 2024/3/2 16:51:50
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionCore')
+include('EagleCore')
 
 --||===================local variables====================||--
 
@@ -87,12 +87,12 @@ function FlasherKillUnit(killedPlayerID, killedUnitID, playerID, unitID)
         --get the kill num
         local killNum = pPlayer:GetProperty(killCounter) or 0
         --get the gold gain
-        local goldGain = EagleCore:ModifyBySpeed(goldBaseNum + goldAddNum * killNum)
+        local goldGain = EagleMath:ModifyBySpeed(goldBaseNum + goldAddNum * killNum)
         --grant the gold and set the property
         pPlayer:GetTreasury():ChangeGoldBalance(goldGain)
         killNum = (killNum or 0) + 1
         pPlayer:SetProperty(killCounter, killNum)
-        ExposedMembers.Flasher.Reset(killNum)
+        Game:SetProperty('FlasherKillUnit', true)
         --get the unit
         local pUnit = UnitManager.GetUnit(playerID, unitID)
         --set the message

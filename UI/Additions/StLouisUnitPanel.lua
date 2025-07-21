@@ -3,17 +3,17 @@
 -- DateCreated: 2025/3/2 19:21:10
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionCore')
+include('EagleCore')
 include('EagleResources')
 
-include('InstanceManager');
+include('InstanceManager')
 
 --||===================local variables====================||--
 
 local luxuries = EagleResources:new({ ["RESOURCECLASS_LUXURY"] = true })
 local resources = EagleResources:new(true)
 
-local m_ResourceIM = InstanceManager:new("ResourceColumnInstance", "Top", Controls.ResourcesStack);
+local m_ResourceIM = InstanceManager:new("ResourceColumnInstance", "Top", Controls.ResourcesStack)
 
 local explorer = GameInfo.Units['UNIT_ST_EXPLORER'].Index
 local Reason_1 = DB.MakeHash("STLOUIS_CREATED")

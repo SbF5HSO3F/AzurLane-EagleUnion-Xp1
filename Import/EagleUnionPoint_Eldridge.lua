@@ -3,7 +3,7 @@
 -- DateCreated: 2024/12/27 7:30:37
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionCore')
+include('EagleCore')
 
 --||===================local variables====================||--
 
@@ -26,7 +26,7 @@ EaglePointManager.Points.Extra.EldridgeScience = {
             local researchCost = techs:GetScienceYield()
             point = researchCost * EldridgeScience
         end
-        return EagleCore.Floor(point)
+        return EagleMath.Floor(point)
     end,
     GetTooltip = function(self, playerID)
         local yield = self.GetPointYield(playerID)
@@ -47,7 +47,7 @@ EaglePointManager.Points.Extra.EldridgeCitizen = {
                 point = point + pop * EldridgePerPop
             end
         end
-        return EagleCore.Floor(point)
+        return EagleMath.Floor(point)
     end,
     GetTooltip = function(self, playerID)
         local yield = self.GetPointYield(playerID)
@@ -68,7 +68,7 @@ EaglePointManager.Reduction.Sources.Eldridge = {
         local limit = self.Limit
         if limit ~= nil then modifier = math.min(modifier, limit) end
         --返回最终的减免
-        return EagleCore.Round(modifier)
+        return EagleMath.Round(modifier)
     end,
     GetTooltip = function(self, playerID)
         local modifier = -self:GetModifier(playerID)

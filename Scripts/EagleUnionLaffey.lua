@@ -3,7 +3,7 @@
 -- DateCreated: 2023/10/31 22:01:41
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionCore')
+include('EagleCore')
 
 --||====================base functions====================||--
 
@@ -29,7 +29,7 @@ function LaffeyTechBoost(pPlayer)
                 end
             end
             if #techlist > 0 then
-                local iTech = techlist[EagleCore.tableRandom(#techlist)]
+                local iTech = techlist[EagleMath.GetRandNum(#techlist)]
                 local TechType = GameInfo.Technologies[iTech].TechnologyType
                 print(TechType)
                 if PlayerTech:HasBoostBeenTriggered(iTech) or not EagleCore.HasBoost(TechType) then
@@ -69,7 +69,7 @@ function LaffeyCivicBoost(pPlayer)
                 end
             end
             if #civiclist > 0 then
-                local iCivic = civiclist[EagleCore.tableRandom(#civiclist)];
+                local iCivic = civiclist[EagleMath.GetRandNum(#civiclist)];
                 local CivicType = GameInfo.Civics[iCivic].CivicType
                 print(CivicType)
                 if PlayerCulture:HasBoostBeenTriggered(iCivic) or not EagleCore.HasBoost(CivicType) then

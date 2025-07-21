@@ -3,39 +3,30 @@
 -- DateCreated: 2024/3/7 19:49:07
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionCore')
-
---||====================ExposedMembers====================||--
-
-ExposedMembers.Flasher = ExposedMembers.Flasher or {}
+include('EagleCore')
 
 --||===================local variables====================||--
 
-local killCounter      = 'FlasherKills'
-local goldBaseNum      = 100
-local goldAddNum       = 50
+local killCounter = 'FlasherKills'
+local goldBaseNum = 100
+local goldAddNum  = 50
 
 --||====================base functions====================||--
 
 --Reset the panel
-function FlasherResetPanel(killNum)
+function FlasherResetPanel()
     --get the loacl player
     local loaclPlayerID = Game.GetLocalPlayer()
     --check the player leader
     if EagleCore.CheckLeaderMatched(loaclPlayerID, 'LEADER_FLASHER_SS249') then
         Controls.FlasherPanelGrid:SetHide(false)
+
+        --get the player
+        local pPlayer = Players[loaclPlayerID]
         --get the kill number
-        local killNumber = nil
-        if killNum then
-            killNumber = killNum
-        else
-            --get the player
-            local pPlayer = Players[loaclPlayerID]
-            --get the kill number
-            killNumber = pPlayer:GetProperty(killCounter) or 0
-        end
+        killNumber = pPlayer:GetProperty(killCounter) or 0
         --get the gold base number
-        local goldNum = EagleCore:ModifyBySpeed(goldBaseNum + goldAddNum * killNumber)
+        local goldNum = EagleMath:ModifyBySpeed(goldBaseNum + goldAddNum * killNumber)
         --set the num
         Controls.FlasherGainCount:SetText(goldNum)
         --set the tooltip
@@ -78,8 +69,8 @@ function Initialize()
     -----------------------Events-----------------------
     Events.LoadGameViewStateDone.Add(FlasherAttachPanel)
     Events.LocalPlayerChanged.Add(FlasherResetPanel)
+    Events.GamePropertyChanged.Add(FlasherResetPanel)
     ---------------------GameEvents---------------------
-    ExposedMembers.Flasher.Reset = FlasherResetPanel
     ----------------------------------------------------
     print('Initial success!')
 end

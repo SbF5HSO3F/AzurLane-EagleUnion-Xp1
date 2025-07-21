@@ -3,7 +3,7 @@
 -- DateCreated: 2025/3/2 19:54:51
 --------------------------------------------------------------
 --||=======================include========================||--
-include('EagleUnionCore')
+include('EagleCore')
 include('EagleUnionPoint')
 include('EagleResources')
 
@@ -37,7 +37,7 @@ function StLouisTreasuryChanged(playerID, yield, balance)
         local change = lastGold - balance
         --if the change is positive, grant the yield
         if change > 0 then
-            change = EagleCore.Round(change * percent / 100)
+            change = EagleMath:ModifyByPercent(change, percent, true)
             --grant the point
             EaglePointManager:ChangeEaglePoint(playerID, change)
         end
