@@ -60,12 +60,6 @@
 		<Replace Tag="LOC_STLOUIS_REMOVE_DETAIL" Language="zh_Hans_CN">
 			<Text>移除：{1_Icon} {2_Name}</Text>
 		</Replace>
-		<Replace Tag="LOC_STLOUIS_REMOVE_REWARD" Language="zh_Hans_CN">
-			<Text>[NEWLINE][ICON_Bullet]将获得{1_num} [ICON_Gold] 金币</Text>
-		</Replace>
-		<Replace Tag="LOC_STLOUIS_REMOVE_TEXT" Language="zh_Hans_CN">
-			<Text>[COLOR_FLOAT_GOLD]+{1_num}[ENDCOLOR] [ICON_GoldLarge]</Text>
-		</Replace>
 		<Replace Tag="LOC_STLOUIS_IMPROV_TITLE" Language="zh_Hans_CN">
 			<Text>占据资源</Text>
 		</Replace>
@@ -103,7 +97,7 @@
 			<Text>勘探者</Text>
 		</Replace>
         <Replace Tag="LOC_UNIT_ST_EXPLORER_DESCRIPTION" Language="zh_Hans_CN">
-			<Text>圣路易斯特色平民单位，能够改良与己方领土相邻的资源并将该单元格纳入领土和移除资源以获得 [ICON_Gold] 金币并摧毁该单元格上的改良设施。[NEWLINE]拥有3点使用次数，可消耗次数在无主的空白单元格上创建奢侈品资源。</Text>
+			<Text>圣路易斯特色平民单位，能够改良与己方领土相邻的资源并将该单元格纳入领土和移除资源以获得产出并摧毁该单元格上的改良设施。[NEWLINE]拥有3点使用次数，可消耗次数在无主的空白单元格上创建奢侈品资源。</Text>
 		</Replace>
 		<!--特殊晋升-->
 
