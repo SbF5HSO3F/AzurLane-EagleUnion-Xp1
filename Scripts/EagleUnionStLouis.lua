@@ -59,6 +59,10 @@ function StLouisCreateTradeRoute(playerID, oPlayerID, oCityID, tPlayerID)
     end
 end
 
+function StLouisReinitResource()
+    resources = EagleResources:new(true)
+end
+
 --||=================GameEvents functions=================||--
 
 --创建随机资源
@@ -116,6 +120,7 @@ end
 --initialization function
 function Initialize()
     -----------------------Events-----------------------
+    Events.LoadGameViewStateDone.Add(StLouisReinitResource)
     Events.TreasuryChanged.Add(StLouisTreasuryChanged)
     Events.TradeRouteActivityChanged.Add(StLouisCreateTradeRoute)
     ---------------------GameEvents---------------------

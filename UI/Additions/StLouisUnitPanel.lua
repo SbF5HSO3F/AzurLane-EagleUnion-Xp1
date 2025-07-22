@@ -355,11 +355,18 @@ function StLouisAddButton()
     StLouisUnitPanel:Init()
 end
 
+-- ReInit the luxuries and resources
+function StLouisReinit()
+    luxuries = EagleResources:new({ ["RESOURCECLASS_LUXURY"] = true })
+    resources = EagleResources:new(true)
+end
+
 --||======================initialize======================||--
 
 --Initialize
 function Initialize()
     Events.LoadGameViewStateDone.Add(StLouisAddButton)
+    Events.LoadGameViewStateDone.Add(StLouisReinit)
     Events.UnitSelectionChanged.Add(StLouisUnitSelectChanged)
     Events.UnitActivate.Add(StLouisUnitActive)
     ------------------------------------------

@@ -4,5 +4,6 @@
 --------------------------------------------------------------
 --MomentIllustrations
 INSERT INTO MomentIllustrations
-		(MomentIllustrationType,                MomentDataType,         GameDataType,       Texture)
-VALUES	('MOMENT_ILLUSTRATION_UNIQUE_UNIT',     'MOMENT_DATA_UNIT',     'UNIT_BENSON_CLASS','Moment_Benson_class.dds');
+	(MomentIllustrationType,                MomentDataType,         GameDataType,       Texture)
+VALUES
+	('MOMENT_ILLUSTRATION_UNIQUE_UNIT',     'MOMENT_DATA_UNIT',     'UNIT_BENSON_CLASS','Moment_Benson_class.dds');

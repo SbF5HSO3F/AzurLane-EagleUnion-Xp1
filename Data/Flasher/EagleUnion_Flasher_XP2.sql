@@ -9,5 +9,6 @@ WHERE UnitType='UNIT_GATO_CLASS';
 
 --Units_XP2
 INSERT INTO Units_XP2
-		(UnitType,			ResourceCost,	ResourceMaintenanceType,ResourceMaintenanceAmount)
-VALUES	('UNIT_GATO_CLASS',	1,				'RESOURCE_OIL',			1);
+	(UnitType,			ResourceCost,	ResourceMaintenanceType,ResourceMaintenanceAmount)
+VALUES
+	('UNIT_GATO_CLASS',	1,				'RESOURCE_OIL',			1);
