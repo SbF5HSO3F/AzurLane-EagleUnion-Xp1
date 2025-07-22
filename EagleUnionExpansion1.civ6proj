@@ -194,6 +194,9 @@
         <UpdateText id="StLouis_Text">
           <File priority="90">Text/zh_Hans_CN/EagleUnion_StLouis_CNText.xml</File>
         </UpdateText>
+        <ImportFiles id="Carlotta">
+          <File>ModSupport/Carlotta/UI/Replace/StLouisUnitPanel_Carlotta.lua</File>
+        </ImportFiles>
       </InGameActions>
     ]]></InGameActionData>
     <ActionCriteriaData><![CDATA[
@@ -201,6 +204,9 @@
         <Criteria id="GoldenAge" any="1">
           <ModInUse>236af578-08bc-4278-ab57-c700ab3e1457</ModInUse>
           <ModInUse>a739fbf8-0b8d-40a3-8fd7-ddd8c8e2183b</ModInUse>
+        </Criteria>
+        <Criteria id="Carlotta">
+          <ModInUse>abd21fed-7e23-44e0-80c0-ef25d46e8d02</ModInUse>
         </Criteria>
       </ActionCriteria>
     ]]></ActionCriteriaData>
@@ -220,7 +226,10 @@
     <Folder Include="Data\StLouis" />
     <Folder Include="Import" />
     <Folder Include="ModSupport" />
+    <Folder Include="ModSupport\Carlotta\UI" />
+    <Folder Include="ModSupport\Carlotta\UI\Replace" />
     <Folder Include="ModSupport\GoldenAge" />
+    <Folder Include="ModSupport\Carlotta" />
     <Folder Include="Scripts" />
     <Folder Include="UI" />
     <Folder Include="Text" />
@@ -294,6 +303,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Import\EagleUnionPoint_Eldridge.lua">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="ModSupport\Carlotta\UI\Replace\StLouisUnitPanel_Carlotta.lua">
       <SubType>Content</SubType>
     </Content>
     <Content Include="ModSupport\GoldenAge\GoldenAge_Config.sql">

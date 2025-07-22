@@ -8,10 +8,11 @@ include('EagleResources')
 
 include('InstanceManager')
 
---||===================local variables====================||--
 
-local luxuries = EagleResources:new({ ["RESOURCECLASS_LUXURY"] = true })
-local resources = EagleResources:new(true)
+Luxuries = EagleResources:new({ ["RESOURCECLASS_LUXURY"] = true })
+Resources = EagleResources:new(true)
+
+--||===================local variables====================||--
 
 local m_ResourceIM = InstanceManager:new("ResourceColumnInstance", "Top", Controls.ResourcesStack)
 
@@ -79,7 +80,7 @@ StLouisUnitPanel = {
                 return detail
             end
             --get the placeable luxuries
-            detail.Recource = luxuries:GetPlaceableResources(plot)
+            detail.Recource = Luxuries:GetPlaceableResources(plot)
             if #detail.Recource == 0 then return detail end
             detail.Disable = false
             return detail
@@ -169,7 +170,7 @@ StLouisUnitPanel = {
             detail.Recource.Name = resourceDef.Name
             detail.Recource.Type = resourceDef.ResourceType
             detail.Recource.Icon = '[ICON_' .. resourceDef.ResourceType .. ']'
-            local resourceStru = resources:GetResource(resourceDef.ResourceType)
+            local resourceStru = Resources:GetResource(resourceDef.ResourceType)
             detail.Harvest = resourceStru:GetHarvestYieldsTooltip(unit:GetOwner())
             detail.Disable = false
             return detail
@@ -253,7 +254,7 @@ StLouisUnitPanel = {
             end
             --get the improvement
             local resDef = GameInfo.Resources[resourceHash]
-            local resource = resources:GetResource(resDef.ResourceType)
+            local resource = Resources:GetResource(resDef.ResourceType)
             local improvement = resource:GetImprovement(plot)
             if not improvement or not next(improvement) then
                 detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_IMPROVEMENT')
@@ -357,8 +358,8 @@ end
 
 -- ReInit the luxuries and resources
 function StLouisReinit()
-    luxuries = EagleResources:new({ ["RESOURCECLASS_LUXURY"] = true })
-    resources = EagleResources:new(true)
+    Luxuries = EagleResources:new({ ["RESOURCECLASS_LUXURY"] = true })
+    Resources = EagleResources:new(true)
 end
 
 --||======================initialize======================||--
