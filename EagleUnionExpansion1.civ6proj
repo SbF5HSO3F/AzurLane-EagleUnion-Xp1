@@ -26,12 +26,12 @@
           <zh_Hant_HK>白鷹聯邦·領袖擴展1</zh_Hant_HK>
         </Text>
         <Text id="LOC_EAGLE_UNION_XP1_TEASER">
-          <en_US>Added more leaders to the mod "AuzrLane-Eagle Union".</en_US>
+          <en_US>Added more leaders to the mod "Auzr Lane-Eagle Union".</en_US>
           <zh_Hans_CN>为模组“碧蓝航线·白鹰联邦”添加更多领袖。</zh_Hans_CN>
           <zh_Hant_HK>為模組「碧藍航線·白鷹聯邦」添加更多領袖。</zh_Hant_HK>
         </Text>
         <Text id="LOC_EAGLE_UNION_XP1_DEACRIPTION">
-          <en_US>Added more leaders to the mod "AuzrLane-Eagle Union". There is currently 4 leader added: Laffey, Flasher, Eldridge and St. Louis.</en_US>
+          <en_US>Added more leaders to the mod "Auzr Lane-Eagle Union". There is currently 4 leader added: Laffey, Flasher, Eldridge and St. Louis.</en_US>
           <zh_Hans_CN>为模组“碧蓝航线·白鹰联邦”添加更多领袖。当前共添加了4名领袖：拉菲、松鲷、埃尔德里奇和圣路易斯。</zh_Hans_CN>
           <zh_Hant_HK>為模組「碧藍航線·白鷹聯邦」添加更多領袖。當前共添加了4名領袖：拉菲、松鲷、埃爾德裏奇和聖路易斯。</zh_Hant_HK>
         </Text>
@@ -173,7 +173,7 @@
         </UpdateText>
         <UpdateDatabase id="Enterprise">
           <File priority="100">Data/Enterprise/EagleUnion_Enterprise_Leader.xml</File>
-        </UpdateDatabase>
+        </Donothing>
         <UpdateText id="Enterprise_Text">
           <File priority="8">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
         </UpdateText>
