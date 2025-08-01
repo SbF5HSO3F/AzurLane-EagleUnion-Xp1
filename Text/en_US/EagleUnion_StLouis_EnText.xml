@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- EagleUnion_StLouis_CNText -->
-<!-- Author: HSbF6HSO3F -->
-<!-- DateCreated: 2025/3/2 18:41:08 -->
+<!-- EagleUnion_StLouis_EnText -->
+<!-- Author: jjj -->
+<!-- DateCreated: 2025/8/1 13:15:04 -->
 <GameData>
 	<LocalizedText>
 		<!--领袖介绍-->
-		<Replace Tag="LOC_LEADER_ST_LOUIS_CL49_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_LEADER_ST_LOUIS_CL49_NAME" Language="en_US">
 			<Text>圣路易斯</Text>
 		</Replace>
 		<!--加载-->
-		<Replace Tag="LOC_LOADING_INFO_LEADER_ST_LOUIS_CL49" Language="zh_Hans_CN">
+		<Replace Tag="LOC_LOADING_INFO_LEADER_ST_LOUIS_CL49" Language="en_US">
 			<Text>圣路易斯，Lucky Lou。当珍珠港的硝烟遮蔽天际时，您如命运女神眷顾的宠儿般毫发无损。虽然在后续的追击中屡遭不利，但好运一直眷顾着您。从瓜岛到菲律宾海，在诸多战役中均有您的身影。来吧，用您的眼光审视一切吧！让白鹰联邦的繁华举世闻名。</Text>
 		</Replace>
 		<!--百科-->
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_QUOTE" Language="zh_Hans_CN">
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_QUOTE" Language="en_US">
 			<Text>好运是不会长久眷顾一人的……</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_CAPSULE_BODY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_CAPSULE_BODY" Language="en_US">
 			<Text>圣路易斯利用奢侈品和金币向人们述说白鹰联邦的胜利。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_DETAILED_BODY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_DETAILED_BODY" Language="en_US">
 			<Text>圣路易斯在带领白鹰联邦时，必须尽快获得她的特色单位“勘探者”。这样，圣路易斯便可以快速地将边界的资源纳入城市并加以改良。面对不需要的资源，勘探者也可将其移除并获得丰厚的产出。当然，勘探者还可发掘单元格的潜力，创造特定的奢侈品资源。所以，当圣路易斯使用勘探者在城市边界发掘出诸多的奢侈品时，便可快速的将这些资源纳入领土。一旦这些改良后的资源纳入了圣路易斯的城市，就会为圣路易斯提供 [ICON_Culture] 文化值和 [ICON_TradeRoute] 贸易路线容量。而拥有了大量的奢侈品资源，圣路易斯便可通过建立国际 [ICON_TradeRoute] 贸易路线获得大量的 [ICON_Gold] 金币和 [ICON_Tourism] 旅游业绩。届时，白鹰联邦将轻松取得文化胜利。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_1" Language="zh_Hans_CN">
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_1" Language="en_US">
 			<Text>圣路易斯号（USS St. Louis，CL-49）是美国海军布鲁克林级轻型巡洋舰8号舰（圣路易斯级1号舰），是第五艘以“密苏里州圣路易斯市”命名的美国海军舰艇。1936年12月10日动工，1938年4月15日下水，1939年5月19日服役。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_2" Language="zh_Hans_CN">
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_2" Language="en_US">
 			<Text>在珍珠港、阿留申群岛、瓜达尔卡纳尔岛（简称：瓜岛）、新乔治亚、布干维尔岛、菲律宾海战役、莱特湾、空袭日本、冲绳战役当中，皆能见到她的身影。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_3" Language="zh_Hans_CN">
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_3" Language="en_US">
 			<Text>战后不久，在1946年6月20日退役。1951年出售给巴西海军，重新服役成为塔曼达雷号（Tamandaré，C-12），直到1976年才退役。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_4" Language="zh_Hans_CN">
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_4" Language="en_US">
 			<Text>1980年，卖给中国台湾的拆船业者准备拆除。1980年8月24日，在拖往中国台湾途中，于好望角附近浸水沉没。</Text>
 		</Replace>
-		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_5" Language="zh_Hans_CN">
+		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_5" Language="en_US">
 			<Text>第二次世界大战期间，她获得十一枚战斗之星。</Text>
 		</Replace>
 		<!--领袖议程-->
 
 		<!--领袖能力-->
-		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_NAME" Language="en_US">
 			<Text>鎏金执舵</Text>
 		</Replace>
-		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION" Language="zh_Hans_CN">
+		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION" Language="en_US">
 			<Text>使用 [ICON_Gold] 金币购买时费用-20%。消耗 [ICON_Gold] 金币时，获得所消耗 [ICON_Gold] 金币25%的 [ICON_ResearchPoint] 研究点数。城市奢侈品资源+2 [ICON_Culture] 文化值，改良的奢侈品资源提供+1 [ICON_TradeRoute] 贸易路线容量。创建国际 [ICON_TradeRoute] 贸易路线时，将根据所拥有的多余奢侈品资源数量提供50点 [ICON_Gold] 金币和10点 [ICON_Tourism] 旅游业绩（标准速度下）。</Text>
 		</Replace>
 		<!--Lua文字-->
-		<Replace Tag="LOC_STLOUIS_CREATE_RESOURCE" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_CREATE_RESOURCE" Language="en_US">
 			<Text>创建 {1_Icon} {2_Name}</Text>
 		</Replace>
-		<Replace Tag="LOC_STLOUIS_REMOVE_TITLE" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_REMOVE_TITLE" Language="en_US">
 			<Text>移除资源</Text>
 		</Replace>
-        <Replace Tag="LOC_STLOUIS_REMOVE_DESC" Language="zh_Hans_CN">
+        <Replace Tag="LOC_STLOUIS_REMOVE_DESC" Language="en_US">
 			<Text>位于资源上时使用，勘探者将移除该单元格上的资源并结束当前回合。现有改良设施将被摧毁。</Text>
 		</Replace>
-		<Replace Tag="LOC_STLOUIS_REMOVE_DETAIL" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_REMOVE_DETAIL" Language="en_US">
 			<Text>移除：{1_Icon} {2_Name}</Text>
 		</Replace>
-		<Replace Tag="LOC_STLOUIS_IMPROV_TITLE" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_IMPROV_TITLE" Language="en_US">
 			<Text>占据资源</Text>
 		</Replace>
-        <Replace Tag="LOC_STLOUIS_IMPROV_DESC" Language="zh_Hans_CN">
+        <Replace Tag="LOC_STLOUIS_IMPROV_DESC" Language="en_US">
 			<Text>位于相邻己方单元格的资源上时使用，勘探者将改良此资源并结束当前回合。该单元格将纳入领土。</Text>
 		</Replace>
-		<Replace Tag="LOC_STLOUIS_IMPROVEMENT" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_IMPROVEMENT" Language="en_US">
 			<Text>创建改良设施：{1_Name}</Text>
 		</Replace>
         <!--Warning-->
-		<Replace Tag="LOC_STLOUIS_NO_MOVES" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_NO_MOVES" Language="en_US">
 			<Text>[COLOR_RED]无剩余移动力[ENDCOLOR]</Text>
 		</Replace>
-		<Replace Tag="LOC_STLOUIS_NOT_NO_OWNER" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_NOT_NO_OWNER" Language="en_US">
 			<Text>[COLOR_RED]必须位于无主单元格[ENDCOLOR]</Text>
 		</Replace>
-		<Replace Tag="LOC_STLOUIS_HAS_RESOURCES" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_HAS_RESOURCES" Language="en_US">
 			<Text>[COLOR_RED]必须位于空白单元格[ENDCOLOR]</Text>
 		</Replace>
-        <Replace Tag="LOC_STLOUIS_NO_PLACEABLE_RESOURCES" Language="zh_Hans_CN">
+        <Replace Tag="LOC_STLOUIS_NO_PLACEABLE_RESOURCES" Language="en_US">
 			<Text>[COLOR_RED]该单元格无有效资源[ENDCOLOR]</Text>
 		</Replace>
-		<Replace Tag="LOC_STLOUIS_NO_ADJACENT_OWNER" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_NO_ADJACENT_OWNER" Language="en_US">
 			<Text>[COLOR_RED]必须相邻己方单元格[ENDCOLOR]</Text>
 		</Replace>
-		<Replace Tag="LOC_STLOUIS_NO_IMPROVEMENT" Language="zh_Hans_CN">
+		<Replace Tag="LOC_STLOUIS_NO_IMPROVEMENT" Language="en_US">
 			<Text>[COLOR_RED]无有效改良设施[ENDCOLOR]</Text>
 		</Replace>
 		<!--特殊加成-->
@@ -92,148 +92,148 @@
 		<!--领袖项目-->
 
 		<!--领袖单位-->
-		<Replace Tag="LOC_UNIT_ST_EXPLORER_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_UNIT_ST_EXPLORER_NAME" Language="en_US">
 			<Text>勘探者</Text>
 		</Replace>
-        <Replace Tag="LOC_UNIT_ST_EXPLORER_DESCRIPTION" Language="zh_Hans_CN">
+        <Replace Tag="LOC_UNIT_ST_EXPLORER_DESCRIPTION" Language="en_US">
 			<Text>圣路易斯特色平民单位，能够改良与己方领土相邻的资源并将该单元格纳入领土和移除资源以获得产出并摧毁该单元格上的改良设施。[NEWLINE]拥有3点使用次数，可消耗次数在无主的空白单元格上创建奢侈品资源。</Text>
 		</Replace>
 		<!--特殊晋升-->
 
 		<!--特殊能力-->
-		<Replace Tag="LOC_ABILITY_ST_EXPLORER_NAME" Language="zh_Hans_CN">
+		<Replace Tag="LOC_ABILITY_ST_EXPLORER_NAME" Language="en_US">
 			<Text>勘探者</Text>
 		</Replace>
-        <Replace Tag="LOC_ABILITY_ST_EXPLORER_DESCRIPTION" Language="zh_Hans_CN">
+        <Replace Tag="LOC_ABILITY_ST_EXPLORER_DESCRIPTION" Language="en_US">
 			<Text>即使未开放边界，该单位也可进入外国领土</Text>
 		</Replace>
 		<!--外交对话-->
 		<![CDATA[<!--同意宣布友谊-->
-		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲，愿意和你做朋友……要睡一会儿吗？</Text>
 		</Replace>
 		<!--拒绝宣布友谊-->
-		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>呣……不要摇我……</Text>
 		</Replace>
 		<!--请求宣布友谊-->
-		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_DECLARE_FRIEND_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲，想跟你做朋友呢……你，愿意吗？</Text>
 		</Replace>
 		<!--宣布友谊被接受-->
-		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_ACCEPT_DECLARE_FRIEND_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>嗯？这是拉菲心情好的表现喔……</Text>
 		</Replace>
 		<!--宣布友谊被拒绝-->
-		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_REJECT_DECLARE_FRIEND_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲很可怕么？</Text>
 		</Replace>
 		<!--被宣战-->
-		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>自我限制解除……再次化身鬼神也无所谓的……</Text>
 		</Replace>
 		<!--宣战-->
-		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_DECLARE_WAR_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲决定对你宣战。嗯……拉菲决定对你宣战……嗯……</Text>
 		</Replace>
 		<!--接受代表团-->
-		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_ACCEPT_DELEGATION_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>代表团……拉菲收到了哦……</Text>
 		</Replace>
 		<!--拒绝代表团-->
-		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_REJECT_DELEGATION_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲，要睡一会儿……</Text>
 		</Replace>
 		<!--派出代表团-->
-		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_DELEGATION_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>嗯……愿意接收拉菲的代表团么？</Text>
 		</Replace>
 		<!--被谴责-->
-		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲，很，可，怕，么？</Text>
 		</Replace>
 		<!--谴责-->
-		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_DENOUNCE_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>逞英雄可没意思……（谴责你）</Text>
 		</Replace>
 		<!--初次见面-->
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>我是备受期待的本森级驱逐舰拉菲，在三次所罗门海战有着极为活跃的表现……你说战舰？那是什么？</Text>
 		</Replace>
 		<!--初次见面，邀请参观附近城市-->
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_VISIT_RECIPIENT_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>愿意到访拉菲附近的城市么？</Text>
 		</Replace>
 		<!--初次见面，感谢玩家提供最近城市位置-->
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NEAR_INITIATOR_POSITIVE_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>呜……谢谢……</Text>
 		</Replace>
 		<!--初次见面，请求交换城市位置-->
-		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_FIRST_MEET_NO_MANS_INFO_EXCHANGE_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲想看看你的城市呢……拉菲的城市，也会给你看的……</Text>
 		</Replace>
 		<!--欢迎语？-->
-		<Replace Tag="LOC_DIPLO_GREETING_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_GREETING_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>要一起睡会儿么？</Text>
 		</Replace>
 		<!--示好-->
-		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_KUDO_EXIT_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>嗯，拉菲喜欢你……</Text>
 		</Replace>
 		<!--敌视-->
-		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_WARNING_EXIT_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>Zzzzzzzzz……</Text>
 		</Replace>
 		<!--请求结盟-->
-		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_MAKE_ALLIANCE_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲，想跟你结盟呢……</Text>
 		</Replace>
 		<!--同意和平-->
-		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_ACCEPT_DEAL_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>嗯……就这样吧……</Text>
 		</Replace>
 		<!--拒绝和平-->
-		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_AI_REFUSE_DEAL_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>这点程度和我当时可差远了……</Text>
 		</Replace>
 		<!--请求和平-->
-		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_MAKE_PEACE_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲想要和平……呼……拉菲，要睡一会儿……</Text>
 		</Replace>
 		<!--接受开放边界请求-->
-		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_ACCEPT_OPEN_BORDERS_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>开放边界？嗯……去吧……</Text>
 		</Replace>
 		<!--拒绝开放边界请求-->
-		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_REJECT_OPEN_BORDERS_FROM_HUMAN_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲对开放边界不感兴趣……</Text>
 		</Replace>
 		<!--请求开放边界-->
-		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_OPEN_BORDERS_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲，想要通过你的边境呢……</Text>
 		</Replace>
 		<!--要求移开边境部队-->
-		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>浩浩荡荡的舰队……拉菲，能看见……</Text>
 		</Replace>
 		<!--拒绝移开边境部队-->
-		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_NEGATIVE_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲，需要这只军队呆在这儿……</Text>
 		</Replace>
 		<!--同意移开边境部队-->
-		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_WARNING_TOO_MANY_TROOPS_NEAR_ME_AI_RESPONSE_POSITIVE_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲会移走军队的……嗯……</Text>
 		</Replace>
 		<!--经受不住时间考验-->
-		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_DEFEAT_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲…还能战斗……</Text>
 		</Replace>
 		<!--同意交易-->
-		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_ACCEPT_MAKE_DEAL_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>嗯……</Text>
 		</Replace>
 		<!--拒绝交易-->
-		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="zh_Hans_CN">
+		<Replace Tag="LOC_DIPLO_REJECT_MAKE_DEAL_FROM_AI_LEADER_ST_LOUIS_CL49_ANY" Language="en_US">
 			<Text>拉菲……不接受……</Text>
 		</Replace>]]>
 	</LocalizedText>

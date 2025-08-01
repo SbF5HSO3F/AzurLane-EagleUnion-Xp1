@@ -52,25 +52,27 @@
           <File>(Mod Art Dependency File)</File>
         </UpdateArt>
         <UpdateText id="Laffey">
-          <File priority="100">Text/en_US/EagleUnion_Laffey_EnText.xml</File>
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_Laffey_CNText.xml</File>
-          <File priority="80">Text/zh_Hant_HK/EagleUnion_Laffey_HKText.xml</File>
+          <File priority="9">Text/en_US/EagleUnion_Laffey_EnText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_Laffey_CNText.xml</File>
+          <File priority="7">Text/zh_Hant_HK/EagleUnion_Laffey_HKText.xml</File>
         </UpdateText>
         <UpdateText id="Flasher">
-          <File priority="100">Text/en_US/EagleUnion_Flasher_EnText.xml</File>
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File>
-          <File priority="80">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File>
+          <File priority="9">Text/en_US/EagleUnion_Flasher_EnText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File>
+          <File priority="7">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File>
         </UpdateText>
         <UpdateText id="Eldridge">
-          <File priority="100">Text/en_US/EagleUnion_Eldridge_EnText.xml</File>
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
-          <File priority="80">Text/zh_Hant_HK/EagleUnion_Eldridge_HKText.xml</File>
+          <File priority="9">Text/en_US/EagleUnion_Eldridge_EnText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
+          <File priority="7">Text/zh_Hant_HK/EagleUnion_Eldridge_HKText.xml</File>
         </UpdateText>
         <UpdateText id="Enterprise">
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
         </UpdateText>
         <UpdateText id="StLouis">
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_StLouis_CNText.xml</File>
+          <File priority="9">Text/en_US/EagleUnion_StLouis_EnText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_StLouis_CNText.xml</File>
+          <File priority="7">Text/zh_Hant_HK/EagleUnion_StLouis_HKText.xml</File>
         </UpdateText>
         <UpdateDatabase id="GoldenAge" criteria="GoldenAge">
           <File>ModSupport/GoldenAge/GoldenAge_Config.sql</File>
@@ -132,9 +134,9 @@
           <File>Data/Laffey/EagleUnion_Laffey_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="Laffey_Text">
-          <File priority="100">Text/en_US/EagleUnion_Laffey_EnText.xml</File>
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_Laffey_CNText.xml</File>
-          <File priority="80">Text/zh_Hant_HK/EagleUnion_Laffey_HKText.xml</File>
+          <File priority="9">Text/en_US/EagleUnion_Laffey_EnText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_Laffey_CNText.xml</File>
+          <File priority="7">Text/zh_Hant_HK/EagleUnion_Laffey_HKText.xml</File>
         </UpdateText>
         <UpdateDatabase id="Flasher">
           <File priority="100">Data/Flasher/EagleUnion_Flasher_Leader.xml</File>
@@ -156,24 +158,24 @@
           <File>Data/Flasher/EagleUnion_Flasher_XP2.sql</File>
         </UpdateDatabase>
         <UpdateText id="Flasher_Text">
-          <File priority="100">Text/en_US/EagleUnion_Flasher_EnText.xml</File>
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File>
-          <File priority="80">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File>
+          <File priority="9">Text/en_US/EagleUnion_Flasher_EnText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_Flasher_CNText.xml</File>
+          <File priority="7">Text/zh_Hant_HK/EagleUnion_Flasher_HKText.xml</File>
         </UpdateText>
         <UpdateDatabase id="Eldridge">
           <File priority="100">Data/Eldridge/EagleUnion_Eldridge_Leader.xml</File>
           <File priority="90">Data/Eldridge/EagleUnion_Eldridge_Agendas.xml</File>
         </UpdateDatabase>
         <UpdateText id="Eldridge_Text">
-          <File priority="100">Text/en_US/EagleUnion_Eldridge_EnText.xml</File>
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
-          <File priority="80">Text/zh_Hant_HK/EagleUnion_Eldridge_HKText.xml</File>
+          <File priority="9">Text/en_US/EagleUnion_Eldridge_EnText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_Eldridge_CNText.xml</File>
+          <File priority="7">Text/zh_Hant_HK/EagleUnion_Eldridge_HKText.xml</File>
         </UpdateText>
         <UpdateDatabase id="Enterprise">
           <File priority="100">Data/Enterprise/EagleUnion_Enterprise_Leader.xml</File>
         </UpdateDatabase>
         <UpdateText id="Enterprise_Text">
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
         </UpdateText>
         <UpdateDatabase id="StLouis">
           <File priority="100">Data/StLouis/EagleUnion_StLouis_Leader.xml</File>
@@ -192,7 +194,9 @@
           <File>Data/StLouis/EagleUnion_StLouis_Moment.sql</File>
         </UpdateDatabase>
         <UpdateText id="StLouis_Text">
-          <File priority="90">Text/zh_Hans_CN/EagleUnion_StLouis_CNText.xml</File>
+          <File priority="9">Text/en_US/EagleUnion_StLouis_EnText.xml</File>
+          <File priority="8">Text/zh_Hans_CN/EagleUnion_StLouis_CNText.xml</File>
+          <File priority="7">Text/zh_Hant_HK/EagleUnion_StLouis_HKText.xml</File>
         </UpdateText>
         <ImportFiles id="Carlotta">
           <File>ModSupport/Carlotta/UI/Replace/StLouisUnitPanel_Carlotta.lua</File>
@@ -335,6 +339,9 @@
     <Content Include="Text\en_US\EagleUnion_Laffey_EnText.xml">
       <SubType>Content</SubType>
     </Content>
+    <Content Include="Text\en_US\EagleUnion_StLouis_EnText.xml">
+      <SubType>Content</SubType>
+    </Content>
     <Content Include="Text\zh_Hans_CN\EagleUnion_Eldridge_CNText.xml">
       <SubType>Content</SubType>
     </Content>
@@ -357,6 +364,9 @@
       <SubType>Content</SubType>
     </Content>
     <Content Include="Text\zh_Hant_HK\EagleUnion_Laffey_HKText.xml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Text\zh_Hant_HK\EagleUnion_StLouis_HKText.xml">
       <SubType>Content</SubType>
     </Content>
     <Content Include="UI\Additions\EldridgeUnitPanel.lua">
