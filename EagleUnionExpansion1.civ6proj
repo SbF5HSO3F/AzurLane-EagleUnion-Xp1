@@ -173,7 +173,7 @@
         </UpdateText>
         <UpdateDatabase id="Enterprise">
           <File priority="100">Data/Enterprise/EagleUnion_Enterprise_Leader.xml</File>
-        </Donothing>
+        </UpdateDatabase>
         <UpdateText id="Enterprise_Text">
           <File priority="8">Text/zh_Hans_CN/EagleUnion_Enterprise_CNText.xml</File>
         </UpdateText>
