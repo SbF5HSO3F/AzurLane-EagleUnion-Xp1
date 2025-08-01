@@ -119,14 +119,14 @@ EldridgeUnitPanel = {
             if pUnit:GetMovesRemaining() == 0
                 or unitDef.IgnoreMoves == true then
                 --no movement, disabled
-                detail.Reason = Locale.Lookup('LOC_UNITCOMMAND_RAINBOW_NOMOVEMENT')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_MOVEMENT')
             else
                 local plots = self.GetPlots(pUnit)
                 if plots and #plots > 0 then
                     detail.Disable = false
                 else
                     --no plot, disabled
-                    detail.Reason = Locale.Lookup('LOC_UNITCOMMAND_RAINBOW_NOPLOT')
+                    detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_TRANSFER_CITY')
                 end
             end
             --return the button detail
@@ -220,7 +220,7 @@ EldridgeUnitPanel = {
             local turn = pUnit:GetProperty(key) or 0
             --check the turns
             if turn >= Game.GetCurrentGameTurn() then
-                detail.Reason = Locale.Lookup('LOC_UNITCOMMAND_VOLTAGE_LIMIT')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_HAS_USED')
             else
                 --has target?
                 local hasTarget = false
@@ -243,7 +243,7 @@ EldridgeUnitPanel = {
                 if hasTarget then
                     detail.Disable = false
                 else
-                    detail.Reason = Locale.Lookup('LOC_UNITCOMMAND_VOLTAGE_NOTARGET')
+                    detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_ADJACENT_EMENY')
                 end
             end
             --return the button detail

@@ -1,91 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- EagleUnion_StLouis_EnText -->
-<!-- Author: jjj -->
+<!-- Author: HSbF6HSO3F -->
 <!-- DateCreated: 2025/8/1 13:15:04 -->
 <GameData>
 	<LocalizedText>
 		<!--领袖介绍-->
 		<Replace Tag="LOC_LEADER_ST_LOUIS_CL49_NAME" Language="en_US">
-			<Text>圣路易斯</Text>
+			<Text>St. Louis</Text>
 		</Replace>
 		<!--加载-->
 		<Replace Tag="LOC_LOADING_INFO_LEADER_ST_LOUIS_CL49" Language="en_US">
-			<Text>圣路易斯，Lucky Lou。当珍珠港的硝烟遮蔽天际时，您如命运女神眷顾的宠儿般毫发无损。虽然在后续的追击中屡遭不利，但好运一直眷顾着您。从瓜岛到菲律宾海，在诸多战役中均有您的身影。来吧，用您的眼光审视一切吧！让白鹰联邦的繁华举世闻名。</Text>
+			<Text>St. Louis, the Lucky Lou. When smoke darkened the skies over Pearl Harbor, you emerged unscathed as if blessed by the goddess of fortune. Though subsequent pursuits brought unfavorable outcomes, luck remained by your side. From Guadalcanal to the Philippine Sea, your presence marked numerous battles. Come, survey all with your discerning eye! Let the prosperity of the Eagle Union be known throughout the world.</Text>
 		</Replace>
 		<!--百科-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_QUOTE" Language="en_US">
-			<Text>好运是不会长久眷顾一人的……</Text>
+			<Text>Luck never stays with one person for too long...</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_CAPSULE_BODY" Language="en_US">
-			<Text>圣路易斯利用奢侈品和金币向人们述说白鹰联邦的胜利。</Text>
+			<Text>St. Louis uses luxury goods and gold to proclaim the Eagle Union's victories.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_DETAILED_BODY" Language="en_US">
-			<Text>圣路易斯在带领白鹰联邦时，必须尽快获得她的特色单位“勘探者”。这样，圣路易斯便可以快速地将边界的资源纳入城市并加以改良。面对不需要的资源，勘探者也可将其移除并获得丰厚的产出。当然，勘探者还可发掘单元格的潜力，创造特定的奢侈品资源。所以，当圣路易斯使用勘探者在城市边界发掘出诸多的奢侈品时，便可快速的将这些资源纳入领土。一旦这些改良后的资源纳入了圣路易斯的城市，就会为圣路易斯提供 [ICON_Culture] 文化值和 [ICON_TradeRoute] 贸易路线容量。而拥有了大量的奢侈品资源，圣路易斯便可通过建立国际 [ICON_TradeRoute] 贸易路线获得大量的 [ICON_Gold] 金币和 [ICON_Tourism] 旅游业绩。届时，白鹰联邦将轻松取得文化胜利。</Text>
+			<Text>When leading the Eagle Union, St. Louis must quickly acquire her unique unit, the "Explorer". This allows St. Louis to rapidly incorporate border resources into cities and improve them. For unwanted resources, the Explorer can remove them and gain substantial yields. Additionally, the Explorer can unlock a tile's potential by creating specific luxury resources. When St. Louis uses Explorers to discover numerous luxury resources within city borders, she can swiftly claim these resources for her territory. Once improved and incorporated into St. Louis's cities, these resources provide [ICON_Culture] Culture and [ICON_TradeRoute] Trade Route capacity. With an abundance of luxury resources, St. Louis can establish international [ICON_TradeRoute] Trade Routes to gain substantial [ICON_Gold] Gold and [ICON_Tourism] Tourism. Thus, the Eagle Union can effortlessly achieve a Culture Victory. [ICON_Culture] 文化值和 [ICON_TradeRoute] 贸易路线容量。而拥有了大量的奢侈品资源，圣路易斯便可通过建立国际 [ICON_TradeRoute] 贸易路线获得大量的 [ICON_Gold] 金币和 [ICON_Tourism] 旅游业绩。届时，白鹰联邦将轻松取得文化胜利。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_1" Language="en_US">
-			<Text>圣路易斯号（USS St. Louis，CL-49）是美国海军布鲁克林级轻型巡洋舰8号舰（圣路易斯级1号舰），是第五艘以“密苏里州圣路易斯市”命名的美国海军舰艇。1936年12月10日动工，1938年4月15日下水，1939年5月19日服役。</Text>
+			<Text>USS St. Louis (CL-49) was the eighth ship of the Brooklyn-class light cruisers (and the first of the St. Louis subclass) in the United States Navy. She was the fifth U.S. Navy vessel named after the city of St. Louis, Missouri. Construction began on December 10, 1936; she was launched on April 15, 1938, and commissioned on May 19, 1939.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_2" Language="en_US">
-			<Text>在珍珠港、阿留申群岛、瓜达尔卡纳尔岛（简称：瓜岛）、新乔治亚、布干维尔岛、菲律宾海战役、莱特湾、空袭日本、冲绳战役当中，皆能见到她的身影。</Text>
+			<Text>She participated in numerous engagements, including Pearl Harbor, the Aleutian Islands, Guadalcanal, New Georgia, Bougainville, the Battle of the Philippine Sea, Leyte Gulf, air raids on Japan, and the Battle of Okinawa.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_3" Language="en_US">
-			<Text>战后不久，在1946年6月20日退役。1951年出售给巴西海军，重新服役成为塔曼达雷号（Tamandaré，C-12），直到1976年才退役。</Text>
+			<Text>Shortly after the war, she was decommissioned on June 20, 1946. In 1951, she was sold to the Brazilian Navy and recommissioned as Tamandaré (C-12), serving until her final decommissioning in 1976.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_4" Language="en_US">
-			<Text>1980年，卖给中国台湾的拆船业者准备拆除。1980年8月24日，在拖往中国台湾途中，于好望角附近浸水沉没。</Text>
+			<Text>In 1980, she was sold to Taiwanese shipbreakers for scrapping. On August 24, 1980, while under tow to Taiwan, she took on water and sank near the Cape of Good Hope.</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_5" Language="en_US">
-			<Text>第二次世界大战期间，她获得十一枚战斗之星。</Text>
+			<Text>During World War II, she earned eleven battle stars.</Text>
 		</Replace>
 		<!--领袖议程-->
 
 		<!--领袖能力-->
 		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_NAME" Language="en_US">
-			<Text>鎏金执舵</Text>
+			<Text>Luxury Handle</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION" Language="en_US">
-			<Text>使用 [ICON_Gold] 金币购买时费用-20%。消耗 [ICON_Gold] 金币时，获得所消耗 [ICON_Gold] 金币25%的 [ICON_ResearchPoint] 研究点数。城市奢侈品资源+2 [ICON_Culture] 文化值，改良的奢侈品资源提供+1 [ICON_TradeRoute] 贸易路线容量。创建国际 [ICON_TradeRoute] 贸易路线时，将根据所拥有的多余奢侈品资源数量提供50点 [ICON_Gold] 金币和10点 [ICON_Tourism] 旅游业绩（标准速度下）。</Text>
+			<Text>20% Discount on Purchases with [ICON_Gold] Gold. When consuming [ICON_Gold] Gold, obtain 25% of the [ICON_SesearchPoint] research points of the consumed [ICON_Gold] Gold. The Luxury Resource tiles in this city +2 [ICON_Culture] Culture, and improved Luxury Resource +1 [ICON_TradeRoute] Trade Route capacity. When creating an international [ICON_TradeRoute] Trade Route, awards 50 [ICON_Gold] Gold and 10 [ICON_Tourism] Tourism (on Standard speed) based on the number of excess copies of Luxury resources St. Louis possesses.</Text>
 		</Replace>
 		<!--Lua文字-->
 		<Replace Tag="LOC_STLOUIS_CREATE_RESOURCE" Language="en_US">
-			<Text>创建 {1_Icon} {2_Name}</Text>
+			<Text>Create: {1_Icon} {2_Name}</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_REMOVE_TITLE" Language="en_US">
-			<Text>移除资源</Text>
+			<Text>Remove Resource</Text>
 		</Replace>
         <Replace Tag="LOC_STLOUIS_REMOVE_DESC" Language="en_US">
-			<Text>位于资源上时使用，勘探者将移除该单元格上的资源并结束当前回合。现有改良设施将被摧毁。</Text>
+			<Text>Use when located on resources, Explorer will remove the resource and ends turn. Any improvement present is destroyed.</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_REMOVE_DETAIL" Language="en_US">
-			<Text>移除：{1_Icon} {2_Name}</Text>
+			<Text>Remove: {1_Icon} {2_Name}</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_IMPROV_TITLE" Language="en_US">
-			<Text>占据资源</Text>
+			<Text>Improve Resource</Text>
 		</Replace>
         <Replace Tag="LOC_STLOUIS_IMPROV_DESC" Language="en_US">
-			<Text>位于相邻己方单元格的资源上时使用，勘探者将改良此资源并结束当前回合。该单元格将纳入领土。</Text>
+			<Text>Use when located on resources adjacent to onwer plot, Explorer will improve the resource and ends turn. Annexes this plot into territory.</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_IMPROVEMENT" Language="en_US">
-			<Text>创建改良设施：{1_Name}</Text>
-		</Replace>
-        <!--Warning-->
-		<Replace Tag="LOC_STLOUIS_NO_MOVES" Language="en_US">
-			<Text>[COLOR_RED]无剩余移动力[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_STLOUIS_NOT_NO_OWNER" Language="en_US">
-			<Text>[COLOR_RED]必须位于无主单元格[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_STLOUIS_HAS_RESOURCES" Language="en_US">
-			<Text>[COLOR_RED]必须位于空白单元格[ENDCOLOR]</Text>
-		</Replace>
-        <Replace Tag="LOC_STLOUIS_NO_PLACEABLE_RESOURCES" Language="en_US">
-			<Text>[COLOR_RED]该单元格无有效资源[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_STLOUIS_NO_ADJACENT_OWNER" Language="en_US">
-			<Text>[COLOR_RED]必须相邻己方单元格[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_STLOUIS_NO_IMPROVEMENT" Language="en_US">
-			<Text>[COLOR_RED]无有效改良设施[ENDCOLOR]</Text>
+			<Text>Create Improvement: {1_Name}</Text>
 		</Replace>
 		<!--特殊加成-->
 		
@@ -93,19 +74,19 @@
 
 		<!--领袖单位-->
 		<Replace Tag="LOC_UNIT_ST_EXPLORER_NAME" Language="en_US">
-			<Text>勘探者</Text>
+			<Text>Explorer</Text>
 		</Replace>
         <Replace Tag="LOC_UNIT_ST_EXPLORER_DESCRIPTION" Language="en_US">
-			<Text>圣路易斯特色平民单位，能够改良与己方领土相邻的资源并将该单元格纳入领土和移除资源以获得产出并摧毁该单元格上的改良设施。[NEWLINE]拥有3点使用次数，可消耗次数在无主的空白单元格上创建奢侈品资源。</Text>
+			<Text>St. Louis's unique civilian unit that can improve resources adjacent to owned territory and annex those plots, or remove resources to gain yields while destroying any improvements on the plot.[NEWLINE]Has 3 charges that can be expended to create Luxury Resource on unowned empty plot.</Text>
 		</Replace>
 		<!--特殊晋升-->
 
 		<!--特殊能力-->
 		<Replace Tag="LOC_ABILITY_ST_EXPLORER_NAME" Language="en_US">
-			<Text>勘探者</Text>
+			<Text>Explorer</Text>
 		</Replace>
         <Replace Tag="LOC_ABILITY_ST_EXPLORER_DESCRIPTION" Language="en_US">
-			<Text>即使未开放边界，该单位也可进入外国领土</Text>
+			<Text>Even without Open Borders, this unit can enter foreign territory.</Text>
 		</Replace>
 		<!--外交对话-->
 		<![CDATA[<!--同意宣布友谊-->

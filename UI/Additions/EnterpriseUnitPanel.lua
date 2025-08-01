@@ -55,14 +55,14 @@ EnterpriseUnitPanel = {
             local turns = pUnit:GetProperty(KeyRecover) or 0
             --check the turns
             if turns >= Game.GetCurrentGameTurn() then
-                detail.Reason = Locale.Lookup('LOC_ENTERPRISE_REASON_HAS_USED')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_HAS_USED')
                 return detail
             end
             --check the unit Hp
             if pUnit:GetDamage() > 0 then
                 detail.Disable = false
             else
-                detail.Reason = Locale.Lookup('LOC_ENTERPRISE_REASON_NO_DAMAGE')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_DAMAGE')
             end
             return detail
         end,

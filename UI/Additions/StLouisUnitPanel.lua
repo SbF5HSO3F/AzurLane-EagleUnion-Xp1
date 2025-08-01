@@ -153,7 +153,7 @@ StLouisUnitPanel = {
             local detail = { Disable = true, Recource = {}, Harvest = '', Reason = '' }
             --get the unit remain movenment
             if unit:GetMovesRemaining() == 0 then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_MOVES')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_MOVEMENT')
                 return detail
             end
             --get the plot
@@ -163,7 +163,7 @@ StLouisUnitPanel = {
             local resourceData = Players[unit:GetOwner()]:GetResources()
             --the plot has resource?
             if resource == -1 or resourceData:IsResourceVisible(resourceHash) == false then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_PLACEABLE_RESOURCES')
                 return detail
             end
             local resourceDef = GameInfo.Resources[resourceHash]
@@ -221,7 +221,7 @@ StLouisUnitPanel = {
             local detail = { Disable = true, Improvement = {}, Reason = '' }
             --get the unit remain movenment
             if unit:GetMovesRemaining() == 0 then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_MOVES')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_MOVEMENT')
                 return detail
             end
             local x, y = unit:GetX(), unit:GetY()
@@ -229,7 +229,7 @@ StLouisUnitPanel = {
             local plot = Map.GetPlot(x, y)
             --the plot is no owner
             if plot:GetOwner() ~= -1 then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NOT_NO_OWNER')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NOT_NO_OWNER_PLOT')
                 return detail
             end
             --the plot has resource
@@ -237,7 +237,7 @@ StLouisUnitPanel = {
             local resourceHash = plot:GetResourceTypeHash()
             local resourceData = Players[unit:GetOwner()]:GetResources()
             if resourceType == -1 or resourceData:IsResourceVisible(resourceHash) == false then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_PLACEABLE_RESOURCES')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_PLACEABLE_RESOURCES')
                 return detail
             end
             --get the next owner plot
@@ -249,7 +249,7 @@ StLouisUnitPanel = {
                 end
             end
             if adjacentOwner == false then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_ADJACENT_OWNER')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_ADJACENT_OWNER')
                 return detail
             end
             --get the improvement
@@ -257,7 +257,7 @@ StLouisUnitPanel = {
             local resource = Resources:GetResource(resDef.ResourceType)
             local improvement = resource:GetImprovement(plot)
             if not improvement or not next(improvement) then
-                detail.Reason = Locale.Lookup('LOC_STLOUIS_NO_IMPROVEMENT')
+                detail.Reason = Locale.Lookup('LOC_EAGLE_ACTION_REASON_NO_VALID_IMPROVEMENT')
                 return detail
             end
             detail.Improvement = improvement

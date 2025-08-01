@@ -1,111 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- EagleUnion_StLouis_HKText -->
-<!-- Author: jjj -->
+<!-- Author: HSbF6HSO3F -->
 <!-- DateCreated: 2025/8/1 13:15:17 -->
 <GameData>
 	<LocalizedText>
 		<!--领袖介绍-->
 		<Replace Tag="LOC_LEADER_ST_LOUIS_CL49_NAME" Language="zh_Hant_HK">
-			<Text>圣路易斯</Text>
+			<Text>聖路易斯</Text>
 		</Replace>
-		<!--加载-->
+		<!--加載-->
 		<Replace Tag="LOC_LOADING_INFO_LEADER_ST_LOUIS_CL49" Language="zh_Hant_HK">
-			<Text>圣路易斯，Lucky Lou。当珍珠港的硝烟遮蔽天际时，您如命运女神眷顾的宠儿般毫发无损。虽然在后续的追击中屡遭不利，但好运一直眷顾着您。从瓜岛到菲律宾海，在诸多战役中均有您的身影。来吧，用您的眼光审视一切吧！让白鹰联邦的繁华举世闻名。</Text>
+			<Text>聖路易斯，Lucky Lou。當珍珠港的硝煙遮蔽天際時，您如命運女神眷顧的寵兒般毫發無損。雖然在後續的追擊中屢遭不利，但好運一直眷顧著您。從瓜島到菲律賓海，在諸多戰役中均有您的身影。來吧，用您的眼光審視一切吧！讓白鷹聯邦的繁華舉世聞名。</Text>
 		</Replace>
 		<!--百科-->
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_QUOTE" Language="zh_Hant_HK">
-			<Text>好运是不会长久眷顾一人的……</Text>
+			<Text>好運是不會長久眷顧一人的……</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_CAPSULE_BODY" Language="zh_Hant_HK">
-			<Text>圣路易斯利用奢侈品和金币向人们述说白鹰联邦的胜利。</Text>
+			<Text>聖路易斯利用奢侈品和金幣向人們述說白鷹聯邦的勝利。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_DETAILED_BODY" Language="zh_Hant_HK">
-			<Text>圣路易斯在带领白鹰联邦时，必须尽快获得她的特色单位“勘探者”。这样，圣路易斯便可以快速地将边界的资源纳入城市并加以改良。面对不需要的资源，勘探者也可将其移除并获得丰厚的产出。当然，勘探者还可发掘单元格的潜力，创造特定的奢侈品资源。所以，当圣路易斯使用勘探者在城市边界发掘出诸多的奢侈品时，便可快速的将这些资源纳入领土。一旦这些改良后的资源纳入了圣路易斯的城市，就会为圣路易斯提供 [ICON_Culture] 文化值和 [ICON_TradeRoute] 贸易路线容量。而拥有了大量的奢侈品资源，圣路易斯便可通过建立国际 [ICON_TradeRoute] 贸易路线获得大量的 [ICON_Gold] 金币和 [ICON_Tourism] 旅游业绩。届时，白鹰联邦将轻松取得文化胜利。</Text>
+			<Text>聖路易斯在帶領白鷹聯邦時，必須盡快獲得她的特色單位「勘探者」。這樣，聖路易斯便可以快速地將邊界的資源納入城市並加以改良。面對不需要的資源，勘探者也可將其移除並獲得豐厚的產出。當然，勘探者還可發掘單元格的潛力，創造特定的奢侈品資源。所以，當聖路易斯使用勘探者在城市邊界發掘出諸多的奢侈品時，便可快速的將這些資源納入領土。一旦這些改良後的資源納入了聖路易斯的城市，就會為聖路易斯提供 [ICON_Culture] 文化值和 [ICON_TradeRoute] 貿易路線容量。而擁有了大量的奢侈品資源，聖路易斯便可通過建立國際 [ICON_TradeRoute] 貿易路線獲得大量的 [ICON_Gold] 金幣和 [ICON_Tourism] 旅遊業績。屆時，白鷹聯邦將輕松取得文化勝利。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_1" Language="zh_Hant_HK">
-			<Text>圣路易斯号（USS St. Louis，CL-49）是美国海军布鲁克林级轻型巡洋舰8号舰（圣路易斯级1号舰），是第五艘以“密苏里州圣路易斯市”命名的美国海军舰艇。1936年12月10日动工，1938年4月15日下水，1939年5月19日服役。</Text>
+			<Text>聖路易斯號（USS St. Louis，CL-49）是美國海軍布魯克林級輕型巡洋艦8號艦（聖路易斯級1號艦），是第五艘以「密蘇裏州聖路易斯市」命名的美國海軍艦艇。1936年12月10日動工，1938年4月15日下水，1939年5月19日服役。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_2" Language="zh_Hant_HK">
-			<Text>在珍珠港、阿留申群岛、瓜达尔卡纳尔岛（简称：瓜岛）、新乔治亚、布干维尔岛、菲律宾海战役、莱特湾、空袭日本、冲绳战役当中，皆能见到她的身影。</Text>
+			<Text>在珍珠港、阿留申群島、瓜達爾卡納爾島（簡稱：瓜島）、新喬治亞、布幹維爾島、菲律賓海戰役、萊特灣、空襲日本、沖繩戰役當中，皆能見到她的身影。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_3" Language="zh_Hant_HK">
-			<Text>战后不久，在1946年6月20日退役。1951年出售给巴西海军，重新服役成为塔曼达雷号（Tamandaré，C-12），直到1976年才退役。</Text>
+			<Text>戰後不久，在1946年6月20日退役。1951年出售給巴西海軍，重新服役成為塔曼達雷號（Tamandaré，C-12），直到1976年才退役。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_4" Language="zh_Hant_HK">
-			<Text>1980年，卖给中国台湾的拆船业者准备拆除。1980年8月24日，在拖往中国台湾途中，于好望角附近浸水沉没。</Text>
+			<Text>1980年，賣給中國臺灣的拆船業者準備拆除。1980年8月24日，在拖往中國臺灣途中，於好望角附近浸水沈沒。</Text>
 		</Replace>
 		<Replace Tag="LOC_PEDIA_LEADERS_PAGE_LEADER_ST_LOUIS_CL49_CHAPTER_HISTORY_PARA_5" Language="zh_Hant_HK">
-			<Text>第二次世界大战期间，她获得十一枚战斗之星。</Text>
+			<Text>第二次世界大戰期間，她獲得十一枚戰鬥之星。</Text>
 		</Replace>
-		<!--领袖议程-->
+		<!--領袖議程-->
 
-		<!--领袖能力-->
+		<!--領袖能力-->
 		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_NAME" Language="zh_Hant_HK">
-			<Text>鎏金执舵</Text>
+			<Text>鎏金執舵</Text>
 		</Replace>
 		<Replace Tag="LOC_TRAIT_LEADER_LUXURY_HANDLE_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>使用 [ICON_Gold] 金币购买时费用-20%。消耗 [ICON_Gold] 金币时，获得所消耗 [ICON_Gold] 金币25%的 [ICON_ResearchPoint] 研究点数。城市奢侈品资源+2 [ICON_Culture] 文化值，改良的奢侈品资源提供+1 [ICON_TradeRoute] 贸易路线容量。创建国际 [ICON_TradeRoute] 贸易路线时，将根据所拥有的多余奢侈品资源数量提供50点 [ICON_Gold] 金币和10点 [ICON_Tourism] 旅游业绩（标准速度下）。</Text>
+			<Text>使用 [ICON_Gold] 金幣購買時費用-20%。消耗 [ICON_Gold] 金幣時，獲得所消耗 [ICON_Gold] 金幣25%的 [ICON_ResearchPoint] 研究點數。城市奢侈品資源+2 [ICON_Culture] 文化值，改良的奢侈品資源提供+1 [ICON_TradeRoute] 貿易路線容量。創建國際 [ICON_TradeRoute] 貿易路線時，將根據所擁有的多余奢侈品資源數量提供50點 [ICON_Gold] 金幣和10點 [ICON_Tourism] 旅遊業績（標準速度下）。</Text>
 		</Replace>
 		<!--Lua文字-->
 		<Replace Tag="LOC_STLOUIS_CREATE_RESOURCE" Language="zh_Hant_HK">
-			<Text>创建 {1_Icon} {2_Name}</Text>
+			<Text>創建：{1_Icon} {2_Name}</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_REMOVE_TITLE" Language="zh_Hant_HK">
-			<Text>移除资源</Text>
+			<Text>移除資源</Text>
 		</Replace>
         <Replace Tag="LOC_STLOUIS_REMOVE_DESC" Language="zh_Hant_HK">
-			<Text>位于资源上时使用，勘探者将移除该单元格上的资源并结束当前回合。现有改良设施将被摧毁。</Text>
+			<Text>位於資源上時使用，勘探者將移除該單元格上的資源並結束當前回合。現有改良設施將被摧毀。</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_REMOVE_DETAIL" Language="zh_Hant_HK">
 			<Text>移除：{1_Icon} {2_Name}</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_IMPROV_TITLE" Language="zh_Hant_HK">
-			<Text>占据资源</Text>
+			<Text>占據資源</Text>
 		</Replace>
         <Replace Tag="LOC_STLOUIS_IMPROV_DESC" Language="zh_Hant_HK">
-			<Text>位于相邻己方单元格的资源上时使用，勘探者将改良此资源并结束当前回合。该单元格将纳入领土。</Text>
+			<Text>位於相鄰己方單元格的資源上時使用，勘探者將改良此資源並結束當前回合。該單元格將納入領土。</Text>
 		</Replace>
 		<Replace Tag="LOC_STLOUIS_IMPROVEMENT" Language="zh_Hant_HK">
-			<Text>创建改良设施：{1_Name}</Text>
-		</Replace>
-        <!--Warning-->
-		<Replace Tag="LOC_STLOUIS_NO_MOVES" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]无剩余移动力[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_STLOUIS_NOT_NO_OWNER" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]必须位于无主单元格[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_STLOUIS_HAS_RESOURCES" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]必须位于空白单元格[ENDCOLOR]</Text>
-		</Replace>
-        <Replace Tag="LOC_STLOUIS_NO_PLACEABLE_RESOURCES" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]该单元格无有效资源[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_STLOUIS_NO_ADJACENT_OWNER" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]必须相邻己方单元格[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_STLOUIS_NO_IMPROVEMENT" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]无有效改良设施[ENDCOLOR]</Text>
+			<Text>創建改良設施：{1_Name}</Text>
 		</Replace>
 		<!--特殊加成-->
 		
-		<!--领袖项目-->
+		<!--領袖項目-->
 
-		<!--领袖单位-->
+		<!--領袖單位-->
 		<Replace Tag="LOC_UNIT_ST_EXPLORER_NAME" Language="zh_Hant_HK">
 			<Text>勘探者</Text>
 		</Replace>
         <Replace Tag="LOC_UNIT_ST_EXPLORER_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>圣路易斯特色平民单位，能够改良与己方领土相邻的资源并将该单元格纳入领土和移除资源以获得产出并摧毁该单元格上的改良设施。[NEWLINE]拥有3点使用次数，可消耗次数在无主的空白单元格上创建奢侈品资源。</Text>
+			<Text>聖路易斯特色平民單位，能夠改良與己方領土相鄰的資源並將該單元格納入領土和移除資源以獲得產出並摧毀該單元格上的改良設施。[NEWLINE]擁有3點使用次數，可消耗次數在無主的空白單元格上創建奢侈品資源。</Text>
 		</Replace>
-		<!--特殊晋升-->
+		<!--特殊晉升-->
 
 		<!--特殊能力-->
 		<Replace Tag="LOC_ABILITY_ST_EXPLORER_NAME" Language="zh_Hant_HK">
 			<Text>勘探者</Text>
 		</Replace>
         <Replace Tag="LOC_ABILITY_ST_EXPLORER_DESCRIPTION" Language="zh_Hant_HK">
-			<Text>即使未开放边界，该单位也可进入外国领土</Text>
+			<Text>即使未開放邊界，該單位也可進入外國領土</Text>
 		</Replace>
 		<!--外交对话-->
 		<![CDATA[<!--同意宣布友谊-->

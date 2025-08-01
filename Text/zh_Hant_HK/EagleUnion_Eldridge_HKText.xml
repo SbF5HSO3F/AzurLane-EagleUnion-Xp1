@@ -74,12 +74,6 @@
 		<Replace Tag="LOC_RAINBOW_DESC" Language="zh_Hant_HK">
 			<Text>轉移至任意一座城市。</Text>
 		</Replace>
-		<Replace Tag="LOC_UNITCOMMAND_RAINBOW_NOMOVEMENT" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]該單位沒有剩余 [ICON_MOVEMENT] 移動力[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_UNITCOMMAND_RAINBOW_NOPLOT" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]該單位沒有可供轉移的城市[ENDCOLOR]</Text>
-		</Replace>
 		<Replace Tag="LOC_VOLTAGE_TITLE" Language="zh_Hant_HK">
 			<Text>電氣功率</Text>
 		</Replace>
@@ -91,12 +85,6 @@
 		</Replace>
 		<Replace Tag="LOC_VOLTAGE_BUFF_FROM_COMBAT" Language="zh_Hant_HK">
 			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#}% 來自戰鬥力</Text>
-		</Replace>
-		<Replace Tag="LOC_UNITCOMMAND_VOLTAGE_LIMIT" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]本回合已發動[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_UNITCOMMAND_VOLTAGE_NOTARGET" Language="zh_Hant_HK">
-			<Text>[COLOR_RED]必須相鄰敵方單位[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_SCIENCE_ELDRIDGE_DE173" Language="zh_Hant_HK">
 			<Text>[NEWLINE]{1_point : number +#.#;-#.#} 來自每回合科技值</Text>

@@ -74,12 +74,6 @@
 		<Replace Tag="LOC_RAINBOW_DESC" Language="en_US">
 			<Text>Transfer to any city.</Text>
 		</Replace>
-		<Replace Tag="LOC_UNITCOMMAND_RAINBOW_NOMOVEMENT" Language="en_US">
-			<Text>[COLOR_RED]The unit has no remaining [ICON_MOVEMENT] Movement.[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_UNITCOMMAND_RAINBOW_NOPLOT" Language="en_US">
-			<Text>[COLOR_RED]The unit has no available transfer cities.[ENDCOLOR]</Text>
-		</Replace>
 		<Replace Tag="LOC_VOLTAGE_TITLE" Language="en_US">
 			<Text>Max Voltage</Text>
 		</Replace>
@@ -91,12 +85,6 @@
 		</Replace>
 		<Replace Tag="LOC_VOLTAGE_BUFF_FROM_COMBAT" Language="en_US">
 			<Text>[NEWLINE][ICON_Bullet]{1_point : number +#.#;-#.#}% from Combat</Text>
-		</Replace>
-		<Replace Tag="LOC_UNITCOMMAND_VOLTAGE_LIMIT" Language="en_US">
-			<Text>[COLOR_RED]This command has already been used by the unit this turn.[ENDCOLOR]</Text>
-		</Replace>
-		<Replace Tag="LOC_UNITCOMMAND_VOLTAGE_NOTARGET" Language="en_US">
-			<Text>[COLOR_RED]Must be adjacent to an enemy unit.[ENDCOLOR]</Text>
 		</Replace>
 		<Replace Tag="LOC_EAGLE_POINT_FROM_SCIENCE_ELDRIDGE_DE173" Language="en_US">
 			<Text>[NEWLINE]{1_point : number +#.#;-#.#} from Science per turn</Text>
